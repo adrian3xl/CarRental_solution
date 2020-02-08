@@ -18,7 +18,8 @@ namespace CarRental
         }
 
 
-        private void button1_Click_1(object sender, EventArgs e)
+
+        private void Button1_Click_1(object sender, EventArgs e)
         {
 
             try
@@ -37,12 +38,12 @@ namespace CarRental
                         || String.IsNullOrEmpty(customer_lastname)
                         || daterented == null
                         || String.IsNullOrEmpty(drpbox_cartype.Text))
-                       
+
                 {
                     isValid = true;
 
                 }
-                       
+
 
                 if (txtbox_firstname == null ||
                     txtbox_lastname == null ||
@@ -63,7 +64,7 @@ namespace CarRental
 
 
                 if (isValid)
-                {
+
                     MessageBox.Show($"customer name is : {customer_firstname} {customer_lastname}\n\r" +
 
                     $"Owner of car:{txtbox_owner}\n\r" +
@@ -72,13 +73,15 @@ namespace CarRental
                    $"date returned to owner: {datereturned}\n\r" +
                    $"ID number is:{txtbox_id_number}\n\r" +
                    $"Type of car : {drpbox_cartype}");
-                }
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
                 throw;
+
             }
         }
     }
+
 }

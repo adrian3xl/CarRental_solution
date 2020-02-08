@@ -1,4 +1,6 @@
-﻿namespace CarRental
+﻿using System.Windows.Forms;
+
+namespace CarRental
 {
     partial class Form1
     {
@@ -34,8 +36,13 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+ 
             this.daterented = new System.Windows.Forms.DateTimePicker();
             this.datereturned = new System.Windows.Forms.DateTimePicker();
+ 
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            ;
+ 
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.txtbox_firstname = new System.Windows.Forms.TextBox();
@@ -112,6 +119,7 @@
             this.textBox4.TabIndex = 5;
             this.textBox4.Text = "Rent Date";
             // 
+ 
             // daterented
             // 
             this.daterented.Location = new System.Drawing.Point(12, 170);
@@ -125,6 +133,17 @@
             this.datereturned.Name = "datereturned";
             this.datereturned.Size = new System.Drawing.Size(200, 20);
             this.datereturned.TabIndex = 8;
+ 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 170);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker1.TabIndex = 6;
+            // 
+            // dateTimePicker2
+            // 
+             
             // 
             // textBox5
             // 
@@ -133,9 +152,15 @@
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(300, 151);
             this.textBox5.Name = "textBox5";
+ 
             this.textBox5.Size = new System.Drawing.Size(80, 13);
             this.textBox5.TabIndex = 7;
             this.textBox5.Text = "Return Date";
+ 
+            this.textBox5.Size = new System.Drawing.Size(63, 13);
+            this.textBox5.TabIndex = 7;
+            this.textBox5.Text = "Rent Date";
+ 
             // 
             // textBox6
             // 
@@ -200,7 +225,7 @@
             this.txtbox_submit.TabIndex = 15;
             this.txtbox_submit.Text = "Submit";
             this.txtbox_submit.UseVisualStyleBackColor = true;
-            this.txtbox_submit.Click += new System.EventHandler(this.button1_Click_1);
+            this.txtbox_submit.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // textBox12
             // 
@@ -234,9 +259,15 @@
             this.Controls.Add(this.txtbox_cost);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.txtbox_firstname);
+ 
             this.Controls.Add(this.datereturned);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.daterented);
+ 
+          
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.dateTimePicker1);
+ 
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -258,8 +289,14 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+ 
         private System.Windows.Forms.DateTimePicker daterented;
         private System.Windows.Forms.DateTimePicker datereturned;
+        private DateTimePicker dateTimePicker2;
+ 
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        
+ 
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox txtbox_firstname;
