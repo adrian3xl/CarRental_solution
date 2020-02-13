@@ -114,6 +114,12 @@
     <Compile Include="Type_of_car.cs">
       <DependentUpon>CarRental_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Vehicle_Listing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicle_Listing.Designer.cs">
+      <DependentUpon>Vehicle_Listing.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="..\..\..\..\Desktop\csharp\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <Link>Form1.resx</Link>
@@ -130,6 +136,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Vehicle_Listing.resx">
+      <DependentUpon>Vehicle_Listing.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="CarRental_Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CarRental_Model.Designer.cs</LastGenOutput>

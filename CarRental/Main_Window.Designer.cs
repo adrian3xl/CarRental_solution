@@ -38,9 +38,9 @@
             this.editDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageRentalsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutDeveloperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutDeveloperToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -103,6 +103,7 @@
             this.vehicleListingToolStripMenuItem.Name = "vehicleListingToolStripMenuItem";
             this.vehicleListingToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.vehicleListingToolStripMenuItem.Text = "Vehicle Listing";
+            this.vehicleListingToolStripMenuItem.Click += new System.EventHandler(this.vehicleListingToolStripMenuItem_Click);
             // 
             // editDetailsToolStripMenuItem
             // 
@@ -127,12 +128,6 @@
             this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.toolStripMenuItem2.Text = "Rental Records";
             // 
-            // aboutDeveloperToolStripMenuItem
-            // 
-            this.aboutDeveloperToolStripMenuItem.Name = "aboutDeveloperToolStripMenuItem";
-            this.aboutDeveloperToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
-            this.aboutDeveloperToolStripMenuItem.Text = "About Developer";
-            // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
@@ -145,6 +140,12 @@
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editToolStripMenuItem.Text = "Edit";
+            // 
+            // aboutDeveloperToolStripMenuItem
+            // 
+            this.aboutDeveloperToolStripMenuItem.Name = "aboutDeveloperToolStripMenuItem";
+            this.aboutDeveloperToolStripMenuItem.Size = new System.Drawing.Size(108, 20);
+            this.aboutDeveloperToolStripMenuItem.Text = "About Developer";
             // 
             // Main_Window
             // 

@@ -23,5 +23,12 @@ namespace CarRental
             Form1.MdiParent = this;
             Form1.Show();
         }
+
+        private void vehicleListingToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Vehicle_Listing vehicle_Listing = new Vehicle_Listing();
+            vehicle_Listing.MdiParent = this;
+            vehicle_Listing.Show();
+        }
     }
 }
