@@ -7,27 +7,29 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CarRental
+namespace JobApp
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Type_of_car
+    public partial class Jobseeker_details
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Type_of_car()
+        public Jobseeker_details()
         {
-            this.Rental_records = new HashSet<Rental_records>();
+            this.Job_Applications_details = new HashSet<Job_Applications_details>();
         }
     
         public int id { get; set; }
-        public string Model { get; set; }
-        public string Make { get; set; }
-        public Nullable<int> Year { get; set; }
-        public string VIN { get; set; }
-        public string LicensePlateNumber { get; set; }
+        public string First_name { get; set; }
+        public string Last_name { get; set; }
+        public Nullable<int> Resume_id { get; set; }
+        public Nullable<int> Jobseeker_age { get; set; }
+        public string Password { get; set; }
+        public string User_Name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Rental_records> Rental_records { get; set; }
+        public virtual ICollection<Job_Applications_details> Job_Applications_details { get; set; }
+        public virtual Resume_details Resume_details { get; set; }
     }
 }

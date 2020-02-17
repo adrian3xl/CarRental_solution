@@ -85,6 +85,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
       <Link>Form1.Designer.cs</Link>
     </Compile>
+    <Compile Include="Add_Edit_Cars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Edit_Cars.Designer.cs">
+      <DependentUpon>Add_Edit_Cars.cs</DependentUpon>
+    </Compile>
     <Compile Include="CarRental_Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,6 +129,9 @@
     <EmbeddedResource Include="..\..\..\..\Desktop\csharp\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
       <Link>Form1.resx</Link>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Edit_Cars.resx">
+      <DependentUpon>Add_Edit_Cars.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Window.resx">
       <DependentUpon>Main_Window.cs</DependentUpon>

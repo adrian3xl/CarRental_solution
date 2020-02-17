@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E4D752B-1F06-444A-BA4D-1E48981A2EAC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JobApp</RootNamespace>
+    <AssemblyName>JobApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Employer_details.cs">
+      <DependentUpon>Jobapp_db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Employer_view_vacancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employer_view_vacancy.Designer.cs">
+      <DependentUpon>Employer_view_vacancy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BrowseJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrowseJobs.Designer.cs">
+      <DependentUpon>BrowseJobs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee_loginview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_loginview.Designer.cs">
+      <DependentUpon>Employee_loginview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employer_accountview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employer_accountview.Designer.cs">
+      <DependentUpon>Employer_accountview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employer_signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employer_signup.Designer.cs">
+      <DependentUpon>Employer_signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobApp_Main_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobApp_Main_window.Designer.cs">
+      <DependentUpon>JobApp_Main_window.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jobapp_db.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Jobapp_db.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Jobapp_db.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Jobapp_db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Jobapp_db.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Jobapp_db.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker_details.cs">
+      <DependentUpon>Jobapp_db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker_loginView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobSeeker_loginView.Designer.cs">
+      <DependentUpon>JobSeeker_loginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JobSeeker_Signup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobSeeker_Signup.Designer.cs">
+      <DependentUpon>JobSeeker_Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jobseeker_view_vacancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jobseeker_view_vacancy.Designer.cs">
+      <DependentUpon>Jobseeker_view_vacancy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Job_Applications_details.cs">
+      <DependentUpon>Jobapp_db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Job_Seeker_Accountview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Job_Seeker_Accountview.Designer.cs">
+      <DependentUpon>Job_Seeker_Accountview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resume_details.cs">
+      <DependentUpon>Jobapp_db.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vacancy_details.cs">
+      <DependentUpon>Jobapp_db.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Employer_view_vacancy.resx">
+      <DependentUpon>Employer_view_vacancy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrowseJobs.resx">
+      <DependentUpon>BrowseJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_loginview.resx">
+      <DependentUpon>Employee_loginview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employer_accountview.resx">
+      <DependentUpon>Employer_accountview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employer_signup.resx">
+      <DependentUpon>Employer_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobApp_Main_window.resx">
+      <DependentUpon>JobApp_Main_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobSeeker_loginView.resx">
+      <DependentUpon>JobSeeker_loginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobSeeker_Signup.resx">
+      <DependentUpon>JobSeeker_Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jobseeker_view_vacancy.resx">
+      <DependentUpon>Jobseeker_view_vacancy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Job_Seeker_Accountview.resx">
+      <DependentUpon>Job_Seeker_Accountview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EntityDeploy Include="Jobapp_db.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Jobapp_db.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Jobapp_db.edmx.diagram">
+      <DependentUpon>Jobapp_db.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Jobapp_db.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Jobapp_db.Context.cs</LastGenOutput>
+      <DependentUpon>Jobapp_db.edmx</DependentUpon>
+    </Content>
+    <Content Include="Jobapp_db.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Jobapp_db.edmx</DependentUpon>
+      <LastGenOutput>Jobapp_db.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
