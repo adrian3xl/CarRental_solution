@@ -74,6 +74,12 @@ namespace JobApp
 
                 if (IsValid)
                 {
+                    var jobJobseeker_detail = new Jobseeker_details();
+                    jobJobseeker_detail.First_name = First_name;
+                    jobJobseeker_detail.Last_name = Last_name;
+                    jobJobseeker_detail.User_Name = User_name;
+                    jobJobseeker_detail.Jobseeker_age = age;
+
                     MessageBox.Show("Registration was successful");
                 }
             }
