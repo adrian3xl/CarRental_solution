@@ -13,11 +13,12 @@ namespace JobApp
     public partial class jobSeeker_Signup : Form
     {
 
-        
+        private readonly Jobapp_dbEntities jobapp_dbEntities;
 
         public jobSeeker_Signup()
         {
-            
+            jobapp_dbEntities = new Jobapp_dbEntities();
+           
             InitializeComponent();
 
            
@@ -79,6 +80,10 @@ namespace JobApp
                     jobJobseeker_detail.Last_name = Last_name;
                     jobJobseeker_detail.User_Name = User_name;
                     jobJobseeker_detail.Jobseeker_age = age;
+                    jobJobseeker_detail.Password = Create_Password;
+
+                    jobapp_dbEntities.Jobseeker_details.Add(jobJobseeker_detail);
+                    jobapp_dbEntities.SaveChanges();
 
                     MessageBox.Show("Registration was successful");
                 }
