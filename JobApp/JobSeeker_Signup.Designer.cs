@@ -66,7 +66,7 @@
             this.employee_itembox});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(78, 450);
+            this.menuStrip1.Size = new System.Drawing.Size(123, 450);
             this.menuStrip1.TabIndex = 20;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -77,8 +77,9 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(71, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
+            this.findJobsTool_itembox.Visible = false;
             // 
             // browseJobsToolStripMenuItem
             // 
@@ -96,8 +97,9 @@
             // 
             this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(71, 19);
+            this.salaryTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.salaryTool_itembox.Text = "Salary Tool";
+            this.salaryTool_itembox.Visible = false;
             // 
             // jobSeeker_itembox
             // 
@@ -106,7 +108,7 @@
             this.jobSeekerSignUpToolStripMenuItem,
             this.jobSeekerLoginToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(71, 19);
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(116, 19);
             this.jobSeeker_itembox.Text = "Job Seeker";
             // 
             // jobSeekerSignUpToolStripMenuItem
@@ -118,8 +120,9 @@
             // jobSeekerLoginToolStripMenuItem
             // 
             this.jobSeekerLoginToolStripMenuItem.Name = "jobSeekerLoginToolStripMenuItem";
-            this.jobSeekerLoginToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.jobSeekerLoginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jobSeekerLoginToolStripMenuItem.Text = "Job Seeker Login";
+            this.jobSeekerLoginToolStripMenuItem.Click += new System.EventHandler(this.jobSeekerLoginToolStripMenuItem_Click);
             // 
             // employee_itembox
             // 

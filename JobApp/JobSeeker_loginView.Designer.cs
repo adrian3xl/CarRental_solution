@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox_username = new System.Windows.Forms.TextBox();
+            this.textBox_Password = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.findJobsTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.browseJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,19 +79,19 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "Password";
             // 
-            // textBox1
+            // textBox_username
             // 
-            this.textBox1.Location = new System.Drawing.Point(287, 100);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 14;
+            this.textBox_username.Location = new System.Drawing.Point(287, 100);
+            this.textBox_username.Name = "textBox_username";
+            this.textBox_username.Size = new System.Drawing.Size(148, 20);
+            this.textBox_username.TabIndex = 14;
             // 
-            // textBox2
+            // textBox_Password
             // 
-            this.textBox2.Location = new System.Drawing.Point(287, 138);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 15;
+            this.textBox_Password.Location = new System.Drawing.Point(287, 138);
+            this.textBox_Password.Name = "textBox_Password";
+            this.textBox_Password.Size = new System.Drawing.Size(148, 20);
+            this.textBox_Password.TabIndex = 15;
             // 
             // menuStrip1
             // 
@@ -122,13 +122,13 @@
             // browseJobsToolStripMenuItem
             // 
             this.browseJobsToolStripMenuItem.Name = "browseJobsToolStripMenuItem";
-            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.browseJobsToolStripMenuItem.Text = "Browse Jobs";
             // 
             // advanceSearchToolStripMenuItem
             // 
             this.advanceSearchToolStripMenuItem.Name = "advanceSearchToolStripMenuItem";
-            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.advanceSearchToolStripMenuItem.Text = "Advance Search";
             // 
             // salaryTool_itembox
@@ -151,13 +151,13 @@
             // jobSeekerSignUpToolStripMenuItem
             // 
             this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
-            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign up";
             // 
             // jobSeekerLoginToolStripMenuItem
             // 
             this.jobSeekerLoginToolStripMenuItem.Name = "jobSeekerLoginToolStripMenuItem";
-            this.jobSeekerLoginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jobSeekerLoginToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.jobSeekerLoginToolStripMenuItem.Text = "Job Seeker Login";
             // 
             // employee_itembox
@@ -192,6 +192,7 @@
             this.enterloging_jobseek_bt.TabIndex = 30;
             this.enterloging_jobseek_bt.Text = "Enter";
             this.enterloging_jobseek_bt.UseVisualStyleBackColor = false;
+            this.enterloging_jobseek_bt.Click += new System.EventHandler(this.enterloging_jobseek_bt_Click);
             // 
             // JobSeeker_loginView
             // 
@@ -200,8 +201,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.enterloging_jobseek_bt);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox_Password);
+            this.Controls.Add(this.textBox_username);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -218,8 +219,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox_username;
+        private System.Windows.Forms.TextBox textBox_Password;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem findJobsTool_itembox;
         private System.Windows.Forms.ToolStripMenuItem browseJobsToolStripMenuItem;

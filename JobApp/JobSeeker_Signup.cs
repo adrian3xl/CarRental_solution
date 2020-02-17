@@ -25,30 +25,6 @@ namespace JobApp
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void Register_bt_Click(object sender, EventArgs e)
         {
@@ -94,6 +70,13 @@ namespace JobApp
                // throw;
             }
             
+        }
+
+        private void jobSeekerLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            JobSeeker_loginView jobSeeker_loginView = new JobSeeker_loginView();
+            jobSeeker_loginView.Show();
+
         }
     }
 }

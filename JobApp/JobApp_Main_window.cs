@@ -40,7 +40,7 @@ namespace JobApp
 
         private void employerLoginToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            var employee_loginview = new Employee_loginview();
+            var employee_loginview = new Employer_loginview();
             employee_loginview.MdiParent = this;
             employee_loginview.Show();
         }

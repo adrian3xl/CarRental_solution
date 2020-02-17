@@ -1,6 +1,6 @@
 ﻿namespace JobApp
 {
-    partial class Employee_loginview
+    partial class Employer_loginview
     {
         /// <summary>
         /// Required designer variable.

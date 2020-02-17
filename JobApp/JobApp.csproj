@@ -71,11 +71,11 @@
     <Compile Include="BrowseJobs.Designer.cs">
       <DependentUpon>BrowseJobs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee_loginview.cs">
+    <Compile Include="Employer_loginview.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee_loginview.Designer.cs">
-      <DependentUpon>Employee_loginview.cs</DependentUpon>
+    <Compile Include="Employer_loginview.Designer.cs">
+      <DependentUpon>Employer_loginview.cs</DependentUpon>
     </Compile>
     <Compile Include="Employer_accountview.cs">
       <SubType>Form</SubType>
@@ -154,8 +154,8 @@
     <EmbeddedResource Include="BrowseJobs.resx">
       <DependentUpon>BrowseJobs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee_loginview.resx">
-      <DependentUpon>Employee_loginview.cs</DependentUpon>
+    <EmbeddedResource Include="Employer_loginview.resx">
+      <DependentUpon>Employer_loginview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employer_accountview.resx">
       <DependentUpon>Employer_accountview.cs</DependentUpon>

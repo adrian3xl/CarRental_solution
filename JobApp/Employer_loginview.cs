@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace JobApp
 {
-    public partial class Employee_loginview : Form
+    public partial class Employer_loginview : Form
     {
-        public Employee_loginview()
+        public Employer_loginview()
         {
             InitializeComponent();
         }
