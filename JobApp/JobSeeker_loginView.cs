@@ -12,9 +12,11 @@ namespace JobApp
 {
     public partial class JobSeeker_loginView : Form
     {
+        private readonly Jobapp_dbEntities _db;
         public JobSeeker_loginView()
         {
             InitializeComponent();
+            _db = new Jobapp_dbEntities();
         }
 
         private void enterloging_jobseek_bt_Click(object sender, EventArgs e)
@@ -29,14 +31,24 @@ namespace JobApp
                 {
                     MessageBox.Show("Required field is empty");
                 }
-                if (IsValid)
+
+                else
                 {
+                    var Jobseeker_details = _db.Jobseeker_details.FirstOrDefault(q => q.User_Name == user_name && q.Password == password);
 
-                    Job_Seeker_Accountview job_Seeker_Accountview = new Job_Seeker_Accountview();
 
-                    job_Seeker_Accountview.Show();
-                    //job_Seeker_Accountview.Close();
 
+
+                    if (IsValid)
+                    {
+                        MessageBox.Show("Welcome ");
+
+                        Job_Seeker_Accountview job_Seeker_Accountview = new Job_Seeker_Accountview();
+
+                        job_Seeker_Accountview.Show();
+                        //job_Seeker_Accountview.Close();
+
+                    }
                 }
             }
             catch (Exception ex)
