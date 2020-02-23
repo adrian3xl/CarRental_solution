@@ -5,11 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="8bf57b7771b2420f95622a139f7fe850" Name="Diagram1" ZoomLevel="64">
-        <EntityTypeShape EntityType="Jobapp_dbModel.Employer_details" Width="1.5" PointX="6.5" PointY="0.5" />
-        <EntityTypeShape EntityType="Jobapp_dbModel.Job_Applications_details" Width="1.5" PointX="6.5" PointY="4.875" />
-        <EntityTypeShape EntityType="Jobapp_dbModel.Jobseeker_details" Width="1.5" PointX="4.25" PointY="6.25" />
-        <EntityTypeShape EntityType="Jobapp_dbModel.Resume_details" Width="1.5" PointX="2" PointY="3.125" />
-        <EntityTypeShape EntityType="Jobapp_dbModel.Vacancy_details" Width="1.5" PointX="4.25" PointY="2.75" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.Employer_details" Width="1.75" PointX="12" PointY="4.75" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.Job_Applications_details" Width="1.75" PointX="9.375" PointY="3.75" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.Jobseeker_details" Width="1.75" PointX="6.625" PointY="6.125" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.Resume_details" Width="1.75" PointX="3.375" PointY="4.5" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.Vacancy_details" Width="1.75" PointX="5.625" PointY="0.5" />
         <AssociationConnector Association="Jobapp_dbModel.FK_Employer_details_Vacancy_details" />
         <AssociationConnector Association="Jobapp_dbModel.FK_Job_Applications_Job_Applications" />
         <AssociationConnector Association="Jobapp_dbModel.FK_Job_Applications_Jobseeker_details" />

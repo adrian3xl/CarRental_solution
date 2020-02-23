@@ -193,7 +193,7 @@
             this.enterloging_jobseek_bt.TabIndex = 30;
             this.enterloging_jobseek_bt.Text = "Enter";
             this.enterloging_jobseek_bt.UseVisualStyleBackColor = false;
-            this.enterloging_jobseek_bt.Click += new System.EventHandler(this.enterloging_jobseek_bt_Click);
+            this.enterloging_jobseek_bt.Click += new System.EventHandler(this.Enterloging_jobseek_bt_Click);
             // 
             // JobSeeker_loginView
             // 

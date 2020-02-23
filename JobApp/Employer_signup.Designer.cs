@@ -197,7 +197,7 @@
             // 
             this.create_emp_bt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.create_emp_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.create_emp_bt.Location = new System.Drawing.Point(348, 406);
+            this.create_emp_bt.Location = new System.Drawing.Point(413, 415);
             this.create_emp_bt.Name = "create_emp_bt";
             this.create_emp_bt.Size = new System.Drawing.Size(114, 32);
             this.create_emp_bt.TabIndex = 31;
@@ -289,13 +289,13 @@
             // employerLoginToolStripMenuItem
             // 
             this.employerLoginToolStripMenuItem.Name = "employerLoginToolStripMenuItem";
-            this.employerLoginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.employerLoginToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.employerLoginToolStripMenuItem.Text = "Employer Sign up";
             // 
             // employerLoginToolStripMenuItem1
             // 
             this.employerLoginToolStripMenuItem1.Name = "employerLoginToolStripMenuItem1";
-            this.employerLoginToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.employerLoginToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
             this.employerLoginToolStripMenuItem1.Text = "Employer Login";
             // 
             // backToMainMenu_itembox

@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Company_name_tb = new System.Windows.Forms.TextBox();
+            this.company_pass_tb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Enter_emp_bt = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -57,19 +57,19 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Company Name";
             // 
-            // textBox1
+            // Company_name_tb
             // 
-            this.textBox1.Location = new System.Drawing.Point(258, 65);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 20);
-            this.textBox1.TabIndex = 26;
+            this.Company_name_tb.Location = new System.Drawing.Point(258, 65);
+            this.Company_name_tb.Name = "Company_name_tb";
+            this.Company_name_tb.Size = new System.Drawing.Size(296, 20);
+            this.Company_name_tb.TabIndex = 26;
             // 
-            // textBox2
+            // company_pass_tb
             // 
-            this.textBox2.Location = new System.Drawing.Point(258, 113);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(296, 20);
-            this.textBox2.TabIndex = 27;
+            this.company_pass_tb.Location = new System.Drawing.Point(258, 113);
+            this.company_pass_tb.Name = "company_pass_tb";
+            this.company_pass_tb.Size = new System.Drawing.Size(296, 20);
+            this.company_pass_tb.TabIndex = 27;
             // 
             // label2
             // 
@@ -91,19 +91,20 @@
             this.Enter_emp_bt.TabIndex = 29;
             this.Enter_emp_bt.Text = "Enter";
             this.Enter_emp_bt.UseVisualStyleBackColor = false;
+            this.Enter_emp_bt.Click += new System.EventHandler(this.Enter_emp_bt_Click);
             // 
-            // Employee_loginview
+            // Employer_loginview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Enter_emp_bt);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.company_pass_tb);
+            this.Controls.Add(this.Company_name_tb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
-            this.Name = "Employee_loginview";
+            this.Name = "Employer_loginview";
             this.Text = "Employee_loginview";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -114,8 +115,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Company_name_tb;
+        private System.Windows.Forms.TextBox company_pass_tb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Enter_emp_bt;
     }

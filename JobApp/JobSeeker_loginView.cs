@@ -19,7 +19,7 @@ namespace JobApp
             _db = new Jobapp_dbEntities();
         }
 
-        private void enterloging_jobseek_bt_Click(object sender, EventArgs e)
+        private void Enterloging_jobseek_bt_Click(object sender, EventArgs e)
         {
             try
             {
