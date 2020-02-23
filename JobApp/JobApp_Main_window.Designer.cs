@@ -154,14 +154,14 @@
             this.employerLoginToolStripMenuItem.Name = "employerLoginToolStripMenuItem";
             this.employerLoginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.employerLoginToolStripMenuItem.Text = "Employer Sign up";
-            this.employerLoginToolStripMenuItem.Click += new System.EventHandler(this.employerLoginToolStripMenuItem_Click);
+            this.employerLoginToolStripMenuItem.Click += new System.EventHandler(this.EmployerLoginToolStripMenuItem_Click);
             // 
             // employerLoginToolStripMenuItem1
             // 
             this.employerLoginToolStripMenuItem1.Name = "employerLoginToolStripMenuItem1";
             this.employerLoginToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.employerLoginToolStripMenuItem1.Text = "Employer Login";
-            this.employerLoginToolStripMenuItem1.Click += new System.EventHandler(this.employerLoginToolStripMenuItem1_Click);
+            this.employerLoginToolStripMenuItem1.Click += new System.EventHandler(this.EmployerLoginToolStripMenuItem1_Click);
             // 
             // JobApp_Main_window
             // 

@@ -1,6 +1,6 @@
 ﻿namespace JobApp
 {
-    partial class jobSeeker_Signup
+    partial class JobSeeker_Signup
     {
         /// <summary>
         /// Required designer variable.
@@ -122,7 +122,7 @@
             this.jobSeekerLoginToolStripMenuItem.Name = "jobSeekerLoginToolStripMenuItem";
             this.jobSeekerLoginToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jobSeekerLoginToolStripMenuItem.Text = "Job Seeker Login";
-            this.jobSeekerLoginToolStripMenuItem.Click += new System.EventHandler(this.jobSeekerLoginToolStripMenuItem_Click);
+            this.jobSeekerLoginToolStripMenuItem.Click += new System.EventHandler(this.JobSeekerLoginToolStripMenuItem_Click);
             // 
             // employee_itembox
             // 

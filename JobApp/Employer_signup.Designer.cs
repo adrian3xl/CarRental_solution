@@ -36,13 +36,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.work_force_tb = new System.Windows.Forms.TextBox();
+            this.compan_name_tb = new System.Windows.Forms.TextBox();
+            this.companinfo_tb = new System.Windows.Forms.TextBox();
+            this.compan_loca_tb = new System.Windows.Forms.TextBox();
+            this.company_contact_tb = new System.Windows.Forms.TextBox();
+            this.company_email_tb = new System.Windows.Forms.TextBox();
+            this.industry_type_tb = new System.Windows.Forms.TextBox();
             this.create_emp_bt = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.findJobsTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,6 +55,10 @@
             this.employee_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.employerLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employerLoginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.backToMainMenu_itembox = new System.Windows.Forms.ToolStripMenuItem();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.password_tb = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,9 +79,9 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(164, 250);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 17);
+            this.label2.Size = new System.Drawing.Size(186, 17);
             this.label2.TabIndex = 13;
-            this.label2.Text = "Company Contact number";
+            this.label2.Text = "*Company Contact number";
             // 
             // label3
             // 
@@ -85,9 +89,9 @@
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(189, 227);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 17);
+            this.label3.Size = new System.Drawing.Size(138, 17);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Company Location";
+            this.label3.Text = "*Company Location";
             // 
             // label4
             // 
@@ -95,9 +99,9 @@
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(189, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 17);
+            this.label4.Size = new System.Drawing.Size(161, 17);
             this.label4.TabIndex = 15;
-            this.label4.Text = "Company Background";
+            this.label4.Text = "*Company Background";
             // 
             // label5
             // 
@@ -105,9 +109,9 @@
             this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(189, 88);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 17);
+            this.label5.Size = new System.Drawing.Size(119, 17);
             this.label5.TabIndex = 16;
-            this.label5.Text = "Company Name";
+            this.label5.Text = "*Company Name";
             // 
             // label6
             // 
@@ -115,9 +119,9 @@
             this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(189, 306);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 17);
+            this.label6.Size = new System.Drawing.Size(118, 17);
             this.label6.TabIndex = 17;
-            this.label6.Text = "Company Email";
+            this.label6.Text = "*Company Email";
             // 
             // label7
             // 
@@ -135,70 +139,71 @@
             this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(189, 335);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 17);
+            this.label8.Size = new System.Drawing.Size(107, 17);
             this.label8.TabIndex = 19;
-            this.label8.Text = "Industry Type";
+            this.label8.Text = "*Industry Type";
             // 
-            // textBox1
+            // work_force_tb
             // 
-            this.textBox1.Location = new System.Drawing.Point(362, 276);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(44, 20);
-            this.textBox1.TabIndex = 20;
+            this.work_force_tb.Location = new System.Drawing.Point(362, 276);
+            this.work_force_tb.Name = "work_force_tb";
+            this.work_force_tb.Size = new System.Drawing.Size(44, 20);
+            this.work_force_tb.TabIndex = 20;
             // 
-            // textBox2
+            // compan_name_tb
             // 
-            this.textBox2.Location = new System.Drawing.Point(362, 85);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(284, 20);
-            this.textBox2.TabIndex = 21;
+            this.compan_name_tb.Location = new System.Drawing.Point(362, 85);
+            this.compan_name_tb.Name = "compan_name_tb";
+            this.compan_name_tb.Size = new System.Drawing.Size(284, 20);
+            this.compan_name_tb.TabIndex = 21;
             // 
-            // textBox3
+            // companinfo_tb
             // 
-            this.textBox3.Location = new System.Drawing.Point(362, 121);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(284, 86);
-            this.textBox3.TabIndex = 22;
+            this.companinfo_tb.Location = new System.Drawing.Point(362, 121);
+            this.companinfo_tb.Multiline = true;
+            this.companinfo_tb.Name = "companinfo_tb";
+            this.companinfo_tb.Size = new System.Drawing.Size(284, 86);
+            this.companinfo_tb.TabIndex = 22;
             // 
-            // textBox4
+            // compan_loca_tb
             // 
-            this.textBox4.Location = new System.Drawing.Point(362, 224);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(284, 20);
-            this.textBox4.TabIndex = 23;
+            this.compan_loca_tb.Location = new System.Drawing.Point(362, 224);
+            this.compan_loca_tb.Name = "compan_loca_tb";
+            this.compan_loca_tb.Size = new System.Drawing.Size(284, 20);
+            this.compan_loca_tb.TabIndex = 23;
             // 
-            // textBox5
+            // company_contact_tb
             // 
-            this.textBox5.Location = new System.Drawing.Point(362, 250);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(284, 20);
-            this.textBox5.TabIndex = 24;
+            this.company_contact_tb.Location = new System.Drawing.Point(362, 250);
+            this.company_contact_tb.Name = "company_contact_tb";
+            this.company_contact_tb.Size = new System.Drawing.Size(284, 20);
+            this.company_contact_tb.TabIndex = 24;
             // 
-            // textBox6
+            // company_email_tb
             // 
-            this.textBox6.Location = new System.Drawing.Point(362, 303);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(284, 20);
-            this.textBox6.TabIndex = 25;
+            this.company_email_tb.Location = new System.Drawing.Point(362, 303);
+            this.company_email_tb.Name = "company_email_tb";
+            this.company_email_tb.Size = new System.Drawing.Size(284, 20);
+            this.company_email_tb.TabIndex = 25;
             // 
-            // textBox7
+            // industry_type_tb
             // 
-            this.textBox7.Location = new System.Drawing.Point(362, 335);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(284, 20);
-            this.textBox7.TabIndex = 26;
+            this.industry_type_tb.Location = new System.Drawing.Point(362, 335);
+            this.industry_type_tb.Name = "industry_type_tb";
+            this.industry_type_tb.Size = new System.Drawing.Size(284, 20);
+            this.industry_type_tb.TabIndex = 26;
             // 
             // create_emp_bt
             // 
             this.create_emp_bt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.create_emp_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.create_emp_bt.Location = new System.Drawing.Point(336, 378);
+            this.create_emp_bt.Location = new System.Drawing.Point(348, 406);
             this.create_emp_bt.Name = "create_emp_bt";
-            this.create_emp_bt.Size = new System.Drawing.Size(154, 50);
+            this.create_emp_bt.Size = new System.Drawing.Size(114, 32);
             this.create_emp_bt.TabIndex = 31;
             this.create_emp_bt.Text = "Create";
             this.create_emp_bt.UseVisualStyleBackColor = false;
+            this.create_emp_bt.Click += new System.EventHandler(this.Create_emp_bt_Click);
             // 
             // menuStrip1
             // 
@@ -209,10 +214,11 @@
             this.findJobsTool_itembox,
             this.salaryTool_itembox,
             this.jobSeeker_itembox,
-            this.employee_itembox});
+            this.employee_itembox,
+            this.backToMainMenu_itembox});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(78, 450);
+            this.menuStrip1.Size = new System.Drawing.Size(125, 450);
             this.menuStrip1.TabIndex = 32;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -223,8 +229,9 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(71, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(118, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
+            this.findJobsTool_itembox.Visible = false;
             // 
             // browseJobsToolStripMenuItem
             // 
@@ -242,8 +249,9 @@
             // 
             this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(71, 19);
+            this.salaryTool_itembox.Size = new System.Drawing.Size(118, 19);
             this.salaryTool_itembox.Text = "Salary Tool";
+            this.salaryTool_itembox.Visible = false;
             // 
             // jobSeeker_itembox
             // 
@@ -252,8 +260,9 @@
             this.jobSeekerSignUpToolStripMenuItem,
             this.jobSeekerLoginToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(71, 19);
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(118, 19);
             this.jobSeeker_itembox.Text = "Job Seeker";
+            this.jobSeeker_itembox.Visible = false;
             // 
             // jobSeekerSignUpToolStripMenuItem
             // 
@@ -274,7 +283,7 @@
             this.employerLoginToolStripMenuItem,
             this.employerLoginToolStripMenuItem1});
             this.employee_itembox.Name = "employee_itembox";
-            this.employee_itembox.Size = new System.Drawing.Size(71, 19);
+            this.employee_itembox.Size = new System.Drawing.Size(118, 19);
             this.employee_itembox.Text = "Employer";
             // 
             // employerLoginToolStripMenuItem
@@ -289,20 +298,58 @@
             this.employerLoginToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.employerLoginToolStripMenuItem1.Text = "Employer Login";
             // 
+            // backToMainMenu_itembox
+            // 
+            this.backToMainMenu_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.backToMainMenu_itembox.Name = "backToMainMenu_itembox";
+            this.backToMainMenu_itembox.Size = new System.Drawing.Size(118, 19);
+            this.backToMainMenu_itembox.Text = "Back to main menu";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.label9.Font = new System.Drawing.Font("Modern No. 20", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(145, 426);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(151, 15);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "(*) means reqired field";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(204, 369);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(78, 17);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "*Password";
+            // 
+            // password_tb
+            // 
+            this.password_tb.Location = new System.Drawing.Point(362, 361);
+            this.password_tb.Name = "password_tb";
+            this.password_tb.Size = new System.Drawing.Size(165, 20);
+            this.password_tb.TabIndex = 35;
+            // 
             // Employer_signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.password_tb);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.create_emp_bt);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.industry_type_tb);
+            this.Controls.Add(this.company_email_tb);
+            this.Controls.Add(this.company_contact_tb);
+            this.Controls.Add(this.compan_loca_tb);
+            this.Controls.Add(this.companinfo_tb);
+            this.Controls.Add(this.compan_name_tb);
+            this.Controls.Add(this.work_force_tb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -312,7 +359,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Employer_signup";
-            this.Text = "Employer_signup";
+            this.Text = "Employer Signup";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -330,13 +377,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox work_force_tb;
+        private System.Windows.Forms.TextBox compan_name_tb;
+        private System.Windows.Forms.TextBox companinfo_tb;
+        private System.Windows.Forms.TextBox compan_loca_tb;
+        private System.Windows.Forms.TextBox company_contact_tb;
+        private System.Windows.Forms.TextBox company_email_tb;
+        private System.Windows.Forms.TextBox industry_type_tb;
         private System.Windows.Forms.Button create_emp_bt;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem findJobsTool_itembox;
@@ -349,5 +396,9 @@
         private System.Windows.Forms.ToolStripMenuItem employee_itembox;
         private System.Windows.Forms.ToolStripMenuItem employerLoginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employerLoginToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem backToMainMenu_itembox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox password_tb;
     }
 }

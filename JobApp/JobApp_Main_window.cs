@@ -19,29 +19,37 @@ namespace JobApp
 
         private void JobSeekerSignUpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var jobSeeker_Signup = new jobSeeker_Signup();
-            jobSeeker_Signup.MdiParent = this;
+            var jobSeeker_Signup = new JobSeeker_Signup
+            {
+                MdiParent = this
+            };
             jobSeeker_Signup.Show();
         }
 
         private void JobSeekerLoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var jobSeeker_loginView = new JobSeeker_loginView();
-            jobSeeker_loginView.MdiParent = this;
+            var jobSeeker_loginView = new JobSeeker_loginView
+            {
+                MdiParent = this
+            };
             jobSeeker_loginView.Show();
         }
 
-        private void employerLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        private void EmployerLoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var employer_signup = new Employer_signup();
-            employer_signup.MdiParent = this;
+            var employer_signup = new Employer_signup
+            {
+                MdiParent = this
+            };
             employer_signup.Show();
         }
 
-        private void employerLoginToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void EmployerLoginToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            var employee_loginview = new Employer_loginview();
-            employee_loginview.MdiParent = this;
+            var employee_loginview = new Employer_loginview
+            {
+                MdiParent = this
+            };
             employee_loginview.Show();
         }
     }

@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace JobApp
 {
-    public partial class jobSeeker_Signup : Form
+    public partial class JobSeeker_Signup : Form
     {
 
-        private readonly Jobapp_dbEntities jobapp_dbEntities;
+        private readonly Jobapp_dbEntities _db;
 
-        public jobSeeker_Signup()
+        public JobSeeker_Signup()
         {
-            jobapp_dbEntities = new Jobapp_dbEntities();
+            _db = new Jobapp_dbEntities();
            
             InitializeComponent();
 
@@ -51,15 +51,17 @@ namespace JobApp
 
                 if (IsValid)
                 {
-                    var jobJobseeker_detail = new Jobseeker_details();
-                    jobJobseeker_detail.First_name = First_name;
-                    jobJobseeker_detail.Last_name = Last_name;
-                    jobJobseeker_detail.User_Name = User_name;
-                    jobJobseeker_detail.Jobseeker_age = age;
-                    jobJobseeker_detail.Password = Create_Password;
+                    var jobJobseeker_detail = new Jobseeker_details
+                    {
+                        First_name = First_name,
+                        Last_name = Last_name,
+                        User_Name = User_name,
+                        Jobseeker_age = age,
+                        Password = Create_Password
+                    };
 
-                    jobapp_dbEntities.Jobseeker_details.Add(jobJobseeker_detail);
-                    jobapp_dbEntities.SaveChanges();
+                    _db.Jobseeker_details.Add(jobJobseeker_detail);
+                    _db.SaveChanges();
 
                     MessageBox.Show("Registration was successful");
                 }
@@ -72,7 +74,7 @@ namespace JobApp
             
         }
 
-        private void jobSeekerLoginToolStripMenuItem_Click(object sender, EventArgs e)
+        private void JobSeekerLoginToolStripMenuItem_Click(object sender, EventArgs e)
         {
             JobSeeker_loginView jobSeeker_loginView = new JobSeeker_loginView();
             jobSeeker_loginView.Show();
