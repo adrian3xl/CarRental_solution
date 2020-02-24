@@ -41,18 +41,18 @@ namespace CarRental
 
         }
 
-        private void bt_add_Click(object sender, EventArgs e)
+        private void Bt_add_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void bt_edit_Click(object sender, EventArgs e)
+        private void Bt_edit_Click(object sender, EventArgs e)
         {
             //int id=(int)dataGrid_forcars.SelectedRows[0].Cells["ID"].Value();
            // var car = _db.Type_of_car.FirstOrDefault(q => q.id);
         }
 
-        private void bt_delete_Click(object sender, EventArgs e)
+        private void Bt_delete_Click(object sender, EventArgs e)
         {
 
         }

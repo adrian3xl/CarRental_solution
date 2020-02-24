@@ -51,7 +51,7 @@
             this.bt_add.TabIndex = 1;
             this.bt_add.Text = "Add";
             this.bt_add.UseVisualStyleBackColor = true;
-            this.bt_add.Click += new System.EventHandler(this.bt_add_Click);
+            this.bt_add.Click += new System.EventHandler(this.Bt_add_Click);
             // 
             // bt_edit
             // 
@@ -61,7 +61,7 @@
             this.bt_edit.TabIndex = 2;
             this.bt_edit.Text = "Edit";
             this.bt_edit.UseVisualStyleBackColor = true;
-            this.bt_edit.Click += new System.EventHandler(this.bt_edit_Click);
+            this.bt_edit.Click += new System.EventHandler(this.Bt_edit_Click);
             // 
             // bt_delete
             // 
@@ -71,7 +71,7 @@
             this.bt_delete.TabIndex = 3;
             this.bt_delete.Text = "Delete Car";
             this.bt_delete.UseVisualStyleBackColor = true;
-            this.bt_delete.Click += new System.EventHandler(this.bt_delete_Click);
+            this.bt_delete.Click += new System.EventHandler(this.Bt_delete_Click);
             // 
             // Vehicle_Listing
             // 
