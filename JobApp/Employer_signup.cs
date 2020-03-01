@@ -9,7 +9,7 @@ namespace JobApp
         public Employer_signup()
         {
             InitializeComponent();
-       _db = new Jobapp_dbEntities();
+            _db = new Jobapp_dbEntities();
         }
 
         private void Create_emp_bt_Click(object sender, EventArgs e)
@@ -30,7 +30,8 @@ namespace JobApp
                     // IsValid = false;
                     MessageBox.Show("Error, required fields were not populated");
 
-                } if (workforce==0)
+                }
+                if (workforce == 0)
                 {
                     MessageBox.Show("Error, required fields were not populated");
                 }

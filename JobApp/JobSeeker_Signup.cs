@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JobApp
@@ -18,10 +11,10 @@ namespace JobApp
         public JobSeeker_Signup()
         {
             _db = new Jobapp_dbEntities();
-           
+
             InitializeComponent();
 
-           
+
 
         }
 
@@ -69,9 +62,9 @@ namespace JobApp
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-               // throw;
+                // throw;
             }
-            
+
         }
 
         private void JobSeekerLoginToolStripMenuItem_Click(object sender, EventArgs e)

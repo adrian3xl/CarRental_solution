@@ -44,7 +44,7 @@ namespace JobApp
                     Employer_accountview.Show();
 
                 }
-              
+
             }
             catch (Exception)
             {

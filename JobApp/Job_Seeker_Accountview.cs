@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JobApp
 {
     public partial class Job_Seeker_Accountview : Form
     {
-        public Job_Seeker_Accountview()
+
+
+        public Job_Seeker_Accountview(string user_name)
         {
+
             InitializeComponent();
+            user_name_tb.Text = user_name;
         }
 
-        private void browseJobsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void BrowseJobsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var BrowseJobs = new BrowseJobs();
             BrowseJobs.Show();

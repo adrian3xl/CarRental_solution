@@ -39,10 +39,6 @@
             this.salaryTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeekerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jobSeekerLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.employee_itembox = new System.Windows.Forms.ToolStripMenuItem();
-            this.employerLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.employerLoginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,8 +98,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.findJobsTool_itembox,
             this.salaryTool_itembox,
-            this.jobSeeker_itembox,
-            this.employee_itembox});
+            this.jobSeeker_itembox});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(78, 450);
@@ -123,13 +118,13 @@
             // browseJobsToolStripMenuItem
             // 
             this.browseJobsToolStripMenuItem.Name = "browseJobsToolStripMenuItem";
-            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.browseJobsToolStripMenuItem.Text = "Browse Jobs";
             // 
             // advanceSearchToolStripMenuItem
             // 
             this.advanceSearchToolStripMenuItem.Name = "advanceSearchToolStripMenuItem";
-            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.advanceSearchToolStripMenuItem.Text = "Advance Search";
             // 
             // salaryTool_itembox
@@ -143,8 +138,7 @@
             // 
             this.jobSeeker_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.jobSeekerSignUpToolStripMenuItem,
-            this.jobSeekerLoginToolStripMenuItem});
+            this.jobSeekerSignUpToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
             this.jobSeeker_itembox.Size = new System.Drawing.Size(71, 19);
             this.jobSeeker_itembox.Text = "Job Seeker";
@@ -153,37 +147,8 @@
             // jobSeekerSignUpToolStripMenuItem
             // 
             this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
-            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign up";
-            // 
-            // jobSeekerLoginToolStripMenuItem
-            // 
-            this.jobSeekerLoginToolStripMenuItem.Name = "jobSeekerLoginToolStripMenuItem";
-            this.jobSeekerLoginToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.jobSeekerLoginToolStripMenuItem.Text = "Job Seeker Login";
-            // 
-            // employee_itembox
-            // 
-            this.employee_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.employee_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.employerLoginToolStripMenuItem,
-            this.employerLoginToolStripMenuItem1});
-            this.employee_itembox.Name = "employee_itembox";
-            this.employee_itembox.Size = new System.Drawing.Size(71, 19);
-            this.employee_itembox.Text = "Employer";
-            this.employee_itembox.Visible = false;
-            // 
-            // employerLoginToolStripMenuItem
-            // 
-            this.employerLoginToolStripMenuItem.Name = "employerLoginToolStripMenuItem";
-            this.employerLoginToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.employerLoginToolStripMenuItem.Text = "Employer Sign up";
-            // 
-            // employerLoginToolStripMenuItem1
-            // 
-            this.employerLoginToolStripMenuItem1.Name = "employerLoginToolStripMenuItem1";
-            this.employerLoginToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
-            this.employerLoginToolStripMenuItem1.Text = "Employer Login";
+            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign out";
             // 
             // BrowseJobs
             // 
@@ -218,10 +183,6 @@
         private System.Windows.Forms.ToolStripMenuItem advanceSearchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salaryTool_itembox;
         private System.Windows.Forms.ToolStripMenuItem jobSeeker_itembox;
-        private System.Windows.Forms.ToolStripMenuItem employee_itembox;
         private System.Windows.Forms.ToolStripMenuItem jobSeekerSignUpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jobSeekerLoginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem employerLoginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem employerLoginToolStripMenuItem1;
     }
 }
