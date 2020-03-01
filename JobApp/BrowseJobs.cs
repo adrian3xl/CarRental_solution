@@ -9,5 +9,9 @@ namespace JobApp
             InitializeComponent();
         }
 
+        private void search_bt_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

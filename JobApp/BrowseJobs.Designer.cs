@@ -70,6 +70,7 @@
             this.search_bt.TabIndex = 6;
             this.search_bt.Text = "Search";
             this.search_bt.UseVisualStyleBackColor = false;
+            this.search_bt.Click += new System.EventHandler(this.search_bt_Click);
             // 
             // label1
             // 
