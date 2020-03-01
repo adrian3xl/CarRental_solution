@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@
             this.mainWindow_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.comp_num_tb = new System.Windows.Forms.TextBox();
             this.company_name_tb = new System.Windows.Forms.TextBox();
+            this.Applicant_MenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -184,7 +184,8 @@
             this.addVacancy_MenuItem,
             this.updateVacancyT_MenuItem,
             this.viewVacancies_MenuItem,
-            this.mainWindow_MenuItem});
+            this.mainWindow_MenuItem,
+            this.Applicant_MenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(195, 492);
@@ -233,6 +234,12 @@
             this.company_name_tb.Size = new System.Drawing.Size(159, 20);
             this.company_name_tb.TabIndex = 44;
             this.company_name_tb.TextChanged += new System.EventHandler(this.Employer_accountview_Load);
+            // 
+            // Applicant_MenuItem1
+            // 
+            this.Applicant_MenuItem1.Name = "Applicant_MenuItem1";
+            this.Applicant_MenuItem1.Size = new System.Drawing.Size(188, 19);
+            this.Applicant_MenuItem1.Text = "Applicant_MenuItem";
             // 
             // Employer_accountview
             // 
@@ -287,5 +294,6 @@
         private System.Windows.Forms.ToolStripMenuItem mainWindow_MenuItem;
         private System.Windows.Forms.TextBox comp_num_tb;
         private System.Windows.Forms.TextBox company_name_tb;
+        private System.Windows.Forms.ToolStripMenuItem Applicant_MenuItem1;
     }
 }

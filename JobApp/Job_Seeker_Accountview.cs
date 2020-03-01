@@ -16,5 +16,11 @@ namespace JobApp
         {
             InitializeComponent();
         }
+
+        private void browseJobsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var BrowseJobs = new BrowseJobs();
+            BrowseJobs.Show();
+        }
     }
 }

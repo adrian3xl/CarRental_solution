@@ -17,6 +17,8 @@ namespace JobApp
             InitializeComponent();
         }
 
+
+
         private void JobSeekerSignUpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var jobSeeker_Signup = new JobSeeker_Signup
