@@ -25,33 +25,30 @@ namespace JobApp
         {
             try
             {
-                var company_name =Company_name_tb.Text;
-                var password = company_pass_tb.Text;
+
+                string company_name =Company_name_tb.Text;
+                string password = company_pass_tb.Text;
                 var IsValid = true;
 
                 if (string.IsNullOrWhiteSpace(company_name) || string.IsNullOrWhiteSpace(password))
                 {
+                    IsValid = false;
                     MessageBox.Show("Required field is empty");
+
                 }
-
-                else
-                {
-                    var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == password);
-
-
-
 
                     if (IsValid)
                     {
+                        var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == password);
+
                         MessageBox.Show("Welcome ");
 
                         Employer_accountview Employer_accountview = new Employer_accountview();
 
                         Employer_accountview.Show();
-                        //job_Seeker_Accountview.Close();
 
                     }
-                }
+                    
             }
             catch (Exception ex)
             {

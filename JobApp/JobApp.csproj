@@ -89,6 +89,11 @@
     <Compile Include="Employer_signup.Designer.cs">
       <DependentUpon>Employer_signup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Jobapp_dbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Jobapp_dbDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="JobApp_Main_window.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -194,6 +199,17 @@
     </EntityDeploy>
     <None Include="Jobapp_db.edmx.diagram">
       <DependentUpon>Jobapp_db.edmx</DependentUpon>
+    </None>
+    <None Include="Jobapp_dbDataSet.xsc">
+      <DependentUpon>Jobapp_dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Jobapp_dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Jobapp_dbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Jobapp_dbDataSet.xss">
+      <DependentUpon>Jobapp_dbDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

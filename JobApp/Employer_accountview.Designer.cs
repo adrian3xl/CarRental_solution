@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.company_name_tb = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -42,12 +42,13 @@
             this.compan_bk_tb = new System.Windows.Forms.TextBox();
             this.compa_loca_tb = new System.Windows.Forms.TextBox();
             this.comp_email_tb = new System.Windows.Forms.TextBox();
-            this.comp_num_tb = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addVacancy_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateVacancyT_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewVacancies_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainWindow_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comp_num_tb = new System.Windows.Forms.TextBox();
+            this.company_name_tb = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -71,14 +72,6 @@
             this.label5.Size = new System.Drawing.Size(111, 17);
             this.label5.TabIndex = 17;
             this.label5.Text = "Company Name";
-            // 
-            // company_name_tb
-            // 
-            this.company_name_tb.Location = new System.Drawing.Point(421, 106);
-            this.company_name_tb.Name = "company_name_tb";
-            this.company_name_tb.ReadOnly = true;
-            this.company_name_tb.Size = new System.Drawing.Size(189, 20);
-            this.company_name_tb.TabIndex = 22;
             // 
             // label9
             // 
@@ -182,14 +175,6 @@
             this.comp_email_tb.Size = new System.Drawing.Size(159, 20);
             this.comp_email_tb.TabIndex = 34;
             // 
-            // comp_num_tb
-            // 
-            this.comp_num_tb.Location = new System.Drawing.Point(440, 165);
-            this.comp_num_tb.Name = "comp_num_tb";
-            this.comp_num_tb.ReadOnly = true;
-            this.comp_num_tb.Size = new System.Drawing.Size(159, 20);
-            this.comp_num_tb.TabIndex = 35;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -232,11 +217,29 @@
             this.mainWindow_MenuItem.Size = new System.Drawing.Size(188, 19);
             this.mainWindow_MenuItem.Text = "Main Window";
             // 
+            // comp_num_tb
+            // 
+            this.comp_num_tb.Location = new System.Drawing.Point(440, 165);
+            this.comp_num_tb.Name = "comp_num_tb";
+            this.comp_num_tb.ReadOnly = true;
+            this.comp_num_tb.Size = new System.Drawing.Size(159, 20);
+            this.comp_num_tb.TabIndex = 35;
+            // 
+            // company_name_tb
+            // 
+            this.company_name_tb.Location = new System.Drawing.Point(440, 109);
+            this.company_name_tb.Name = "company_name_tb";
+            this.company_name_tb.ReadOnly = true;
+            this.company_name_tb.Size = new System.Drawing.Size(159, 20);
+            this.company_name_tb.TabIndex = 44;
+            this.company_name_tb.TextChanged += new System.EventHandler(this.Employer_accountview_Load);
+            // 
             // Employer_accountview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1174, 492);
+            this.Controls.Add(this.company_name_tb);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.comp_num_tb);
             this.Controls.Add(this.comp_email_tb);
@@ -250,7 +253,6 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.company_name_tb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "Employer_accountview";
@@ -267,7 +269,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox company_name_tb;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -279,11 +280,12 @@
         private System.Windows.Forms.TextBox compan_bk_tb;
         private System.Windows.Forms.TextBox compa_loca_tb;
         private System.Windows.Forms.TextBox comp_email_tb;
-        private System.Windows.Forms.TextBox comp_num_tb;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addVacancy_MenuItem;
         private System.Windows.Forms.ToolStripMenuItem updateVacancyT_MenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewVacancies_MenuItem;
         private System.Windows.Forms.ToolStripMenuItem mainWindow_MenuItem;
+        private System.Windows.Forms.TextBox comp_num_tb;
+        private System.Windows.Forms.TextBox company_name_tb;
     }
 }
