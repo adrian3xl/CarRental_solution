@@ -18,18 +18,19 @@ namespace JobApp
         public Jobseeker_details()
         {
             this.Job_Applications_details = new HashSet<Job_Applications_details>();
+            this.Resume_details = new HashSet<Resume_details>();
         }
     
         public int id { get; set; }
         public string First_name { get; set; }
         public string Last_name { get; set; }
-        public Nullable<int> Resume_id { get; set; }
         public Nullable<int> Jobseeker_age { get; set; }
         public string Password { get; set; }
         public string User_Name { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Job_Applications_details> Job_Applications_details { get; set; }
-        public virtual Resume_details Resume_details { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Resume_details> Resume_details { get; set; }
     }
 }

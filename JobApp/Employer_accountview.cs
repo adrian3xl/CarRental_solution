@@ -17,8 +17,7 @@ namespace JobApp
 
         private void Employer_accountview_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'jobapp_dbDataSet.Employer_details' table. You can move, or remove it, as needed.
-            this.employer_detailsTableAdapter.Fill(this.jobapp_dbDataSet.Employer_details);
+ 
 
 /*
             var company_name = company_name_tb.Text;

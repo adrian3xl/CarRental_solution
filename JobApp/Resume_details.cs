@@ -18,7 +18,6 @@ namespace JobApp
         public Resume_details()
         {
             this.Job_Applications_details = new HashSet<Job_Applications_details>();
-            this.Jobseeker_details = new HashSet<Jobseeker_details>();
         }
     
         public int id { get; set; }
@@ -28,10 +27,10 @@ namespace JobApp
         public string Hobbies { get; set; }
         public string Contact_number { get; set; }
         public string Email { get; set; }
+        public Nullable<int> Jobseeker_details_id { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Job_Applications_details> Job_Applications_details { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Jobseeker_details> Jobseeker_details { get; set; }
+        public virtual Jobseeker_details Jobseeker_details { get; set; }
     }
 }
