@@ -31,9 +31,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.add_resume_bt = new System.Windows.Forms.Button();
-            this.Edit_resume_bt = new System.Windows.Forms.Button();
-            this.Delete_resume_bt = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.findJobsTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.browseJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,7 +42,14 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.resumeQueryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deleteResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -71,41 +75,11 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(212, 143);
+            this.textBox3.Location = new System.Drawing.Point(578, 102);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(148, 20);
             this.textBox3.TabIndex = 30;
-            // 
-            // add_resume_bt
-            // 
-            this.add_resume_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.add_resume_bt.Location = new System.Drawing.Point(119, 336);
-            this.add_resume_bt.Name = "add_resume_bt";
-            this.add_resume_bt.Size = new System.Drawing.Size(170, 52);
-            this.add_resume_bt.TabIndex = 31;
-            this.add_resume_bt.Text = "Add Resume";
-            this.add_resume_bt.UseVisualStyleBackColor = true;
-            // 
-            // Edit_resume_bt
-            // 
-            this.Edit_resume_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Edit_resume_bt.Location = new System.Drawing.Point(357, 342);
-            this.Edit_resume_bt.Name = "Edit_resume_bt";
-            this.Edit_resume_bt.Size = new System.Drawing.Size(170, 46);
-            this.Edit_resume_bt.TabIndex = 32;
-            this.Edit_resume_bt.Text = "Edit Resume";
-            this.Edit_resume_bt.UseVisualStyleBackColor = true;
-            // 
-            // Delete_resume_bt
-            // 
-            this.Delete_resume_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Delete_resume_bt.Location = new System.Drawing.Point(573, 342);
-            this.Delete_resume_bt.Name = "Delete_resume_bt";
-            this.Delete_resume_bt.Size = new System.Drawing.Size(170, 46);
-            this.Delete_resume_bt.TabIndex = 33;
-            this.Delete_resume_bt.Text = "Delete Resume";
-            this.Delete_resume_bt.UseVisualStyleBackColor = true;
             // 
             // menuStrip1
             // 
@@ -115,10 +89,11 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.findJobsTool_itembox,
             this.salaryTool_itembox,
-            this.jobSeeker_itembox});
+            this.jobSeeker_itembox,
+            this.resumeQueryToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(78, 450);
+            this.menuStrip1.Size = new System.Drawing.Size(99, 450);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -182,7 +157,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(116, 143);
+            this.label4.Location = new System.Drawing.Point(484, 102);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(83, 17);
             this.label4.TabIndex = 24;
@@ -206,16 +181,65 @@
             this.label3.TabIndex = 23;
             this.label3.Text = "First Name";
             // 
+            // resumeQueryToolStripMenuItem
+            // 
+            this.resumeQueryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addResumeToolStripMenuItem,
+            this.editResumeToolStripMenuItem,
+            this.deleteResumeToolStripMenuItem});
+            this.resumeQueryToolStripMenuItem.Name = "resumeQueryToolStripMenuItem";
+            this.resumeQueryToolStripMenuItem.Size = new System.Drawing.Size(116, 19);
+            this.resumeQueryToolStripMenuItem.Text = "Resume Query";
+            // 
+            // addResumeToolStripMenuItem
+            // 
+            this.addResumeToolStripMenuItem.Name = "addResumeToolStripMenuItem";
+            this.addResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addResumeToolStripMenuItem.Text = "Add Resume";
+            this.addResumeToolStripMenuItem.Click += new System.EventHandler(this.addResumeToolStripMenuItem_Click);
+            // 
+            // editResumeToolStripMenuItem
+            // 
+            this.editResumeToolStripMenuItem.Name = "editResumeToolStripMenuItem";
+            this.editResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editResumeToolStripMenuItem.Text = "Edit Resume";
+            this.editResumeToolStripMenuItem.Click += new System.EventHandler(this.editResumeToolStripMenuItem_Click);
+            // 
+            // deleteResumeToolStripMenuItem
+            // 
+            this.deleteResumeToolStripMenuItem.Name = "deleteResumeToolStripMenuItem";
+            this.deleteResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteResumeToolStripMenuItem.Text = "Delete Resume";
+            this.deleteResumeToolStripMenuItem.Click += new System.EventHandler(this.deleteResumeToolStripMenuItem_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(119, 207);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(669, 231);
+            this.dataGridView1.TabIndex = 36;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label5.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(348, 165);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(176, 39);
+            this.label5.TabIndex = 37;
+            this.label5.Text = "Resume view";
+            // 
             // Job_Seeker_Accountview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.user_name_tb);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.Delete_resume_bt);
-            this.Controls.Add(this.Edit_resume_bt);
-            this.Controls.Add(this.add_resume_bt);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label4);
@@ -226,6 +250,7 @@
             this.Text = "Job Seeker Accountview";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,9 +261,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button add_resume_bt;
-        private System.Windows.Forms.Button Edit_resume_bt;
-        private System.Windows.Forms.Button Delete_resume_bt;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem findJobsTool_itembox;
         private System.Windows.Forms.ToolStripMenuItem browseJobsToolStripMenuItem;
@@ -250,5 +272,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ToolStripMenuItem resumeQueryToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addResumeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editResumeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteResumeToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label5;
     }
 }

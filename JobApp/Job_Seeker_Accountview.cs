@@ -19,5 +19,20 @@ namespace JobApp
             var BrowseJobs = new BrowseJobs();
             BrowseJobs.Show();
         }
+
+        private void addResumeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void editResumeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void deleteResumeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
