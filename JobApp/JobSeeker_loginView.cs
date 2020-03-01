@@ -26,18 +26,13 @@ namespace JobApp
                 var user_name = textBox_username.Text;
                 var password = textBox_Password.Text;
                 var IsValid = true;
+                var Jobseeker_details = _db.Jobseeker_details.FirstOrDefault(q => q.User_Name == user_name && q.Password == password);
 
-                if (string.IsNullOrWhiteSpace(user_name) || string.IsNullOrWhiteSpace(password))
+                if (Jobseeker_details == null)
                 {
+                    IsValid = false;
                     MessageBox.Show("Required field is empty");
                 }
-
-                else
-                {
-                    var Jobseeker_details = _db.Jobseeker_details.FirstOrDefault(q => q.User_Name == user_name && q.Password == password);
-
-
-
 
                     if (IsValid)
                     {
@@ -49,7 +44,7 @@ namespace JobApp
                         //job_Seeker_Accountview.Close();
 
                     }
-                }
+                
             }
             catch (Exception ex)
             {

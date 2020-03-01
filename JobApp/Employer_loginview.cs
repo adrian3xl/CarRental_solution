@@ -1,18 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JobApp
 {
     public partial class Employer_loginview : Form
     {
-       private readonly Jobapp_dbEntities _db;
+        private readonly Jobapp_dbEntities _db;
         public Employer_loginview()
         {
             InitializeComponent();
@@ -26,33 +20,35 @@ namespace JobApp
             try
             {
 
-                string company_name =Company_name_tb.Text;
+                string company_name = Company_name_tb.Text.Trim();
                 string password = company_pass_tb.Text;
-                var IsValid = true;
+                bool IsValid = true;
+                var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == password);
 
-                if (string.IsNullOrWhiteSpace(company_name) || string.IsNullOrWhiteSpace(password))
+                if (Employer_details == null)
                 {
                     IsValid = false;
-                    MessageBox.Show("Required field is empty");
+                    MessageBox.Show("Invalid user name and password entered");
+
+
 
                 }
 
-                    if (IsValid)
-                    {
-                        var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == password);
+                if (IsValid)
+                {
 
-                        MessageBox.Show("Welcome ");
+                    MessageBox.Show("Welcome ");
 
-                        Employer_accountview Employer_accountview = new Employer_accountview();
+                    Employer_accountview Employer_accountview = new Employer_accountview();
 
-                        Employer_accountview.Show();
+                    Employer_accountview.Show();
 
-                    }
-                    
+                }
+              
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Please re-enter username and password");
                 //throw;
             }
         }
