@@ -34,5 +34,12 @@ namespace JobApp
         {
 
         }
+
+        private void Job_Seeker_Accountview_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'jobapp_dbDataSet.Job_Applications_details' table. You can move, or remove it, as needed.
+            this.job_Applications_detailsTableAdapter.Fill(this.jobapp_dbDataSet.Job_Applications_details);
+
+        }
     }
 }

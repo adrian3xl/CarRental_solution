@@ -15,8 +15,12 @@ namespace JobApp
 
         private void search_bt_Click(object sender, System.EventArgs e)
         {
+
+            
             try
             {
+
+
                 var Jobseeker_vacancy_view = new Jobseeker_vacancy_view();
                 Jobseeker_vacancy_view.ShowDialog();
             }
