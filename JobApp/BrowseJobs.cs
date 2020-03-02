@@ -4,6 +4,7 @@ namespace JobApp
 {
     public partial class BrowseJobs : Form
     {
+
         private readonly Jobapp_dbEntities _db;
         public BrowseJobs()
         {
@@ -16,7 +17,8 @@ namespace JobApp
         {
             try
             {
-
+                var Jobseeker_vacancy_view = new Jobseeker_vacancy_view();
+                Jobseeker_vacancy_view.ShowDialog();
             }
             catch (System.Exception)
             {

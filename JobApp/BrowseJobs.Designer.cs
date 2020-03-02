@@ -48,7 +48,7 @@
             this.textox_search.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.textox_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textox_search.ForeColor = System.Drawing.Color.LightSlateGray;
-            this.textox_search.Location = new System.Drawing.Point(317, 240);
+            this.textox_search.Location = new System.Drawing.Point(299, 150);
             this.textox_search.Multiline = true;
             this.textox_search.Name = "textox_search";
             this.textox_search.Size = new System.Drawing.Size(311, 48);
@@ -60,7 +60,7 @@
             // 
             this.search_bt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.search_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_bt.Location = new System.Drawing.Point(403, 308);
+            this.search_bt.Location = new System.Drawing.Point(375, 222);
             this.search_bt.Name = "search_bt";
             this.search_bt.Size = new System.Drawing.Size(154, 50);
             this.search_bt.TabIndex = 6;
@@ -73,7 +73,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(142, 75);
+            this.label1.Location = new System.Drawing.Point(112, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(684, 39);
             this.label1.TabIndex = 7;
@@ -84,7 +84,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(358, 180);
+            this.label2.Location = new System.Drawing.Point(327, 80);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(230, 41);
             this.label2.TabIndex = 8;
@@ -118,13 +118,13 @@
             // browseJobsToolStripMenuItem
             // 
             this.browseJobsToolStripMenuItem.Name = "browseJobsToolStripMenuItem";
-            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.browseJobsToolStripMenuItem.Text = "Browse Jobs";
             // 
             // advanceSearchToolStripMenuItem
             // 
             this.advanceSearchToolStripMenuItem.Name = "advanceSearchToolStripMenuItem";
-            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.advanceSearchToolStripMenuItem.Text = "Advance Search";
             // 
             // salaryTool_itembox
@@ -147,7 +147,7 @@
             // jobSeekerSignUpToolStripMenuItem
             // 
             this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
-            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign out";
             // 
             // BrowseJobs

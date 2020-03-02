@@ -38,14 +38,14 @@
             this.salaryTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeekerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.user_name_tb = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.resumeQueryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.user_name_tb = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
@@ -93,7 +93,7 @@
             this.resumeQueryToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(99, 450);
+            this.menuStrip1.Size = new System.Drawing.Size(99, 508);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -104,7 +104,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(71, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(92, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -124,7 +124,7 @@
             // 
             this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(71, 19);
+            this.salaryTool_itembox.Size = new System.Drawing.Size(92, 19);
             this.salaryTool_itembox.Text = "Salary Tool";
             // 
             // jobSeeker_itembox
@@ -133,7 +133,7 @@
             this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jobSeekerSignUpToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(71, 19);
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(92, 19);
             this.jobSeeker_itembox.Text = "Job Seeker";
             // 
             // jobSeekerSignUpToolStripMenuItem
@@ -141,6 +141,37 @@
             this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
             this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign out";
+            // 
+            // resumeQueryToolStripMenuItem
+            // 
+            this.resumeQueryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addResumeToolStripMenuItem,
+            this.editResumeToolStripMenuItem,
+            this.deleteResumeToolStripMenuItem});
+            this.resumeQueryToolStripMenuItem.Name = "resumeQueryToolStripMenuItem";
+            this.resumeQueryToolStripMenuItem.Size = new System.Drawing.Size(92, 19);
+            this.resumeQueryToolStripMenuItem.Text = "Resume Query";
+            // 
+            // addResumeToolStripMenuItem
+            // 
+            this.addResumeToolStripMenuItem.Name = "addResumeToolStripMenuItem";
+            this.addResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addResumeToolStripMenuItem.Text = "Add Resume";
+            this.addResumeToolStripMenuItem.Click += new System.EventHandler(this.addResumeToolStripMenuItem_Click);
+            // 
+            // editResumeToolStripMenuItem
+            // 
+            this.editResumeToolStripMenuItem.Name = "editResumeToolStripMenuItem";
+            this.editResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editResumeToolStripMenuItem.Text = "Edit Resume";
+            this.editResumeToolStripMenuItem.Click += new System.EventHandler(this.editResumeToolStripMenuItem_Click);
+            // 
+            // deleteResumeToolStripMenuItem
+            // 
+            this.deleteResumeToolStripMenuItem.Name = "deleteResumeToolStripMenuItem";
+            this.deleteResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteResumeToolStripMenuItem.Text = "Delete Resume";
+            this.deleteResumeToolStripMenuItem.Click += new System.EventHandler(this.deleteResumeToolStripMenuItem_Click);
             // 
             // user_name_tb
             // 
@@ -181,37 +212,6 @@
             this.label3.TabIndex = 23;
             this.label3.Text = "First Name";
             // 
-            // resumeQueryToolStripMenuItem
-            // 
-            this.resumeQueryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addResumeToolStripMenuItem,
-            this.editResumeToolStripMenuItem,
-            this.deleteResumeToolStripMenuItem});
-            this.resumeQueryToolStripMenuItem.Name = "resumeQueryToolStripMenuItem";
-            this.resumeQueryToolStripMenuItem.Size = new System.Drawing.Size(116, 19);
-            this.resumeQueryToolStripMenuItem.Text = "Resume Query";
-            // 
-            // addResumeToolStripMenuItem
-            // 
-            this.addResumeToolStripMenuItem.Name = "addResumeToolStripMenuItem";
-            this.addResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.addResumeToolStripMenuItem.Text = "Add Resume";
-            this.addResumeToolStripMenuItem.Click += new System.EventHandler(this.addResumeToolStripMenuItem_Click);
-            // 
-            // editResumeToolStripMenuItem
-            // 
-            this.editResumeToolStripMenuItem.Name = "editResumeToolStripMenuItem";
-            this.editResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.editResumeToolStripMenuItem.Text = "Edit Resume";
-            this.editResumeToolStripMenuItem.Click += new System.EventHandler(this.editResumeToolStripMenuItem_Click);
-            // 
-            // deleteResumeToolStripMenuItem
-            // 
-            this.deleteResumeToolStripMenuItem.Name = "deleteResumeToolStripMenuItem";
-            this.deleteResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.deleteResumeToolStripMenuItem.Text = "Delete Resume";
-            this.deleteResumeToolStripMenuItem.Click += new System.EventHandler(this.deleteResumeToolStripMenuItem_Click);
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -235,7 +235,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 508);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.user_name_tb);
