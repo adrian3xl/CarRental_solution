@@ -121,6 +121,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Jobapp_db.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Jobseeker_addresume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jobseeker_addresume.Designer.cs">
+      <DependentUpon>Jobseeker_addresume.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jobseeker_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JobApp_Main_window.resx">
       <DependentUpon>JobApp_Main_window.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jobseeker_addresume.resx">
+      <DependentUpon>Jobseeker_addresume.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JobSeeker_loginView.resx">
       <DependentUpon>JobSeeker_loginView.cs</DependentUpon>
