@@ -155,21 +155,21 @@
             this.addResumeToolStripMenuItem.Name = "addResumeToolStripMenuItem";
             this.addResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.addResumeToolStripMenuItem.Text = "Add Resume";
-            this.addResumeToolStripMenuItem.Click += new System.EventHandler(this.addResumeToolStripMenuItem_Click);
+       
             // 
             // editResumeToolStripMenuItem
             // 
             this.editResumeToolStripMenuItem.Name = "editResumeToolStripMenuItem";
             this.editResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.editResumeToolStripMenuItem.Text = "Edit Resume";
-            this.editResumeToolStripMenuItem.Click += new System.EventHandler(this.editResumeToolStripMenuItem_Click);
+     
             // 
             // deleteResumeToolStripMenuItem
             // 
             this.deleteResumeToolStripMenuItem.Name = "deleteResumeToolStripMenuItem";
             this.deleteResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.deleteResumeToolStripMenuItem.Text = "Delete Resume";
-            this.deleteResumeToolStripMenuItem.Click += new System.EventHandler(this.deleteResumeToolStripMenuItem_Click);
+      ;
             // 
             // user_name_tb
             // 
@@ -267,7 +267,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Job_Seeker_Accountview";
             this.Text = "Job Seeker Accountview";
-            this.Load += new System.EventHandler(this.Job_Seeker_Accountview_Load);
+         
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
