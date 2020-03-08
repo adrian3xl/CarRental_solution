@@ -25,9 +25,9 @@ namespace JobApp
 
         private void Search_bt_Click(object sender, EventArgs e)
         {
-            dgv_vacacies.AutoGenerateColumns = false;
+            //dgv_vacacies.AutoGenerateColumns = false;
             Jobapp_dbEntities _db = new Jobapp_dbEntities();
-            var vacancy = _db.Vacancy_details.Where(q => q.Job_title == textox_search.Text || q.Job_category == textox_search.Text).ToList();
+            var vacancy = _db.Vacancy_details.Where(q => q.Job_title.Contains(textox_search.Text.Trim()) || q.Job_category == textox_search.Text).ToList();
             dgv_vacacies.DataSource = vacancy;
 
         }
