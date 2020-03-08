@@ -38,23 +38,6 @@
             this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeekerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgv_vacacies = new System.Windows.Forms.DataGridView();
-            this.Job_title = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Job_Discription = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Job_Requirements = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Job_level = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Employment_type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Submit_deadline = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Job_category = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companynameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companybackgroundDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companylocatiionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.campanycontactnumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.workforcenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vacancyidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.companyEmailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.industrytypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employerdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jobapp_dbDataSet = new JobApp.Jobapp_dbDataSet();
             this.employer_detailsTableAdapter = new JobApp.Jobapp_dbDataSetTableAdapters.Employer_detailsTableAdapter();
@@ -76,9 +59,8 @@
             this.textox_search.Location = new System.Drawing.Point(246, 12);
             this.textox_search.Multiline = true;
             this.textox_search.Name = "textox_search";
-            this.textox_search.Size = new System.Drawing.Size(606, 48);
+            this.textox_search.Size = new System.Drawing.Size(606, 37);
             this.textox_search.TabIndex = 4;
-            this.textox_search.Text = "ENTER HERE A KEYWORD,\r\n A TITLE OR A LOCATION";
             this.textox_search.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // menuStrip1
@@ -145,144 +127,12 @@
             // 
             this.dgv_vacacies.AllowUserToAddRows = false;
             this.dgv_vacacies.AllowUserToDeleteRows = false;
-            this.dgv_vacacies.AutoGenerateColumns = false;
             this.dgv_vacacies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_vacacies.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Job_title,
-            this.Job_Discription,
-            this.Job_Requirements,
-            this.Job_level,
-            this.Employment_type,
-            this.Submit_deadline,
-            this.Job_category,
-            this.idDataGridViewTextBoxColumn,
-            this.companynameDataGridViewTextBoxColumn,
-            this.companybackgroundDataGridViewTextBoxColumn,
-            this.companylocatiionDataGridViewTextBoxColumn,
-            this.campanycontactnumberDataGridViewTextBoxColumn,
-            this.workforcenumberDataGridViewTextBoxColumn,
-            this.vacancyidDataGridViewTextBoxColumn,
-            this.companyEmailDataGridViewTextBoxColumn,
-            this.industrytypeDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn});
-            this.dgv_vacacies.DataSource = this.employerdetailsBindingSource;
-            this.dgv_vacacies.Location = new System.Drawing.Point(126, 121);
+            this.dgv_vacacies.Location = new System.Drawing.Point(97, 121);
             this.dgv_vacacies.Name = "dgv_vacacies";
             this.dgv_vacacies.ReadOnly = true;
-            this.dgv_vacacies.Size = new System.Drawing.Size(744, 298);
+            this.dgv_vacacies.Size = new System.Drawing.Size(786, 298);
             this.dgv_vacacies.TabIndex = 11;
-            // 
-            // Job_title
-            // 
-            this.Job_title.HeaderText = "Job Title";
-            this.Job_title.Name = "Job_title";
-            this.Job_title.ReadOnly = true;
-            // 
-            // Job_Discription
-            // 
-            this.Job_Discription.HeaderText = "Job Discription";
-            this.Job_Discription.Name = "Job_Discription";
-            this.Job_Discription.ReadOnly = true;
-            // 
-            // Job_Requirements
-            // 
-            this.Job_Requirements.HeaderText = "Job Requirements";
-            this.Job_Requirements.Name = "Job_Requirements";
-            this.Job_Requirements.ReadOnly = true;
-            // 
-            // Job_level
-            // 
-            this.Job_level.HeaderText = "Job level";
-            this.Job_level.Name = "Job_level";
-            this.Job_level.ReadOnly = true;
-            // 
-            // Employment_type
-            // 
-            this.Employment_type.HeaderText = "Employment Type";
-            this.Employment_type.Name = "Employment_type";
-            this.Employment_type.ReadOnly = true;
-            // 
-            // Submit_deadline
-            // 
-            this.Submit_deadline.HeaderText = "Submit Deadline";
-            this.Submit_deadline.Name = "Submit_deadline";
-            this.Submit_deadline.ReadOnly = true;
-            // 
-            // Job_category
-            // 
-            this.Job_category.HeaderText = "Job Category";
-            this.Job_category.Name = "Job_category";
-            this.Job_category.ReadOnly = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // companynameDataGridViewTextBoxColumn
-            // 
-            this.companynameDataGridViewTextBoxColumn.DataPropertyName = "Company_name";
-            this.companynameDataGridViewTextBoxColumn.HeaderText = "Company_name";
-            this.companynameDataGridViewTextBoxColumn.Name = "companynameDataGridViewTextBoxColumn";
-            this.companynameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // companybackgroundDataGridViewTextBoxColumn
-            // 
-            this.companybackgroundDataGridViewTextBoxColumn.DataPropertyName = "Company_background";
-            this.companybackgroundDataGridViewTextBoxColumn.HeaderText = "Company_background";
-            this.companybackgroundDataGridViewTextBoxColumn.Name = "companybackgroundDataGridViewTextBoxColumn";
-            this.companybackgroundDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // companylocatiionDataGridViewTextBoxColumn
-            // 
-            this.companylocatiionDataGridViewTextBoxColumn.DataPropertyName = "Company_locatiion";
-            this.companylocatiionDataGridViewTextBoxColumn.HeaderText = "Company_locatiion";
-            this.companylocatiionDataGridViewTextBoxColumn.Name = "companylocatiionDataGridViewTextBoxColumn";
-            this.companylocatiionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // campanycontactnumberDataGridViewTextBoxColumn
-            // 
-            this.campanycontactnumberDataGridViewTextBoxColumn.DataPropertyName = "Campany_contact_number";
-            this.campanycontactnumberDataGridViewTextBoxColumn.HeaderText = "Campany_contact_number";
-            this.campanycontactnumberDataGridViewTextBoxColumn.Name = "campanycontactnumberDataGridViewTextBoxColumn";
-            this.campanycontactnumberDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // workforcenumberDataGridViewTextBoxColumn
-            // 
-            this.workforcenumberDataGridViewTextBoxColumn.DataPropertyName = "Workforce_number";
-            this.workforcenumberDataGridViewTextBoxColumn.HeaderText = "Workforce_number";
-            this.workforcenumberDataGridViewTextBoxColumn.Name = "workforcenumberDataGridViewTextBoxColumn";
-            this.workforcenumberDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vacancyidDataGridViewTextBoxColumn
-            // 
-            this.vacancyidDataGridViewTextBoxColumn.DataPropertyName = "Vacancy_id";
-            this.vacancyidDataGridViewTextBoxColumn.HeaderText = "Vacancy_id";
-            this.vacancyidDataGridViewTextBoxColumn.Name = "vacancyidDataGridViewTextBoxColumn";
-            this.vacancyidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // companyEmailDataGridViewTextBoxColumn
-            // 
-            this.companyEmailDataGridViewTextBoxColumn.DataPropertyName = "Company_Email";
-            this.companyEmailDataGridViewTextBoxColumn.HeaderText = "Company_Email";
-            this.companyEmailDataGridViewTextBoxColumn.Name = "companyEmailDataGridViewTextBoxColumn";
-            this.companyEmailDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // industrytypeDataGridViewTextBoxColumn
-            // 
-            this.industrytypeDataGridViewTextBoxColumn.DataPropertyName = "Industry_type";
-            this.industrytypeDataGridViewTextBoxColumn.HeaderText = "Industry_type";
-            this.industrytypeDataGridViewTextBoxColumn.Name = "industrytypeDataGridViewTextBoxColumn";
-            this.industrytypeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // employerdetailsBindingSource
             // 
@@ -357,26 +207,9 @@
         private System.Windows.Forms.ToolStripMenuItem jobSeeker_itembox;
         private System.Windows.Forms.ToolStripMenuItem jobSeekerSignUpToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgv_vacacies;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Job_title;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Job_Discription;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Job_Requirements;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Job_level;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Employment_type;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Submit_deadline;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Job_category;
         private Jobapp_dbDataSet jobapp_dbDataSet;
         private System.Windows.Forms.BindingSource employerdetailsBindingSource;
         private Jobapp_dbDataSetTableAdapters.Employer_detailsTableAdapter employer_detailsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn companynameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn companybackgroundDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn companylocatiionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn campanycontactnumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn workforcenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vacancyidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn companyEmailDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn industrytypeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
         private Jobapp_dbDataSetTableAdapters.Vacancy_detailsTableAdapter vacancy_detailsTableAdapter;
         private Jobapp_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Button Search_bt;

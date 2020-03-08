@@ -143,12 +143,6 @@
     <Compile Include="JobSeeker_Signup.Designer.cs">
       <DependentUpon>JobSeeker_Signup.cs</DependentUpon>
     </Compile>
-    <Compile Include="Jobseeker_vacancy_view.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Jobseeker_vacancy_view.Designer.cs">
-      <DependentUpon>Jobseeker_vacancy_view.cs</DependentUpon>
-    </Compile>
     <Compile Include="Job_Applications_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
@@ -192,9 +186,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JobSeeker_Signup.resx">
       <DependentUpon>JobSeeker_Signup.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Jobseeker_vacancy_view.resx">
-      <DependentUpon>Jobseeker_vacancy_view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Job_Seeker_Accountview.resx">
       <DependentUpon>Job_Seeker_Accountview.cs</DependentUpon>

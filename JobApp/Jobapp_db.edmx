@@ -27,6 +27,7 @@
           <Property Name="resume_id" Type="int" />
           <Property Name="Jobseeker_id" Type="int" />
           <Property Name="vacancy_id" Type="int" />
+          <Property Name="Application_status" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Jobseeker_details">
           <Key>
@@ -63,7 +64,6 @@
           <Property Name="Job_level" Type="nvarchar" MaxLength="3" />
           <Property Name="Employment_type" Type="nvarchar" MaxLength="20" />
           <Property Name="Submit_deadline" Type="date" />
-          <Property Name="Employer_details_id" Type="int" />
           <Property Name="Job_category" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <Association Name="FK_Job_Applications_Job_Applications">
@@ -114,18 +114,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_Vacancy_details_Employer_details">
-          <End Role="Employer_details" Type="Self.Employer_details" Multiplicity="0..1" />
-          <End Role="Vacancy_details" Type="Self.Vacancy_details" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Employer_details">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="Vacancy_details">
-              <PropertyRef Name="Employer_details_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="Jobapp_dbModelStoreContainer">
           <EntitySet Name="Employer_details" EntityType="Self.Employer_details" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Job_Applications_details" EntityType="Self.Job_Applications_details" Schema="dbo" store:Type="Tables" />
@@ -148,10 +136,6 @@
             <End Role="Jobseeker_details" EntitySet="Jobseeker_details" />
             <End Role="Resume_details" EntitySet="Resume_details" />
           </AssociationSet>
-          <AssociationSet Name="FK_Vacancy_details_Employer_details" Association="Self.FK_Vacancy_details_Employer_details">
-            <End Role="Employer_details" EntitySet="Employer_details" />
-            <End Role="Vacancy_details" EntitySet="Vacancy_details" />
-          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -163,10 +147,6 @@
           <EntitySet Name="Jobseeker_details" EntityType="Jobapp_dbModel.Jobseeker_details" />
           <EntitySet Name="Resume_details" EntityType="Jobapp_dbModel.Resume_details" />
           <EntitySet Name="Vacancy_details" EntityType="Jobapp_dbModel.Vacancy_details" />
-          <AssociationSet Name="FK_Vacancy_details_Employer_details" Association="Jobapp_dbModel.FK_Vacancy_details_Employer_details">
-            <End Role="Employer_details" EntitySet="Employer_details" />
-            <End Role="Vacancy_details" EntitySet="Vacancy_details" />
-          </AssociationSet>
           <AssociationSet Name="FK_Job_Applications_Job_Applications" Association="Jobapp_dbModel.FK_Job_Applications_Job_Applications">
             <End Role="Vacancy_details" EntitySet="Vacancy_details" />
             <End Role="Job_Applications_details" EntitySet="Job_Applications_details" />
@@ -197,7 +177,6 @@
           <Property Name="Company_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Industry_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Vacancy_details" Relationship="Jobapp_dbModel.FK_Vacancy_details_Employer_details" FromRole="Employer_details" ToRole="Vacancy_details" />
         </EntityType>
         <EntityType Name="Job_Applications_details">
           <Key>
@@ -207,6 +186,7 @@
           <Property Name="resume_id" Type="Int32" />
           <Property Name="Jobseeker_id" Type="Int32" />
           <Property Name="vacancy_id" Type="Int32" />
+          <Property Name="Application_status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Vacancy_details" Relationship="Jobapp_dbModel.FK_Job_Applications_Job_Applications" FromRole="Job_Applications_details" ToRole="Vacancy_details" />
           <NavigationProperty Name="Jobseeker_details" Relationship="Jobapp_dbModel.FK_Job_Applications_Jobseeker_details" FromRole="Job_Applications_details" ToRole="Jobseeker_details" />
           <NavigationProperty Name="Resume_details" Relationship="Jobapp_dbModel.FK_Job_Applications_Resume_details" FromRole="Job_Applications_details" ToRole="Resume_details" />
@@ -250,23 +230,9 @@
           <Property Name="Job_level" Type="String" MaxLength="3" FixedLength="false" Unicode="true" />
           <Property Name="Employment_type" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="Submit_deadline" Type="DateTime" Precision="0" />
-          <Property Name="Employer_details_id" Type="Int32" />
           <Property Name="Job_category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <NavigationProperty Name="Employer_details" Relationship="Jobapp_dbModel.FK_Vacancy_details_Employer_details" FromRole="Vacancy_details" ToRole="Employer_details" />
           <NavigationProperty Name="Job_Applications_details" Relationship="Jobapp_dbModel.FK_Job_Applications_Job_Applications" FromRole="Vacancy_details" ToRole="Job_Applications_details" />
         </EntityType>
-        <Association Name="FK_Vacancy_details_Employer_details">
-          <End Type="Jobapp_dbModel.Employer_details" Role="Employer_details" Multiplicity="0..1" />
-          <End Type="Jobapp_dbModel.Vacancy_details" Role="Vacancy_details" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Employer_details">
-              <PropertyRef Name="id" />
-            </Principal>
-            <Dependent Role="Vacancy_details">
-              <PropertyRef Name="Employer_details_id" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK_Job_Applications_Job_Applications">
           <End Type="Jobapp_dbModel.Vacancy_details" Role="Vacancy_details" Multiplicity="0..1" />
           <End Type="Jobapp_dbModel.Job_Applications_details" Role="Job_Applications_details" Multiplicity="*" />
@@ -339,6 +305,7 @@
           <EntitySetMapping Name="Job_Applications_details">
             <EntityTypeMapping TypeName="Jobapp_dbModel.Job_Applications_details">
               <MappingFragment StoreEntitySet="Job_Applications_details">
+                <ScalarProperty Name="Application_status" ColumnName="Application_status" />
                 <ScalarProperty Name="vacancy_id" ColumnName="vacancy_id" />
                 <ScalarProperty Name="Jobseeker_id" ColumnName="Jobseeker_id" />
                 <ScalarProperty Name="resume_id" ColumnName="resume_id" />
@@ -376,7 +343,6 @@
             <EntityTypeMapping TypeName="Jobapp_dbModel.Vacancy_details">
               <MappingFragment StoreEntitySet="Vacancy_details">
                 <ScalarProperty Name="Job_category" ColumnName="Job_category" />
-                <ScalarProperty Name="Employer_details_id" ColumnName="Employer_details_id" />
                 <ScalarProperty Name="Submit_deadline" ColumnName="Submit_deadline" />
                 <ScalarProperty Name="Employment_type" ColumnName="Employment_type" />
                 <ScalarProperty Name="Job_level" ColumnName="Job_level" />
