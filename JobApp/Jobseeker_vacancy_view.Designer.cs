@@ -38,11 +38,9 @@
             this.vacancydetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jobapp_dbDataSet = new JobApp.Jobapp_dbDataSet();
             this.vacancy_detailsTableAdapter = new JobApp.Jobapp_dbDataSetTableAdapters.Vacancy_detailsTableAdapter();
-            this.DV_vacancy = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vacancydetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobapp_dbDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DV_vacancy)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -55,7 +53,7 @@
             this.jobSeeker_itembox});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(71, 450);
+            this.menuStrip1.Size = new System.Drawing.Size(123, 450);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -66,7 +64,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(64, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -87,7 +85,7 @@
             this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jobSeekerSignUpToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(70, 19);
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(116, 19);
             this.jobSeeker_itembox.Text = "Job Seeker";
             this.jobSeeker_itembox.Visible = false;
             // 
@@ -111,21 +109,11 @@
             // 
             this.vacancy_detailsTableAdapter.ClearBeforeFill = true;
             // 
-            // DV_vacancy
-            // 
-            this.DV_vacancy.AllowUserToOrderColumns = true;
-            this.DV_vacancy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DV_vacancy.Location = new System.Drawing.Point(110, 22);
-            this.DV_vacancy.Name = "DV_vacancy";
-            this.DV_vacancy.Size = new System.Drawing.Size(662, 381);
-            this.DV_vacancy.TabIndex = 11;
-            // 
             // Jobseeker_vacancy_view
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.DV_vacancy);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Jobseeker_vacancy_view";
             this.Text = "Jobseeker_vacancy_view";
@@ -134,7 +122,6 @@
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vacancydetailsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobapp_dbDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DV_vacancy)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,6 +138,5 @@
         private Jobapp_dbDataSet jobapp_dbDataSet;
         private System.Windows.Forms.BindingSource vacancydetailsBindingSource;
         private Jobapp_dbDataSetTableAdapters.Vacancy_detailsTableAdapter vacancy_detailsTableAdapter;
-        private System.Windows.Forms.DataGridView DV_vacancy;
     }
 }

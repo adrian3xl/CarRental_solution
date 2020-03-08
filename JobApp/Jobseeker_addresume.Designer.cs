@@ -28,62 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.exper_tb = new System.Windows.Forms.TextBox();
+            this.qualifica_tb = new System.Windows.Forms.TextBox();
+            this.edu_tb = new System.Windows.Forms.TextBox();
+            this.hobby_tb = new System.Windows.Forms.TextBox();
+            this.cont_tb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.email_tb = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.Cancel_bt = new System.Windows.Forms.Button();
             this.Submit_bt = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // exper_tb
             // 
-            this.textBox1.Location = new System.Drawing.Point(342, 343);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 139);
-            this.textBox1.TabIndex = 22;
+            this.exper_tb.Location = new System.Drawing.Point(342, 343);
+            this.exper_tb.Multiline = true;
+            this.exper_tb.Name = "exper_tb";
+            this.exper_tb.Size = new System.Drawing.Size(260, 139);
+            this.exper_tb.TabIndex = 22;
             // 
-            // textBox2
+            // qualifica_tb
             // 
-            this.textBox2.Location = new System.Drawing.Point(658, 67);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(484, 279);
-            this.textBox2.TabIndex = 23;
+            this.qualifica_tb.Location = new System.Drawing.Point(658, 67);
+            this.qualifica_tb.Multiline = true;
+            this.qualifica_tb.Name = "qualifica_tb";
+            this.qualifica_tb.Size = new System.Drawing.Size(484, 279);
+            this.qualifica_tb.TabIndex = 23;
             // 
-            // textBox3
+            // edu_tb
             // 
-            this.textBox3.Location = new System.Drawing.Point(342, 67);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(117, 22);
-            this.textBox3.TabIndex = 24;
+            this.edu_tb.Location = new System.Drawing.Point(342, 67);
+            this.edu_tb.Multiline = true;
+            this.edu_tb.Name = "edu_tb";
+            this.edu_tb.Size = new System.Drawing.Size(117, 22);
+            this.edu_tb.TabIndex = 24;
             // 
-            // textBox4
+            // hobby_tb
             // 
-            this.textBox4.Location = new System.Drawing.Point(342, 158);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(260, 103);
-            this.textBox4.TabIndex = 25;
+            this.hobby_tb.Location = new System.Drawing.Point(342, 158);
+            this.hobby_tb.Multiline = true;
+            this.hobby_tb.Name = "hobby_tb";
+            this.hobby_tb.Size = new System.Drawing.Size(260, 103);
+            this.hobby_tb.TabIndex = 25;
             // 
-            // textBox5
+            // cont_tb
             // 
-            this.textBox5.Location = new System.Drawing.Point(342, 109);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(117, 25);
-            this.textBox5.TabIndex = 26;
+            this.cont_tb.Location = new System.Drawing.Point(342, 109);
+            this.cont_tb.Multiline = true;
+            this.cont_tb.Name = "cont_tb";
+            this.cont_tb.Size = new System.Drawing.Size(117, 25);
+            this.cont_tb.TabIndex = 26;
             // 
             // label1
             // 
@@ -130,13 +130,13 @@
             this.label5.TabIndex = 31;
             this.label5.Text = "Email";
             // 
-            // textBox6
+            // email_tb
             // 
-            this.textBox6.Location = new System.Drawing.Point(342, 279);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(185, 25);
-            this.textBox6.TabIndex = 32;
+            this.email_tb.Location = new System.Drawing.Point(342, 279);
+            this.email_tb.Multiline = true;
+            this.email_tb.Name = "email_tb";
+            this.email_tb.Size = new System.Drawing.Size(185, 25);
+            this.email_tb.TabIndex = 32;
             // 
             // label6
             // 
@@ -186,17 +186,17 @@
             this.Controls.Add(this.Submit_bt);
             this.Controls.Add(this.Cancel_bt);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.email_tb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cont_tb);
+            this.Controls.Add(this.hobby_tb);
+            this.Controls.Add(this.edu_tb);
+            this.Controls.Add(this.qualifica_tb);
+            this.Controls.Add(this.exper_tb);
             this.Name = "Jobseeker_addresume";
             this.Text = "Jobseeker_addresume";
             this.ResumeLayout(false);
@@ -206,17 +206,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox exper_tb;
+        private System.Windows.Forms.TextBox qualifica_tb;
+        private System.Windows.Forms.TextBox edu_tb;
+        private System.Windows.Forms.TextBox hobby_tb;
+        private System.Windows.Forms.TextBox cont_tb;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox email_tb;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button Cancel_bt;
         private System.Windows.Forms.Button Submit_bt;
