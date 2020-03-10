@@ -13,13 +13,13 @@ namespace JobApp
     
     public partial class Jobseeker_addresume : Form
     {
-        private bool isedit_mode;
+        private bool issubmit_mode;
         private readonly Jobapp_dbEntities _db;
         public Jobseeker_addresume()
         {
             InitializeComponent();
             _db = new Jobapp_dbEntities();
-             isedit_mode=false;
+             issubmit_mode=false;
     }
         public Jobseeker_addresume(Job_Applications_details addresume)
         {
@@ -46,7 +46,7 @@ namespace JobApp
 
         private void Submit_bt_Click(object sender, EventArgs e)
         {
-            if (isedit_mode)
+            if (issubmit_mode)
             {
 
             }

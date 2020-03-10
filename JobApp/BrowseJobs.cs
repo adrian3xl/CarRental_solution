@@ -17,7 +17,7 @@ namespace JobApp
             InitializeComponent();
             //user_name_tb.Text
             _db = new Jobapp_dbEntities();
-            
+
         }
 
 
@@ -34,24 +34,25 @@ namespace JobApp
 
         private void BrowseJobs_Load(object sender, EventArgs e)
         {
-            
+
             var vacancy = _db.Vacancy_details.Select(q => new
             {
-               // vacancyID = q.id,
+                // vacancyID = q.id,
                 Jobtitle = q.Job_title,
                 JobRequirements = q.Job_Requirements
        ,
-                JobDiscription=q.Job_Discription,
+                JobDiscription = q.Job_Discription,
                 Joblevel = q.Job_level
        ,
                 Employmenttype = q.Employment_type
        ,
                 Submitdeadline = q.Submit_deadline,
-                Jobcategory = q.Job_category
+                Jobcategory = q.Job_category,
+                q.id
             }).ToList();
 
             dgv_vacacies.DataSource = vacancy;
-           // dgv_vacacies.Columns[0].HeaderText = "ID";
+            // dgv_vacacies.Columns[0].HeaderText = "ID";
             dgv_vacacies.Columns[0].HeaderText = "Job Title";
             dgv_vacacies.Columns[1].HeaderText = "Job Discription";
             dgv_vacacies.Columns[2].HeaderText = "Job Requirements";
@@ -59,8 +60,20 @@ namespace JobApp
             dgv_vacacies.Columns[4].HeaderText = "Employment Type";
             dgv_vacacies.Columns[5].HeaderText = "Submit deadline";
             dgv_vacacies.Columns[6].HeaderText = "Job Category";
+            dgv_vacacies.Columns[7].Visible = false;
 
 
+
+        }
+
+        private void dgv_vacacies_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var Id = dgv_vacacies.SelectedRows;
+            var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
+
+            var jobseeker_addresume = new Jobseeker_addresume();
+            jobseeker_addresume.MdiParent = this.MdiParent;
+            jobseeker_addresume.ShowDialog();
         }
     }
 }

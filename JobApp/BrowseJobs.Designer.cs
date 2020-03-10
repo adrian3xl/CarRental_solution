@@ -131,8 +131,10 @@
             this.dgv_vacacies.Location = new System.Drawing.Point(97, 121);
             this.dgv_vacacies.Name = "dgv_vacacies";
             this.dgv_vacacies.ReadOnly = true;
+            this.dgv_vacacies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgv_vacacies.Size = new System.Drawing.Size(786, 298);
             this.dgv_vacacies.TabIndex = 11;
+            this.dgv_vacacies.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_vacacies_CellContentClick);
             // 
             // employerdetailsBindingSource
             // 
