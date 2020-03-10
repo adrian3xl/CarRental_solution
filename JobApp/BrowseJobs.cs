@@ -37,7 +37,7 @@ namespace JobApp
             
             var vacancy = _db.Vacancy_details.Select(q => new
             {
-                //vacancyID = q.id,
+               // vacancyID = q.id,
                 Jobtitle = q.Job_title,
                 JobRequirements = q.Job_Requirements
        ,
@@ -59,6 +59,7 @@ namespace JobApp
             dgv_vacacies.Columns[4].HeaderText = "Employment Type";
             dgv_vacacies.Columns[5].HeaderText = "Submit deadline";
             dgv_vacacies.Columns[6].HeaderText = "Job Category";
+
 
         }
     }
