@@ -69,8 +69,8 @@ namespace JobApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var Id = (int)dgv_vacacies.SelectedRows[0].Cells.[0];
-            var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
+           // var Id = (int)dgv_vacacies.SelectedRows[0].Cells.[0];
+        //    var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
 
             var jobseeker_addresume = new Jobseeker_addresume();
             jobseeker_addresume.MdiParent = this.MdiParent;

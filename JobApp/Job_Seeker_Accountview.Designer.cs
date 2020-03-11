@@ -43,19 +43,15 @@
             this.editResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.user_name_tb = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.jobapp_dbDataSet = new JobApp.Jobapp_dbDataSet();
+            this.gv_appstatus_list = new System.Windows.Forms.DataGridView();
             this.jobApplicationsdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.jobapp_dbDataSet = new JobApp.Jobapp_dbDataSet();
+            this.label3 = new System.Windows.Forms.Label();
             this.job_Applications_detailsTableAdapter = new JobApp.Jobapp_dbDataSetTableAdapters.Job_Applications_detailsTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jobseekeridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.resumeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vacancyidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jobapp_dbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_appstatus_list)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobApplicationsdetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobapp_dbDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -108,14 +104,14 @@
             // browseJobsToolStripMenuItem
             // 
             this.browseJobsToolStripMenuItem.Name = "browseJobsToolStripMenuItem";
-            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.browseJobsToolStripMenuItem.Text = "Browse Jobs";
             this.browseJobsToolStripMenuItem.Click += new System.EventHandler(this.BrowseJobsToolStripMenuItem_Click);
             // 
             // advanceSearchToolStripMenuItem
             // 
             this.advanceSearchToolStripMenuItem.Name = "advanceSearchToolStripMenuItem";
-            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.advanceSearchToolStripMenuItem.Text = "Advance Search";
             // 
             // salaryTool_itembox
@@ -137,7 +133,7 @@
             // jobSeekerSignUpToolStripMenuItem
             // 
             this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
-            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign out";
             // 
             // resumeQueryToolStripMenuItem
@@ -153,23 +149,20 @@
             // addResumeToolStripMenuItem
             // 
             this.addResumeToolStripMenuItem.Name = "addResumeToolStripMenuItem";
-            this.addResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addResumeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.addResumeToolStripMenuItem.Text = "Add Resume";
-       
             // 
             // editResumeToolStripMenuItem
             // 
             this.editResumeToolStripMenuItem.Name = "editResumeToolStripMenuItem";
-            this.editResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editResumeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.editResumeToolStripMenuItem.Text = "Edit Resume";
-     
             // 
             // deleteResumeToolStripMenuItem
             // 
             this.deleteResumeToolStripMenuItem.Name = "deleteResumeToolStripMenuItem";
-            this.deleteResumeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deleteResumeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.deleteResumeToolStripMenuItem.Text = "Delete Resume";
-      ;
             // 
             // user_name_tb
             // 
@@ -182,77 +175,41 @@
             this.user_name_tb.TabIndex = 35;
             this.user_name_tb.Text = " ";
             // 
-            // dataGridView1
+            // gv_appstatus_list
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.jobseekeridDataGridViewTextBoxColumn,
-            this.resumeidDataGridViewTextBoxColumn,
-            this.vacancyidDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.jobApplicationsdetailsBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(158, 196);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(518, 231);
-            this.dataGridView1.TabIndex = 36;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(318, 154);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(249, 39);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "Application Status";
-            // 
-            // jobapp_dbDataSet
-            // 
-            this.jobapp_dbDataSet.DataSetName = "Jobapp_dbDataSet";
-            this.jobapp_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.gv_appstatus_list.AllowUserToAddRows = false;
+            this.gv_appstatus_list.AllowUserToDeleteRows = false;
+            this.gv_appstatus_list.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gv_appstatus_list.Location = new System.Drawing.Point(141, 196);
+            this.gv_appstatus_list.Name = "gv_appstatus_list";
+            this.gv_appstatus_list.ReadOnly = true;
+            this.gv_appstatus_list.Size = new System.Drawing.Size(571, 231);
+            this.gv_appstatus_list.TabIndex = 36;
             // 
             // jobApplicationsdetailsBindingSource
             // 
             this.jobApplicationsdetailsBindingSource.DataMember = "Job_Applications_details";
             this.jobApplicationsdetailsBindingSource.DataSource = this.jobapp_dbDataSet;
             // 
+            // jobapp_dbDataSet
+            // 
+            this.jobapp_dbDataSet.DataSetName = "Jobapp_dbDataSet";
+            this.jobapp_dbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(289, 154);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(249, 39);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Application Status";
+            // 
             // job_Applications_detailsTableAdapter
             // 
             this.job_Applications_detailsTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.ReadOnly = true;
-            this.idDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // jobseekeridDataGridViewTextBoxColumn
-            // 
-            this.jobseekeridDataGridViewTextBoxColumn.DataPropertyName = "Jobseeker_id";
-            this.jobseekeridDataGridViewTextBoxColumn.HeaderText = "Jobseeker ";
-            this.jobseekeridDataGridViewTextBoxColumn.Name = "jobseekeridDataGridViewTextBoxColumn";
-            this.jobseekeridDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // resumeidDataGridViewTextBoxColumn
-            // 
-            this.resumeidDataGridViewTextBoxColumn.DataPropertyName = "resume_id";
-            this.resumeidDataGridViewTextBoxColumn.HeaderText = "resume ";
-            this.resumeidDataGridViewTextBoxColumn.Name = "resumeidDataGridViewTextBoxColumn";
-            this.resumeidDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // vacancyidDataGridViewTextBoxColumn
-            // 
-            this.vacancyidDataGridViewTextBoxColumn.DataPropertyName = "vacancy_id";
-            this.vacancyidDataGridViewTextBoxColumn.HeaderText = "vacancy ";
-            this.vacancyidDataGridViewTextBoxColumn.Name = "vacancyidDataGridViewTextBoxColumn";
-            this.vacancyidDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Job_Seeker_Accountview
             // 
@@ -260,19 +217,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 508);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gv_appstatus_list);
             this.Controls.Add(this.user_name_tb);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "Job_Seeker_Accountview";
             this.Text = "Job Seeker Accountview";
-         
+            this.Load += new System.EventHandler(this.Job_Seeker_Accountview_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jobapp_dbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_appstatus_list)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobApplicationsdetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jobapp_dbDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,14 +251,10 @@
         private System.Windows.Forms.ToolStripMenuItem addResumeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editResumeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteResumeToolStripMenuItem;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gv_appstatus_list;
         private System.Windows.Forms.Label label3;
         private Jobapp_dbDataSet jobapp_dbDataSet;
         private System.Windows.Forms.BindingSource jobApplicationsdetailsBindingSource;
         private Jobapp_dbDataSetTableAdapters.Job_Applications_detailsTableAdapter job_Applications_detailsTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn jobseekeridDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn resumeidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn vacancyidDataGridViewTextBoxColumn;
     }
 }

@@ -18,7 +18,7 @@ namespace JobApp
         public Nullable<int> resume_id { get; set; }
         public Nullable<int> Jobseeker_id { get; set; }
         public Nullable<int> vacancy_id { get; set; }
-        public string Application_status { get; set; }
+        public Nullable<bool> Application_status { get; set; }
     
         public virtual Vacancy_details Vacancy_details { get; set; }
         public virtual Jobseeker_details Jobseeker_details { get; set; }

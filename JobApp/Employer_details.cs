@@ -14,6 +14,12 @@ namespace JobApp
     
     public partial class Employer_details
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Employer_details()
+        {
+            this.Vacancy_details = new HashSet<Vacancy_details>();
+        }
+    
         public int id { get; set; }
         public string Company_name { get; set; }
         public string Company_background { get; set; }
@@ -23,5 +29,8 @@ namespace JobApp
         public string Company_Email { get; set; }
         public string Industry_type { get; set; }
         public string Password { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Vacancy_details> Vacancy_details { get; set; }
     }
 }

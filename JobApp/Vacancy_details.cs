@@ -28,7 +28,9 @@ namespace JobApp
         public string Employment_type { get; set; }
         public Nullable<System.DateTime> Submit_deadline { get; set; }
         public string Job_category { get; set; }
+        public Nullable<int> Employers_id { get; set; }
     
+        public virtual Employer_details Employer_details { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Job_Applications_details> Job_Applications_details { get; set; }
     }
