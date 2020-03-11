@@ -27,7 +27,7 @@
           <Property Name="resume_id" Type="int" />
           <Property Name="Jobseeker_id" Type="int" />
           <Property Name="vacancy_id" Type="int" />
-          <Property Name="Application_status" Type="bit" />
+          <Property Name="Application_status" Type="nvarchar" MaxLength="15" />
         </EntityType>
         <EntityType Name="Jobseeker_details">
           <Key>
@@ -208,7 +208,7 @@
           <Property Name="resume_id" Type="Int32" />
           <Property Name="Jobseeker_id" Type="Int32" />
           <Property Name="vacancy_id" Type="Int32" />
-          <Property Name="Application_status" Type="Boolean" />
+          <Property Name="Application_status" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Vacancy_details" Relationship="Jobapp_dbModel.FK_Job_Applications_Job_Applications" FromRole="Job_Applications_details" ToRole="Vacancy_details" />
           <NavigationProperty Name="Jobseeker_details" Relationship="Jobapp_dbModel.FK_Job_Applications_Jobseeker_details" FromRole="Job_Applications_details" ToRole="Jobseeker_details" />
           <NavigationProperty Name="Resume_details" Relationship="Jobapp_dbModel.FK_Job_Applications_Resume_details" FromRole="Job_Applications_details" ToRole="Resume_details" />

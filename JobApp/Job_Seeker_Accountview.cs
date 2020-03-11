@@ -18,6 +18,7 @@ namespace JobApp
             InitializeComponent();
             _db = new Jobapp_dbEntities();
             user_name_tb.Text = user_name;
+           
         }
 
         private void BrowseJobsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,7 +32,7 @@ namespace JobApp
             var application = _db.Job_Applications_details.Select(q => new
             {
                 ID=q.id,
-               // q.Application_status,
+                q.Application_status,
                 Resume_details = q.Resume_details.Jobseeker_details.First_name + "" + q.Resume_details.Jobseeker_details.Last_name,
                 q.Vacancy_details.Job_title
 
