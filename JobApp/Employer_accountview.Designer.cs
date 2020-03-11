@@ -46,9 +46,9 @@
             this.updateVacancyT_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewVacancies_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mainWindow_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Applicant_MenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.comp_num_tb = new System.Windows.Forms.TextBox();
             this.company_name_tb = new System.Windows.Forms.TextBox();
-            this.Applicant_MenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -218,6 +218,12 @@
             this.mainWindow_MenuItem.Size = new System.Drawing.Size(188, 19);
             this.mainWindow_MenuItem.Text = "Main Window";
             // 
+            // Applicant_MenuItem1
+            // 
+            this.Applicant_MenuItem1.Name = "Applicant_MenuItem1";
+            this.Applicant_MenuItem1.Size = new System.Drawing.Size(188, 19);
+            this.Applicant_MenuItem1.Text = "Applicant_MenuItem";
+            // 
             // comp_num_tb
             // 
             this.comp_num_tb.Location = new System.Drawing.Point(440, 165);
@@ -234,12 +240,6 @@
             this.company_name_tb.Size = new System.Drawing.Size(159, 20);
             this.company_name_tb.TabIndex = 44;
             this.company_name_tb.TextChanged += new System.EventHandler(this.Employer_accountview_Load);
-            // 
-            // Applicant_MenuItem1
-            // 
-            this.Applicant_MenuItem1.Name = "Applicant_MenuItem1";
-            this.Applicant_MenuItem1.Size = new System.Drawing.Size(188, 19);
-            this.Applicant_MenuItem1.Text = "Applicant_MenuItem";
             // 
             // Employer_accountview
             // 

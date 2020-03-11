@@ -41,7 +41,7 @@ namespace JobApp
         private void Cancel_bt_Click(object sender, EventArgs e)
         {
             var Job_Seeker_Accountview = new Job_Seeker_Accountview();
-            Job_Seeker_Accountview.Show();
+            Job_Seeker_Accountview.Close();
         }
 
         private void Submit_bt_Click(object sender, EventArgs e)

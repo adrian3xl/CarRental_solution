@@ -44,6 +44,8 @@
             this.vacancy_detailsTableAdapter = new JobApp.Jobapp_dbDataSetTableAdapters.Vacancy_detailsTableAdapter();
             this.tableAdapterManager = new JobApp.Jobapp_dbDataSetTableAdapters.TableAdapterManager();
             this.Search_bt = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vacacies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employerdetailsBindingSource)).BeginInit();
@@ -174,6 +176,28 @@
             this.Search_bt.UseVisualStyleBackColor = true;
             this.Search_bt.Click += new System.EventHandler(this.Search_bt_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(736, 481);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(147, 41);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "APPLY";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(677, 537);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(259, 13);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "*Select vacancy and then click apply button";
+            // 
             // BrowseJobs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,6 +205,8 @@
             this.BackgroundImage = global::JobApp.Properties.Resources.download;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(948, 559);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.Search_bt);
             this.Controls.Add(this.dgv_vacacies);
             this.Controls.Add(this.menuStrip1);
@@ -215,5 +241,7 @@
         private Jobapp_dbDataSetTableAdapters.Vacancy_detailsTableAdapter vacancy_detailsTableAdapter;
         private Jobapp_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Button Search_bt;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
     }
 }
