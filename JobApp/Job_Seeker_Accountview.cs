@@ -29,19 +29,29 @@ namespace JobApp
 
         private void Job_Seeker_Accountview_Load(object sender, EventArgs e)
         {
-            var application = _db.Job_Applications_details.Select(q => new
+
+            try
             {
-                ID=q.id,
-                q.Application_status,
-                Resume_details = q.Resume_details.Jobseeker_details.First_name + "" + q.Resume_details.Jobseeker_details.Last_name,
-                q.Vacancy_details.Job_title
+                var application = _db.Job_Applications_details.Select(q => new
+                {
+                    ID = q.id,
+                    q.Application_status,
+                    Resume_details = q.Resume_details.Jobseeker_details.First_name + "" + q.Resume_details.Jobseeker_details.Last_name,
+                    q.Vacancy_details.Job_title
 
-            }).ToList();
+                }).ToList();
 
-            gv_appstatus_list.DataSource = application;
-           // gv_appstatus_list.Columns["First_name"].HeaderText = "First Name";
-           // gv_appstatus_list.Columns["Last_name"].HeaderText = "Last Name";
-            gv_appstatus_list.Columns["ID"].Visible = false;
+                gv_appstatus_list.DataSource = application;
+                gv_appstatus_list.Columns["Resume_details"].HeaderText = "Resume Details";
+                // gv_appstatus_list.Columns["Resume_details"].HeaderText = "Resume Details";
+                gv_appstatus_list.Columns["Job_title"].HeaderText = "Job Title";
+                gv_appstatus_list.Columns["ID"].Visible = false;
+            }
+            catch (Exception )
+            {
+                MessageBox.Show("");
+               // throw;
+            }
         }
 
         //   private void addResumeToolStripMenuItem_Click(object sender, EventArgs e)

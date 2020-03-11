@@ -34,36 +34,44 @@ namespace JobApp
 
         private void BrowseJobs_Load(object sender, EventArgs e)
         {
-
-            var vacancy = _db.Vacancy_details.Select(q => new
+            try
             {
-                // vacancyID = q.id,
-                Jobtitle = q.Job_title,
-                JobRequirements = q.Job_Requirements
-       ,
-                JobDiscription = q.Job_Discription,
-                Joblevel = q.Job_level
-       ,
-                Employmenttype = q.Employment_type
-       ,
-                Submitdeadline = q.Submit_deadline,
-                Jobcategory = q.Job_category,
-                q.id
-            }).ToList();
 
-            dgv_vacacies.DataSource = vacancy;
-            // dgv_vacacies.Columns[0].HeaderText = "ID";
-            dgv_vacacies.Columns[0].HeaderText = "Job Title";
-            dgv_vacacies.Columns[1].HeaderText = "Job Discription";
-            dgv_vacacies.Columns[2].HeaderText = "Job Requirements";
-            dgv_vacacies.Columns[3].HeaderText = "Job Level";
-            dgv_vacacies.Columns[4].HeaderText = "Employment Type";
-            dgv_vacacies.Columns[5].HeaderText = "Submit deadline";
-            dgv_vacacies.Columns[6].HeaderText = "Job Category";
-            dgv_vacacies.Columns[7].Visible = false;
+                var vacancy = _db.Vacancy_details.Select(q => new
+                {
+                    // vacancyID = q.id,
+                    Jobtitle = q.Job_title,
+                    JobRequirements = q.Job_Requirements
+           ,
+                    JobDiscription = q.Job_Discription,
+                    Joblevel = q.Job_level
+           ,
+                    Employmenttype = q.Employment_type
+           ,
+                    Submitdeadline = q.Submit_deadline,
+                    Jobcategory = q.Job_category,
+                    q.id
+                }).ToList();
+
+                dgv_vacacies.DataSource = vacancy;
+                // dgv_vacacies.Columns[0].HeaderText = "ID";
+                dgv_vacacies.Columns["Jobtitle"].HeaderText = "Job Title";
+                dgv_vacacies.Columns["JobDiscription"].HeaderText = "Job Discription";
+                dgv_vacacies.Columns["JobRequirements"].HeaderText = "Job Requirements";
+                dgv_vacacies.Columns["Joblevel"].HeaderText = "Job Level";
+                dgv_vacacies.Columns["Employmenttype"].HeaderText = "Employment Type";
+                dgv_vacacies.Columns["Submitdeadline"].HeaderText = "Submit deadline";
+                dgv_vacacies.Columns["Jobcategory"].HeaderText = "Job Category";
+                dgv_vacacies.Columns[7].Visible = false;
 
 
 
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("");
+              //  throw;
+            }
         }
 
 
