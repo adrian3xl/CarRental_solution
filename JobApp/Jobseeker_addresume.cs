@@ -1,16 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JobApp
 {
-    
+
     public partial class Jobseeker_addresume : Form
     {
         private bool issubmit_mode;
@@ -19,8 +12,8 @@ namespace JobApp
         {
             InitializeComponent();
             _db = new Jobapp_dbEntities();
-             issubmit_mode=false;
-    }
+
+        }
         public Jobseeker_addresume(Job_Applications_details addresume)
         {
             InitializeComponent();
@@ -31,7 +24,7 @@ namespace JobApp
         private void populateFields(Job_Applications_details addresume)
         {
             edu_tb.Text = addresume.Resume_details.Education_level;
-            cont_tb.Text = addresume.Resume_details.Education_level;
+            cont_tb.Text = addresume.Resume_details.Contact_number;
             hobby_tb.Text = addresume.Resume_details.Hobbies;
             email_tb.Text = addresume.Resume_details.Email;
             exper_tb.Text = addresume.Resume_details.PriorWork_Experiences;
@@ -46,14 +39,39 @@ namespace JobApp
 
         private void Submit_bt_Click(object sender, EventArgs e)
         {
-            if (issubmit_mode)
+
+
+            try
             {
+                var Education_level = edu_tb.Text;
+                var Contact_number = cont_tb.Text;
+                var Hobbies = hobby_tb.Text;
+                var Email = email_tb.Text;
+                var PriorWork_Experiences = exper_tb.Text;
+                var Qualifications = qualifica_tb.Text;
+
+                var Resume_details = new Resume_details
+                {
+                    Education_level = Education_level,
+                    Contact_number = Contact_number,
+                    Hobbies = Hobbies,
+                    Email = Email,
+                    PriorWork_Experiences = PriorWork_Experiences,
+                    Qualifications = Qualifications
+                };
+
+                _db.Resume_details.Add(Resume_details);
+                _db.SaveChanges();
 
             }
-            else
+            catch (Exception)
             {
-                Close();
+
+                // throw;
             }
+
+
+
         }
     }
 }

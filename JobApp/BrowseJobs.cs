@@ -83,6 +83,7 @@ namespace JobApp
             var jobseeker_addresume = new Jobseeker_addresume();
             jobseeker_addresume.MdiParent = this.MdiParent;
             jobseeker_addresume.ShowDialog();
+          //  Close();
         }
     }
 }
