@@ -50,6 +50,7 @@ namespace JobApp
                 var PriorWork_Experiences = exper_tb.Text;
                 var Qualifications = qualifica_tb.Text;
 
+                // var vacancy_id = v
                 var Resume_details = new Resume_details
                 {
                     Education_level = Education_level,
@@ -58,9 +59,26 @@ namespace JobApp
                     Email = Email,
                     PriorWork_Experiences = PriorWork_Experiences,
                     Qualifications = Qualifications
+
+
                 };
 
                 _db.Resume_details.Add(Resume_details);
+                _db.SaveChanges();
+
+                var resume_id = Resume_details.id;
+
+
+                var Job_Applications_details = new Job_Applications_details
+                {
+
+
+                    resume_id = resume_id,
+                  
+
+                };
+
+                _db.Job_Applications_details.Add(Job_Applications_details);
                 _db.SaveChanges();
 
             }
