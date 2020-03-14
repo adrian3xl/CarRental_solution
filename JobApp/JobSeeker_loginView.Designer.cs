@@ -34,6 +34,8 @@
             this.textBox_username = new System.Windows.Forms.TextBox();
             this.textBox_Password = new System.Windows.Forms.TextBox();
             this.enterloging_jobseek_bt = new System.Windows.Forms.Button();
+            this.label_text = new System.Windows.Forms.Label();
+            this.Signup_click_lb = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -94,11 +96,35 @@
             this.enterloging_jobseek_bt.UseVisualStyleBackColor = false;
             this.enterloging_jobseek_bt.Click += new System.EventHandler(this.Enterloging_jobseek_bt_Click);
             // 
+            // label_text
+            // 
+            this.label_text.AutoSize = true;
+            this.label_text.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_text.Location = new System.Drawing.Point(254, 359);
+            this.label_text.Name = "label_text";
+            this.label_text.Size = new System.Drawing.Size(165, 15);
+            this.label_text.TabIndex = 31;
+            this.label_text.Text = "* If you are not yet a member.";
+            // 
+            // Signup_click_lb
+            // 
+            this.Signup_click_lb.AutoSize = true;
+            this.Signup_click_lb.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Signup_click_lb.ForeColor = System.Drawing.Color.Blue;
+            this.Signup_click_lb.Location = new System.Drawing.Point(425, 359);
+            this.Signup_click_lb.Name = "Signup_click_lb";
+            this.Signup_click_lb.Size = new System.Drawing.Size(81, 15);
+            this.Signup_click_lb.TabIndex = 32;
+            this.Signup_click_lb.Text = "CLICK HERE";
+            this.Signup_click_lb.Click += new System.EventHandler(this.Signup_click_lb_Click);
+            // 
             // JobSeeker_loginView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Signup_click_lb);
+            this.Controls.Add(this.label_text);
             this.Controls.Add(this.enterloging_jobseek_bt);
             this.Controls.Add(this.textBox_Password);
             this.Controls.Add(this.textBox_username);
@@ -119,5 +145,7 @@
         private System.Windows.Forms.TextBox textBox_username;
         private System.Windows.Forms.TextBox textBox_Password;
         private System.Windows.Forms.Button enterloging_jobseek_bt;
+        private System.Windows.Forms.Label label_text;
+        private System.Windows.Forms.Label Signup_click_lb;
     }
 }

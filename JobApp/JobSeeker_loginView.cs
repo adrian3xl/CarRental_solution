@@ -30,12 +30,13 @@ namespace JobApp
 
                 if (IsValid)
                 {
-                    MessageBox.Show("Welcome ");
+                    MessageBox.Show("Welcome " + user_name);
 
                     Job_Seeker_Accountview job_Seeker_Accountview = new Job_Seeker_Accountview(textBox_username.Text);
 
-                    job_Seeker_Accountview.Show();
-                    //job_Seeker_Accountview.Close();
+                    job_Seeker_Accountview.ShowDialog();
+                    
+
 
                 }
 
@@ -45,6 +46,14 @@ namespace JobApp
                 MessageBox.Show(ex.Message);
                 //throw;
             }
+
+        }
+
+        private void Signup_click_lb_Click(object sender, EventArgs e)
+        {
+            var jobseeker_signup = new JobSeeker_Signup();
+            jobseeker_signup.ShowDialog();
+
 
         }
     }

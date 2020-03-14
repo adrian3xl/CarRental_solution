@@ -50,5 +50,13 @@ namespace JobApp
            
             
         }
+
+        private void dummy_search_bt_Click(object sender, EventArgs e)
+        {
+            var JobSeeker_loginView = new JobSeeker_loginView();
+            JobSeeker_loginView.ShowDialog();
+            JobSeeker_loginView.MdiParent = this;
+
+        }
     }
 }

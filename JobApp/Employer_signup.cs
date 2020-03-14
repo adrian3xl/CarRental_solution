@@ -53,6 +53,7 @@ namespace JobApp
                     _db.SaveChanges();
 
                     MessageBox.Show("Registration was successful");
+                    
                 }
 
 
@@ -65,6 +66,12 @@ namespace JobApp
             }
 
 
+        }
+
+        private void Cancel_bt_Click(object sender, EventArgs e)
+        {
+            var Employer_signup = new Employer_signup();
+            Close();
         }
     }
 }

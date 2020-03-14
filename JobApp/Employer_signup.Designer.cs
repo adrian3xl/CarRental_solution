@@ -47,6 +47,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.password_tb = new System.Windows.Forms.TextBox();
+            this.Cancel_bt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -184,7 +185,7 @@
             // 
             this.create_emp_bt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.create_emp_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.create_emp_bt.Location = new System.Drawing.Point(413, 415);
+            this.create_emp_bt.Location = new System.Drawing.Point(573, 415);
             this.create_emp_bt.Name = "create_emp_bt";
             this.create_emp_bt.Size = new System.Drawing.Size(114, 32);
             this.create_emp_bt.TabIndex = 31;
@@ -220,11 +221,24 @@
             this.password_tb.Size = new System.Drawing.Size(165, 20);
             this.password_tb.TabIndex = 35;
             // 
+            // Cancel_bt
+            // 
+            this.Cancel_bt.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Cancel_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel_bt.Location = new System.Drawing.Point(371, 415);
+            this.Cancel_bt.Name = "Cancel_bt";
+            this.Cancel_bt.Size = new System.Drawing.Size(114, 32);
+            this.Cancel_bt.TabIndex = 36;
+            this.Cancel_bt.Text = "Cancel";
+            this.Cancel_bt.UseVisualStyleBackColor = false;
+            this.Cancel_bt.Click += new System.EventHandler(this.Cancel_bt_Click);
+            // 
             // Employer_signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Cancel_bt);
             this.Controls.Add(this.password_tb);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -272,5 +286,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox password_tb;
+        private System.Windows.Forms.Button Cancel_bt;
     }
 }

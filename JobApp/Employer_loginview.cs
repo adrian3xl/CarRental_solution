@@ -52,5 +52,11 @@ namespace JobApp
                 //throw;
             }
         }
+
+        private void cancel_bt_Click(object sender, EventArgs e)
+        {
+            var Employer_loginview = new Employer_loginview();
+            Close();
+        }
     }
 }
