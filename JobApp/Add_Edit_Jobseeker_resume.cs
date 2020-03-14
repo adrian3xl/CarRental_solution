@@ -3,13 +3,20 @@ using System.Windows.Forms;
 
 namespace JobApp
 {
-    public partial class Add_Jobseeker_resume : Form
+    public partial class Add_Edit_Jobseeker_resume : Form
     {
         private readonly Jobapp_dbEntities _db;
-        public Add_Jobseeker_resume()
+        public Add_Edit_Jobseeker_resume()
         {
             InitializeComponent();
             _db = new Jobapp_dbEntities();
+            lable_title.Text = "Add New Resume";
+        }
+
+        public Add_Edit_Jobseeker_resume(Resume_details resume_toedit)
+        {
+            InitializeComponent();
+            lable_title.Text = "Edit New Resume";
         }
 
         private void Submit_bt_Click(object sender, EventArgs e)

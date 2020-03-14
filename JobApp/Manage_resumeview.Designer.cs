@@ -32,12 +32,13 @@
             this.Delete_bt = new System.Windows.Forms.Button();
             this.edit_bt = new System.Windows.Forms.Button();
             this.dgv_resumeview = new System.Windows.Forms.DataGridView();
+            this.Manage_lb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resumeview)).BeginInit();
             this.SuspendLayout();
             // 
             // add_bt
             // 
-            this.add_bt.Location = new System.Drawing.Point(225, 402);
+            this.add_bt.Location = new System.Drawing.Point(127, 402);
             this.add_bt.Name = "add_bt";
             this.add_bt.Size = new System.Drawing.Size(170, 50);
             this.add_bt.TabIndex = 0;
@@ -47,7 +48,7 @@
             // 
             // Delete_bt
             // 
-            this.Delete_bt.Location = new System.Drawing.Point(783, 402);
+            this.Delete_bt.Location = new System.Drawing.Point(694, 402);
             this.Delete_bt.Name = "Delete_bt";
             this.Delete_bt.Size = new System.Drawing.Size(170, 50);
             this.Delete_bt.TabIndex = 1;
@@ -57,7 +58,7 @@
             // 
             // edit_bt
             // 
-            this.edit_bt.Location = new System.Drawing.Point(506, 402);
+            this.edit_bt.Location = new System.Drawing.Point(407, 402);
             this.edit_bt.Name = "edit_bt";
             this.edit_bt.Size = new System.Drawing.Size(170, 50);
             this.edit_bt.TabIndex = 2;
@@ -68,17 +69,33 @@
             // dgv_resumeview
             // 
             this.dgv_resumeview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_resumeview.Location = new System.Drawing.Point(12, 59);
+            this.dgv_resumeview.Location = new System.Drawing.Point(12, 75);
             this.dgv_resumeview.Name = "dgv_resumeview";
             this.dgv_resumeview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.dgv_resumeview.Size = new System.Drawing.Size(941, 298);
+            this.dgv_resumeview.Size = new System.Drawing.Size(862, 298);
             this.dgv_resumeview.TabIndex = 12;
+            // 
+            // Manage_lb
+            // 
+            this.Manage_lb.AllowDrop = true;
+            this.Manage_lb.AutoSize = true;
+            this.Manage_lb.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Manage_lb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Manage_lb.Font = new System.Drawing.Font("Monotype Corsiva", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Manage_lb.Location = new System.Drawing.Point(44, 9);
+            this.Manage_lb.Name = "Manage_lb";
+            this.Manage_lb.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Manage_lb.Size = new System.Drawing.Size(244, 52);
+            this.Manage_lb.TabIndex = 13;
+            this.Manage_lb.Text = "Manage Resume";
+            this.Manage_lb.UseCompatibleTextRendering = true;
             // 
             // Manage_resumeview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1024, 464);
+            this.ClientSize = new System.Drawing.Size(971, 464);
+            this.Controls.Add(this.Manage_lb);
             this.Controls.Add(this.dgv_resumeview);
             this.Controls.Add(this.edit_bt);
             this.Controls.Add(this.Delete_bt);
@@ -88,6 +105,7 @@
             this.Load += new System.EventHandler(this.Manage_resumeview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resumeview)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -97,5 +115,6 @@
         private System.Windows.Forms.Button Delete_bt;
         private System.Windows.Forms.Button edit_bt;
         private System.Windows.Forms.DataGridView dgv_resumeview;
+        private System.Windows.Forms.Label Manage_lb;
     }
 }

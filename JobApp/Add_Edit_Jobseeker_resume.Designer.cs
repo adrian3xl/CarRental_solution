@@ -1,6 +1,6 @@
 ﻿namespace JobApp
 {
-    partial class Add_Jobseeker_resume
+    partial class Add_Edit_Jobseeker_resume
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label7 = new System.Windows.Forms.Label();
+            this.lable_title = new System.Windows.Forms.Label();
             this.Submit_bt = new System.Windows.Forms.Button();
             this.Cancel_bt = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,16 +45,15 @@
             this.exper_tb = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // label7
+            // lable_title
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label7.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(12, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(168, 39);
-            this.label7.TabIndex = 51;
-            this.label7.Text = "Add Resume";
+            this.lable_title.AutoSize = true;
+            this.lable_title.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lable_title.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lable_title.Location = new System.Drawing.Point(12, 3);
+            this.lable_title.Name = "lable_title";
+            this.lable_title.Size = new System.Drawing.Size(0, 39);
+            this.lable_title.TabIndex = 51;
             // 
             // Submit_bt
             // 
@@ -177,12 +176,12 @@
             this.exper_tb.Size = new System.Drawing.Size(260, 139);
             this.exper_tb.TabIndex = 37;
             // 
-            // Add_Jobseeker_resume
+            // Add_Edit_Jobseeker_resume
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 512);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.lable_title);
             this.Controls.Add(this.Submit_bt);
             this.Controls.Add(this.Cancel_bt);
             this.Controls.Add(this.label6);
@@ -197,7 +196,7 @@
             this.Controls.Add(this.edu_tb);
             this.Controls.Add(this.qualifica_tb);
             this.Controls.Add(this.exper_tb);
-            this.Name = "Add_Jobseeker_resume";
+            this.Name = "Add_Edit_Jobseeker_resume";
             this.Text = "Add_Jobseeker_resume";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -206,7 +205,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lable_title;
         private System.Windows.Forms.Button Submit_bt;
         private System.Windows.Forms.Button Cancel_bt;
         private System.Windows.Forms.Label label6;
