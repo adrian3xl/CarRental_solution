@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.lable_title = new System.Windows.Forms.Label();
-            this.Submit_bt = new System.Windows.Forms.Button();
+            this.Save_bt = new System.Windows.Forms.Button();
             this.Cancel_bt = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.email_tb = new System.Windows.Forms.TextBox();
@@ -55,15 +55,15 @@
             this.lable_title.Size = new System.Drawing.Size(0, 39);
             this.lable_title.TabIndex = 51;
             // 
-            // Submit_bt
+            // Save_bt
             // 
-            this.Submit_bt.Location = new System.Drawing.Point(789, 446);
-            this.Submit_bt.Name = "Submit_bt";
-            this.Submit_bt.Size = new System.Drawing.Size(129, 54);
-            this.Submit_bt.TabIndex = 50;
-            this.Submit_bt.Text = "Save";
-            this.Submit_bt.UseVisualStyleBackColor = true;
-            this.Submit_bt.Click += new System.EventHandler(this.Submit_bt_Click);
+            this.Save_bt.Location = new System.Drawing.Point(789, 446);
+            this.Save_bt.Name = "Save_bt";
+            this.Save_bt.Size = new System.Drawing.Size(129, 54);
+            this.Save_bt.TabIndex = 50;
+            this.Save_bt.Text = "Save";
+            this.Save_bt.UseVisualStyleBackColor = true;
+            this.Save_bt.Click += new System.EventHandler(this.Submit_bt_Click);
             // 
             // Cancel_bt
             // 
@@ -73,6 +73,7 @@
             this.Cancel_bt.TabIndex = 49;
             this.Cancel_bt.Text = "Cancel";
             this.Cancel_bt.UseVisualStyleBackColor = true;
+            this.Cancel_bt.Click += new System.EventHandler(this.Cancel_bt_Click);
             // 
             // label6
             // 
@@ -182,7 +183,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 512);
             this.Controls.Add(this.lable_title);
-            this.Controls.Add(this.Submit_bt);
+            this.Controls.Add(this.Save_bt);
             this.Controls.Add(this.Cancel_bt);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.email_tb);
@@ -206,7 +207,7 @@
         #endregion
 
         private System.Windows.Forms.Label lable_title;
-        private System.Windows.Forms.Button Submit_bt;
+        private System.Windows.Forms.Button Save_bt;
         private System.Windows.Forms.Button Cancel_bt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox email_tb;
