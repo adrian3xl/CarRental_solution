@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JobApp
@@ -19,20 +14,24 @@ namespace JobApp
             _db = new Jobapp_dbEntities();
         }
 
-        private void add_bt_Click(object sender, EventArgs e)
+        private void Add_bt_Click(object sender, EventArgs e)
         {
-            var add_Edit_Jobseeker_Resume = new Add_Edit_Jobseeker_resume();
-            add_Edit_Jobseeker_Resume.MdiParent = this.MdiParent;
+            var add_Edit_Jobseeker_Resume = new Add_Edit_Jobseeker_resume
+            {
+                MdiParent = this.MdiParent
+            };
             add_Edit_Jobseeker_Resume.Show();
         }
 
-        private void edit_bt_Click(object sender, EventArgs e)
+        private void Edit_bt_Click(object sender, EventArgs e)
         {
             var ID = (int)dgv_resumeview.SelectedRows[0].Cells["id"].Value;
             var resume = _db.Resume_details.FirstOrDefault(q => q.id == ID);
 
-            var add_Edit_Jobseeker_Resume = new Add_Edit_Jobseeker_resume(resume);
-            add_Edit_Jobseeker_Resume.MdiParent = this.MdiParent;
+            Add_Edit_Jobseeker_resume add_Edit_Jobseeker_Resume = new Add_Edit_Jobseeker_resume(resume)
+            {
+                MdiParent = this.MdiParent
+            };
             add_Edit_Jobseeker_Resume.Show();
         }
 
@@ -43,6 +42,8 @@ namespace JobApp
 
             _db.Resume_details.Remove(resume);
             _db.SaveChanges();
+
+            dgv_resumeview.Refresh();
         }
 
         private void Manage_resumeview_Load(object sender, EventArgs e)
@@ -53,7 +54,7 @@ namespace JobApp
                 {
                     ID = q.id,
                     q.Education_level,
-                     q.Qualifications,
+                    q.Qualifications,
                     q.PriorWork_Experiences,
                     q.Hobbies,
                     q.Contact_number,
@@ -62,8 +63,8 @@ namespace JobApp
 
                 }).ToList();
 
-               
-               dgv_resumeview.DataSource = Resume_details;
+
+                dgv_resumeview.DataSource = Resume_details;
 
                 dgv_resumeview.Columns["Education_level"].HeaderText = "Education Leve";
                 dgv_resumeview.Columns["Qualifications"].HeaderText = "Qualifications";

@@ -70,20 +70,22 @@ namespace JobApp
             catch (Exception)
             {
                 MessageBox.Show("");
-              //  throw;
+                //  throw;
             }
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-           // var Id = (int)dgv_vacacies.SelectedRows[0].Cells.[0];
-        //    var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
+            // var Id = (int)dgv_vacacies.SelectedRows[0].Cells.[0];
+            //    var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
 
-            var jobseeker_addresume = new Jobseeker_submit_resume();
-            jobseeker_addresume.MdiParent = this.MdiParent;
+            var jobseeker_addresume = new Jobseeker_submit_resume
+            {
+                MdiParent = this.MdiParent
+            };
             jobseeker_addresume.ShowDialog();
-          //  Close();
+            //  Close();
         }
     }
 }

@@ -180,7 +180,7 @@
             this.dummy_search_bt.TabIndex = 12;
             this.dummy_search_bt.Text = "Search Jobs";
             this.dummy_search_bt.UseVisualStyleBackColor = true;
-            this.dummy_search_bt.Click += new System.EventHandler(this.dummy_search_bt_Click);
+            this.dummy_search_bt.Click += new System.EventHandler(this.Dummy_search_bt_Click);
             // 
             // textBox1
             // 

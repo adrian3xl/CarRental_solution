@@ -44,7 +44,7 @@
             this.add_bt.TabIndex = 0;
             this.add_bt.Text = "Add Resume";
             this.add_bt.UseVisualStyleBackColor = true;
-            this.add_bt.Click += new System.EventHandler(this.add_bt_Click);
+            this.add_bt.Click += new System.EventHandler(this.Add_bt_Click);
             // 
             // Delete_bt
             // 
@@ -64,7 +64,7 @@
             this.edit_bt.TabIndex = 2;
             this.edit_bt.Text = "Edit Resume";
             this.edit_bt.UseVisualStyleBackColor = true;
-            this.edit_bt.Click += new System.EventHandler(this.edit_bt_Click);
+            this.edit_bt.Click += new System.EventHandler(this.Edit_bt_Click);
             // 
             // dgv_resumeview
             // 

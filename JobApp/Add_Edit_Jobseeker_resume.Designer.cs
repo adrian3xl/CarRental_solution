@@ -43,6 +43,7 @@
             this.edu_tb = new System.Windows.Forms.TextBox();
             this.qualifica_tb = new System.Windows.Forms.TextBox();
             this.exper_tb = new System.Windows.Forms.TextBox();
+            this.lb_id = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lable_title
@@ -122,7 +123,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(668, 29);
+            this.label2.Location = new System.Drawing.Point(712, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 13);
             this.label2.TabIndex = 43;
@@ -163,7 +164,7 @@
             // 
             // qualifica_tb
             // 
-            this.qualifica_tb.Location = new System.Drawing.Point(481, 47);
+            this.qualifica_tb.Location = new System.Drawing.Point(481, 78);
             this.qualifica_tb.Multiline = true;
             this.qualifica_tb.Name = "qualifica_tb";
             this.qualifica_tb.Size = new System.Drawing.Size(484, 279);
@@ -177,11 +178,22 @@
             this.exper_tb.Size = new System.Drawing.Size(260, 139);
             this.exper_tb.TabIndex = 37;
             // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lb_id.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_id.Location = new System.Drawing.Point(474, 3);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(0, 39);
+            this.lb_id.TabIndex = 52;
+            // 
             // Add_Edit_Jobseeker_resume
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(984, 512);
+            this.Controls.Add(this.lb_id);
             this.Controls.Add(this.lable_title);
             this.Controls.Add(this.Save_bt);
             this.Controls.Add(this.Cancel_bt);
@@ -221,5 +233,6 @@
         private System.Windows.Forms.TextBox edu_tb;
         private System.Windows.Forms.TextBox qualifica_tb;
         private System.Windows.Forms.TextBox exper_tb;
+        private System.Windows.Forms.Label lb_id;
     }
 }
