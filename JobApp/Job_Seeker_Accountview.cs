@@ -18,7 +18,7 @@ namespace JobApp
             InitializeComponent();
             _db = new Jobapp_dbEntities();
             user_name_tb.Text = user_name;
-           
+
         }
 
         private void BrowseJobsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,11 +47,19 @@ namespace JobApp
                 gv_appstatus_list.Columns["Job_title"].HeaderText = "Job Title";
                 gv_appstatus_list.Columns["ID"].Visible = false;
             }
-            catch (Exception )
+            catch (Exception)
             {
-                MessageBox.Show("");
-               // throw;
+                MessageBox.Show("error");
+                // throw;
             }
+        }
+
+
+        private void Manageresume_MenuItem_Click(object sender, EventArgs e)
+        {
+            var Manage_resumeview = new Manage_resumeview();
+            Manage_resumeview.MdiParent = this.MdiParent;
+            Manage_resumeview.Show();
         }
 
         //   private void addResumeToolStripMenuItem_Click(object sender, EventArgs e)

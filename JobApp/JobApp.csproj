@@ -63,6 +63,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add_Jobseeker_resume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Jobseeker_resume.Designer.cs">
+      <DependentUpon>Add_Jobseeker_resume.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employer_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
@@ -122,11 +128,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Jobapp_db.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Jobseeker_addresume.cs">
+    <Compile Include="Jobseeker_submit_resume.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Jobseeker_addresume.Designer.cs">
-      <DependentUpon>Jobseeker_addresume.cs</DependentUpon>
+    <Compile Include="Jobseeker_submit_resume.Designer.cs">
+      <DependentUpon>Jobseeker_submit_resume.cs</DependentUpon>
     </Compile>
     <Compile Include="Jobseeker_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
@@ -152,6 +158,12 @@
     <Compile Include="Job_Seeker_Accountview.Designer.cs">
       <DependentUpon>Job_Seeker_Accountview.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manage_resumeview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage_resumeview.Designer.cs">
+      <DependentUpon>Manage_resumeview.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resume_details.cs">
@@ -160,6 +172,9 @@
     <Compile Include="Vacancy_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add_Jobseeker_resume.resx">
+      <DependentUpon>Add_Jobseeker_resume.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employer_view_vacancy.resx">
       <DependentUpon>Employer_view_vacancy.cs</DependentUpon>
     </EmbeddedResource>
@@ -178,8 +193,8 @@
     <EmbeddedResource Include="JobApp_Main_window.resx">
       <DependentUpon>JobApp_Main_window.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Jobseeker_addresume.resx">
-      <DependentUpon>Jobseeker_addresume.cs</DependentUpon>
+    <EmbeddedResource Include="Jobseeker_submit_resume.resx">
+      <DependentUpon>Jobseeker_submit_resume.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JobSeeker_loginView.resx">
       <DependentUpon>JobSeeker_loginView.cs</DependentUpon>
@@ -189,6 +204,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Job_Seeker_Accountview.resx">
       <DependentUpon>Job_Seeker_Accountview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage_resumeview.resx">
+      <DependentUpon>Manage_resumeview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

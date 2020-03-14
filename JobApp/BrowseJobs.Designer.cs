@@ -44,7 +44,7 @@
             this.vacancy_detailsTableAdapter = new JobApp.Jobapp_dbDataSetTableAdapters.Vacancy_detailsTableAdapter();
             this.tableAdapterManager = new JobApp.Jobapp_dbDataSetTableAdapters.TableAdapterManager();
             this.Search_bt = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.apply_bt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vacacies)).BeginInit();
@@ -136,7 +136,6 @@
             this.dgv_vacacies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgv_vacacies.Size = new System.Drawing.Size(786, 298);
             this.dgv_vacacies.TabIndex = 11;
-           
             // 
             // employerdetailsBindingSource
             // 
@@ -176,16 +175,16 @@
             this.Search_bt.UseVisualStyleBackColor = true;
             this.Search_bt.Click += new System.EventHandler(this.Search_bt_Click);
             // 
-            // button1
+            // apply_bt
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(736, 481);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 41);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "APPLY";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.apply_bt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.apply_bt.Location = new System.Drawing.Point(736, 481);
+            this.apply_bt.Name = "apply_bt";
+            this.apply_bt.Size = new System.Drawing.Size(147, 41);
+            this.apply_bt.TabIndex = 13;
+            this.apply_bt.Text = "APPLY";
+            this.apply_bt.UseVisualStyleBackColor = true;
+            this.apply_bt.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -206,7 +205,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(948, 559);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.apply_bt);
             this.Controls.Add(this.Search_bt);
             this.Controls.Add(this.dgv_vacacies);
             this.Controls.Add(this.menuStrip1);
@@ -241,7 +240,7 @@
         private Jobapp_dbDataSetTableAdapters.Vacancy_detailsTableAdapter vacancy_detailsTableAdapter;
         private Jobapp_dbDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.Button Search_bt;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button apply_bt;
         private System.Windows.Forms.Label label1;
     }
 }

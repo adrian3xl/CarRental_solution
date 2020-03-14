@@ -4,11 +4,11 @@ using System.Windows.Forms;
 namespace JobApp
 {
 
-    public partial class Jobseeker_addresume : Form
+    public partial class Jobseeker_submit_resume : Form
     {
          
         private readonly Jobapp_dbEntities _db;
-        public Jobseeker_addresume()
+        public Jobseeker_submit_resume()
         {
             InitializeComponent();
             _db = new Jobapp_dbEntities();

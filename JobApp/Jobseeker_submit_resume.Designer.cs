@@ -1,6 +1,6 @@
 ﻿namespace JobApp
 {
-    partial class Jobseeker_addresume
+    partial class Jobseeker_submit_resume
     {
         /// <summary>
         /// Required designer variable.
@@ -174,11 +174,11 @@
             this.label7.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(12, 9);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(168, 39);
+            this.label7.Size = new System.Drawing.Size(204, 39);
             this.label7.TabIndex = 36;
-            this.label7.Text = "Add Resume";
+            this.label7.Text = "Submit Resume";
             // 
-            // Jobseeker_addresume
+            // Jobseeker_submit_resume
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -198,7 +198,7 @@
             this.Controls.Add(this.edu_tb);
             this.Controls.Add(this.qualifica_tb);
             this.Controls.Add(this.exper_tb);
-            this.Name = "Jobseeker_addresume";
+            this.Name = "Jobseeker_submit_resume";
             this.Text = "Jobseeker_addresume";
             this.ResumeLayout(false);
             this.PerformLayout();

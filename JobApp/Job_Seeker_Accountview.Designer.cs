@@ -38,10 +38,7 @@
             this.salaryTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeekerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resumeQueryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteResumeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Manageresume_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.user_name_tb = new System.Windows.Forms.Label();
             this.gv_appstatus_list = new System.Windows.Forms.DataGridView();
             this.jobApplicationsdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -84,10 +81,10 @@
             this.findJobsTool_itembox,
             this.salaryTool_itembox,
             this.jobSeeker_itembox,
-            this.resumeQueryToolStripMenuItem});
+            this.Manageresume_MenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(99, 508);
+            this.menuStrip1.Size = new System.Drawing.Size(123, 508);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,7 +95,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(92, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -118,7 +115,7 @@
             // 
             this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(92, 19);
+            this.salaryTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.salaryTool_itembox.Text = "Salary Tool";
             // 
             // jobSeeker_itembox
@@ -127,7 +124,7 @@
             this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jobSeekerSignUpToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(92, 19);
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(116, 19);
             this.jobSeeker_itembox.Text = "Job Seeker";
             // 
             // jobSeekerSignUpToolStripMenuItem
@@ -136,33 +133,12 @@
             this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign out";
             // 
-            // resumeQueryToolStripMenuItem
+            // Manageresume_MenuItem
             // 
-            this.resumeQueryToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addResumeToolStripMenuItem,
-            this.editResumeToolStripMenuItem,
-            this.deleteResumeToolStripMenuItem});
-            this.resumeQueryToolStripMenuItem.Name = "resumeQueryToolStripMenuItem";
-            this.resumeQueryToolStripMenuItem.Size = new System.Drawing.Size(92, 19);
-            this.resumeQueryToolStripMenuItem.Text = "Resume Query";
-            // 
-            // addResumeToolStripMenuItem
-            // 
-            this.addResumeToolStripMenuItem.Name = "addResumeToolStripMenuItem";
-            this.addResumeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.addResumeToolStripMenuItem.Text = "Add Resume";
-            // 
-            // editResumeToolStripMenuItem
-            // 
-            this.editResumeToolStripMenuItem.Name = "editResumeToolStripMenuItem";
-            this.editResumeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.editResumeToolStripMenuItem.Text = "Edit Resume";
-            // 
-            // deleteResumeToolStripMenuItem
-            // 
-            this.deleteResumeToolStripMenuItem.Name = "deleteResumeToolStripMenuItem";
-            this.deleteResumeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.deleteResumeToolStripMenuItem.Text = "Delete Resume";
+            this.Manageresume_MenuItem.Name = "Manageresume_MenuItem";
+            this.Manageresume_MenuItem.Size = new System.Drawing.Size(116, 19);
+            this.Manageresume_MenuItem.Text = "Manage Resume";
+            this.Manageresume_MenuItem.Click += new System.EventHandler(this.Manageresume_MenuItem_Click);
             // 
             // user_name_tb
             // 
@@ -247,10 +223,7 @@
         private System.Windows.Forms.ToolStripMenuItem jobSeeker_itembox;
         private System.Windows.Forms.ToolStripMenuItem jobSeekerSignUpToolStripMenuItem;
         private System.Windows.Forms.Label user_name_tb;
-        private System.Windows.Forms.ToolStripMenuItem resumeQueryToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addResumeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editResumeToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteResumeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem Manageresume_MenuItem;
         private System.Windows.Forms.DataGridView gv_appstatus_list;
         private System.Windows.Forms.Label label3;
         private Jobapp_dbDataSet jobapp_dbDataSet;

@@ -80,7 +80,7 @@ namespace JobApp
            // var Id = (int)dgv_vacacies.SelectedRows[0].Cells.[0];
         //    var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
 
-            var jobseeker_addresume = new Jobseeker_addresume();
+            var jobseeker_addresume = new Jobseeker_submit_resume();
             jobseeker_addresume.MdiParent = this.MdiParent;
             jobseeker_addresume.ShowDialog();
           //  Close();
