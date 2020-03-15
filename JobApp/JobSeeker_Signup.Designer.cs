@@ -40,6 +40,7 @@
             this.textBox_username = new System.Windows.Forms.TextBox();
             this.textBox_createpass = new System.Windows.Forms.TextBox();
             this.Register_bt = new System.Windows.Forms.Button();
+            this.Cancel_bt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -142,7 +143,7 @@
             // 
             this.Register_bt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.Register_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Register_bt.Location = new System.Drawing.Point(341, 267);
+            this.Register_bt.Location = new System.Drawing.Point(435, 281);
             this.Register_bt.Name = "Register_bt";
             this.Register_bt.Size = new System.Drawing.Size(154, 50);
             this.Register_bt.TabIndex = 32;
@@ -150,11 +151,24 @@
             this.Register_bt.UseVisualStyleBackColor = false;
             this.Register_bt.Click += new System.EventHandler(this.Register_bt_Click);
             // 
+            // Cancel_bt
+            // 
+            this.Cancel_bt.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Cancel_bt.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel_bt.Location = new System.Drawing.Point(164, 281);
+            this.Cancel_bt.Name = "Cancel_bt";
+            this.Cancel_bt.Size = new System.Drawing.Size(154, 50);
+            this.Cancel_bt.TabIndex = 33;
+            this.Cancel_bt.Text = "Cancel";
+            this.Cancel_bt.UseVisualStyleBackColor = false;
+            this.Cancel_bt.Click += new System.EventHandler(this.Cancel_bt_Click);
+            // 
             // JobSeeker_Signup
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(846, 450);
+            this.Controls.Add(this.Cancel_bt);
             this.Controls.Add(this.Register_bt);
             this.Controls.Add(this.textBox_createpass);
             this.Controls.Add(this.textBox_username);
@@ -187,5 +201,6 @@
         private System.Windows.Forms.TextBox textBox_username;
         private System.Windows.Forms.TextBox textBox_createpass;
         private System.Windows.Forms.Button Register_bt;
+        private System.Windows.Forms.Button Cancel_bt;
     }
 }

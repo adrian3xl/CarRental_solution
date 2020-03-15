@@ -73,5 +73,10 @@ namespace JobApp
             jobSeeker_loginView.Show();
 
         }
+
+        private void Cancel_bt_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
