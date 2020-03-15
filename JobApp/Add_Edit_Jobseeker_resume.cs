@@ -21,7 +21,7 @@ namespace JobApp
         {
             InitializeComponent();
             _db = new Jobapp_dbEntities();
-            lable_title.Text = "Edit New Resume";
+            lable_title.Text = "Edit Resume";
             iseditmode = true;
             Populatefields(resume_toedit);
 

@@ -5,10 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="8bf57b7771b2420f95622a139f7fe850" Name="Diagram1" ZoomLevel="64">
-        <EntityTypeShape EntityType="Jobapp_dbModel.Employer_details" Width="1.5" PointX="10.5" PointY="5.75" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.Employer_details" Width="1.5" PointX="10" PointY="5.125" />
         <EntityTypeShape EntityType="Jobapp_dbModel.Job_Applications_details" Width="1.5" PointX="7.75" PointY="5.375" />
-        <EntityTypeShape EntityType="Jobapp_dbModel.Jobseeker_details" Width="1.5" PointX="2.75" PointY="8.5" />
-        <EntityTypeShape EntityType="Jobapp_dbModel.Resume_details" Width="1.5" PointX="5.375" PointY="5" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.Jobseeker_details" Width="1.5" PointX="2.125" PointY="5.625" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.Resume_details" Width="1.5" PointX="4.875" PointY="4.75" />
         <EntityTypeShape EntityType="Jobapp_dbModel.Vacancy_details" Width="1.5" PointX="5.125" PointY="1.125" />
         <AssociationConnector Association="Jobapp_dbModel.FK_Vacancy_details_Employer_details" />
         <AssociationConnector Association="Jobapp_dbModel.FK_Job_Applications_Job_Applications" />
