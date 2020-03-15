@@ -31,5 +31,10 @@ namespace JobApp
 
 
         }
+
+        private void mainWindow_MenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

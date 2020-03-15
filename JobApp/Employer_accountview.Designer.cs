@@ -201,8 +201,9 @@
             // 
             this.mainWindow_MenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.mainWindow_MenuItem.Name = "mainWindow_MenuItem";
-            this.mainWindow_MenuItem.Size = new System.Drawing.Size(117, 19);
-            this.mainWindow_MenuItem.Text = "Main Window";
+            this.mainWindow_MenuItem.Size = new System.Drawing.Size(170, 19);
+            this.mainWindow_MenuItem.Text = "Manage account information";
+            this.mainWindow_MenuItem.Click += new System.EventHandler(this.mainWindow_MenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -215,7 +216,7 @@
             this.mainWindow_MenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(124, 492);
+            this.menuStrip1.Size = new System.Drawing.Size(177, 492);
             this.menuStrip1.TabIndex = 43;
             this.menuStrip1.Text = "menuStrip1";
             // 
