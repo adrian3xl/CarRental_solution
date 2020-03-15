@@ -41,14 +41,12 @@
             this.compan_bk_tb = new System.Windows.Forms.TextBox();
             this.compa_loca_tb = new System.Windows.Forms.TextBox();
             this.comp_email_tb = new System.Windows.Forms.TextBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.addVacancy_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateVacancyT_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewVacancies_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mainWindow_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Applicant_MenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.comp_num_tb = new System.Windows.Forms.TextBox();
             this.company_name_tb = new System.Windows.Forms.TextBox();
+            this.ManageVacancy_menustrip = new System.Windows.Forms.ToolStripMenuItem();
+            this.mainWindow_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.manageApplicantsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,55 +173,6 @@
             this.comp_email_tb.Size = new System.Drawing.Size(159, 20);
             this.comp_email_tb.TabIndex = 34;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addVacancy_MenuItem,
-            this.updateVacancyT_MenuItem,
-            this.viewVacancies_MenuItem,
-            this.mainWindow_MenuItem,
-            this.Applicant_MenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(195, 492);
-            this.menuStrip1.TabIndex = 43;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // addVacancy_MenuItem
-            // 
-            this.addVacancy_MenuItem.Name = "addVacancy_MenuItem";
-            this.addVacancy_MenuItem.Size = new System.Drawing.Size(188, 19);
-            this.addVacancy_MenuItem.Text = "Add Vacancy";
-            // 
-            // updateVacancyT_MenuItem
-            // 
-            this.updateVacancyT_MenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.updateVacancyT_MenuItem.Name = "updateVacancyT_MenuItem";
-            this.updateVacancyT_MenuItem.Size = new System.Drawing.Size(188, 19);
-            this.updateVacancyT_MenuItem.Text = "Update Vacancy";
-            // 
-            // viewVacancies_MenuItem
-            // 
-            this.viewVacancies_MenuItem.Name = "viewVacancies_MenuItem";
-            this.viewVacancies_MenuItem.Size = new System.Drawing.Size(188, 19);
-            this.viewVacancies_MenuItem.Text = "View Vacancies of your company";
-            // 
-            // mainWindow_MenuItem
-            // 
-            this.mainWindow_MenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mainWindow_MenuItem.Name = "mainWindow_MenuItem";
-            this.mainWindow_MenuItem.Size = new System.Drawing.Size(188, 19);
-            this.mainWindow_MenuItem.Text = "Main Window";
-            // 
-            // Applicant_MenuItem1
-            // 
-            this.Applicant_MenuItem1.Name = "Applicant_MenuItem1";
-            this.Applicant_MenuItem1.Size = new System.Drawing.Size(188, 19);
-            this.Applicant_MenuItem1.Text = "Applicant_MenuItem";
-            // 
             // comp_num_tb
             // 
             this.comp_num_tb.Location = new System.Drawing.Point(440, 165);
@@ -240,6 +189,41 @@
             this.company_name_tb.Size = new System.Drawing.Size(159, 20);
             this.company_name_tb.TabIndex = 44;
             this.company_name_tb.TextChanged += new System.EventHandler(this.Employer_accountview_Load);
+            // 
+            // ManageVacancy_menustrip
+            // 
+            this.ManageVacancy_menustrip.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ManageVacancy_menustrip.Name = "ManageVacancy_menustrip";
+            this.ManageVacancy_menustrip.Size = new System.Drawing.Size(117, 19);
+            this.ManageVacancy_menustrip.Text = "Manage Vacancy";
+            // 
+            // mainWindow_MenuItem
+            // 
+            this.mainWindow_MenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.mainWindow_MenuItem.Name = "mainWindow_MenuItem";
+            this.mainWindow_MenuItem.Size = new System.Drawing.Size(117, 19);
+            this.mainWindow_MenuItem.Text = "Main Window";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ManageVacancy_menustrip,
+            this.manageApplicantsToolStripMenuItem,
+            this.mainWindow_MenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(124, 492);
+            this.menuStrip1.TabIndex = 43;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // manageApplicantsToolStripMenuItem
+            // 
+            this.manageApplicantsToolStripMenuItem.Name = "manageApplicantsToolStripMenuItem";
+            this.manageApplicantsToolStripMenuItem.Size = new System.Drawing.Size(117, 19);
+            this.manageApplicantsToolStripMenuItem.Text = "Manage Applicants";
             // 
             // Employer_accountview
             // 
@@ -287,13 +271,11 @@
         private System.Windows.Forms.TextBox compan_bk_tb;
         private System.Windows.Forms.TextBox compa_loca_tb;
         private System.Windows.Forms.TextBox comp_email_tb;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem addVacancy_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem updateVacancyT_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem viewVacancies_MenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mainWindow_MenuItem;
         private System.Windows.Forms.TextBox comp_num_tb;
         private System.Windows.Forms.TextBox company_name_tb;
-        private System.Windows.Forms.ToolStripMenuItem Applicant_MenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem ManageVacancy_menustrip;
+        private System.Windows.Forms.ToolStripMenuItem mainWindow_MenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem manageApplicantsToolStripMenuItem;
     }
 }
