@@ -114,7 +114,7 @@
             this.Controls.Add(this.Delete_bt);
             this.Controls.Add(this.add_bt);
             this.Name = "Manage_resumeview";
-            this.Text = "Manage_resumeview";
+            this.Text = "Job Application Management System";
             this.Load += new System.EventHandler(this.Manage_resumeview_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resumeview)).EndInit();
             this.ResumeLayout(false);

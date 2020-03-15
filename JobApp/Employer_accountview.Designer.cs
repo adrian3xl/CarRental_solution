@@ -263,7 +263,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Name = "Employer_accountview";
-            this.Text = "Employer_accountview";
+            this.Text = "Job Application Management System";
             this.Load += new System.EventHandler(this.Employer_accountview_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

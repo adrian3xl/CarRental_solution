@@ -211,7 +211,7 @@
             this.Controls.Add(this.qualifica_tb);
             this.Controls.Add(this.exper_tb);
             this.Name = "Add_Edit_Jobseeker_resume";
-            this.Text = "Add_Jobseeker_resume";
+            this.Text = "Job Application Management System";
             this.ResumeLayout(false);
             this.PerformLayout();
 

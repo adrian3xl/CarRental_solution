@@ -88,7 +88,7 @@
             this.Controls.Add(this.editvacanc_button1);
             this.Controls.Add(this.Add_vacancy_bt);
             this.Name = "Employer_view_vacancy";
-            this.Text = "View vacancy";
+            this.Text = "Job Application Management System";
             this.ResumeLayout(false);
             this.PerformLayout();
 

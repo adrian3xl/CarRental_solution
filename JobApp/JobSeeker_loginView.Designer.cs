@@ -132,7 +132,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "JobSeeker_loginView";
-            this.Text = "JobSeeker_View";
+            this.Text = "Job Application Management System";
             this.ResumeLayout(false);
             this.PerformLayout();
 

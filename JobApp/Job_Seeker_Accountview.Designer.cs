@@ -84,7 +84,7 @@
             this.Manageresume_MenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(123, 508);
+            this.menuStrip1.Size = new System.Drawing.Size(110, 508);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -95,7 +95,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(103, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -115,7 +115,7 @@
             // 
             this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(116, 19);
+            this.salaryTool_itembox.Size = new System.Drawing.Size(103, 19);
             this.salaryTool_itembox.Text = "Salary Tool";
             // 
             // jobSeeker_itembox
@@ -124,7 +124,7 @@
             this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jobSeekerSignUpToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(116, 19);
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(103, 19);
             this.jobSeeker_itembox.Text = "Job Seeker";
             // 
             // jobSeekerSignUpToolStripMenuItem
@@ -136,7 +136,7 @@
             // Manageresume_MenuItem
             // 
             this.Manageresume_MenuItem.Name = "Manageresume_MenuItem";
-            this.Manageresume_MenuItem.Size = new System.Drawing.Size(116, 19);
+            this.Manageresume_MenuItem.Size = new System.Drawing.Size(103, 19);
             this.Manageresume_MenuItem.Text = "Manage Resume";
             this.Manageresume_MenuItem.Click += new System.EventHandler(this.Manageresume_MenuItem_Click);
             // 
@@ -199,7 +199,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Name = "Job_Seeker_Accountview";
-            this.Text = "Job Seeker Accountview";
+            this.Text = "Job Application Management System";
             this.Load += new System.EventHandler(this.Job_Seeker_Accountview_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -35,6 +35,7 @@ namespace JobApp
                     Job_Seeker_Accountview job_Seeker_Accountview = new Job_Seeker_Accountview(textBox_username.Text);
 
                     job_Seeker_Accountview.ShowDialog();
+                    Close();
                     
 
 

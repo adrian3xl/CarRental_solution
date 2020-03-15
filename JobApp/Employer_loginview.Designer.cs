@@ -119,7 +119,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Name = "Employer_loginview";
-            this.Text = "Employee_loginview";
+            this.Text = "Job Application Management System";
             this.ResumeLayout(false);
             this.PerformLayout();
 

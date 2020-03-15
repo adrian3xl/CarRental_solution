@@ -211,7 +211,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.textox_search);
             this.Name = "BrowseJobs";
-            this.Text = "BrowseJobs";
+            this.Text = "Job Application Management System";
             this.Load += new System.EventHandler(this.BrowseJobs_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

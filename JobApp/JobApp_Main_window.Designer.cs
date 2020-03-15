@@ -217,7 +217,7 @@
             this.IsMdiContainer = true;
             this.Name = "JobApp_Main_window";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
-            this.Text = "Job App Main Window";
+            this.Text = "Job Application Management System";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
