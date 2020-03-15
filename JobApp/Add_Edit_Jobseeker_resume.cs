@@ -29,7 +29,7 @@ namespace JobApp
 
         private void Populatefields(Resume_details resume_toedit)
         {
-            lb_id.Text = resume_toedit.ToString();
+            lb_id.Text = resume_toedit.id.ToString();
             edu_tb.Text = resume_toedit.Education_level;
             cont_tb.Text = resume_toedit.Contact_number;
             hobby_tb.Text = resume_toedit.Hobbies;
@@ -42,18 +42,28 @@ namespace JobApp
         {
             if (iseditmode == true)
             {
-                var id = int.Parse(lb_id.Text);
-                var resume = _db.Resume_details.FirstOrDefault(q => q.id == id);
-                resume.Education_level = edu_tb.Text;
-                resume.Contact_number = cont_tb.Text;
-                resume.Hobbies = hobby_tb.Text;
-                resume.Email = email_tb.Text;
-                resume.PriorWork_Experiences = exper_tb.Text;
-                resume.Qualifications = qualifica_tb.Text;
-                _db.SaveChanges();
+                try
+                {
+                    var id = int.Parse(lb_id.Text);
+                    var resume = _db.Resume_details.FirstOrDefault(q => q.id == id);
+                    resume.Education_level = edu_tb.Text;
+                    resume.Contact_number = cont_tb.Text;
+                    resume.Hobbies = hobby_tb.Text;
+                    resume.Email = email_tb.Text;
+                    resume.PriorWork_Experiences = exper_tb.Text;
+                    resume.Qualifications = qualifica_tb.Text;
+                    _db.SaveChanges();
+
+                    MessageBox.Show("Resume was successfully Edited");
+
+                    Close();
+                }
+                catch (Exception)
+                {
 
 
-
+                    MessageBox.Show("error");
+                }
             }
             else
 
@@ -74,6 +84,9 @@ namespace JobApp
                     _db.Resume_details.Add(add_resume);
                     _db.SaveChanges();
 
+                    MessageBox.Show("Resume was successfully added");
+
+                    Close();
 
 
                 }

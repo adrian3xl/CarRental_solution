@@ -187,6 +187,7 @@
             this.lb_id.Name = "lb_id";
             this.lb_id.Size = new System.Drawing.Size(0, 39);
             this.lb_id.TabIndex = 52;
+            this.lb_id.Visible = false;
             // 
             // Add_Edit_Jobseeker_resume
             // 

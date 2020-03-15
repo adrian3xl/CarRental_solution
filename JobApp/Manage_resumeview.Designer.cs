@@ -33,6 +33,7 @@
             this.edit_bt = new System.Windows.Forms.Button();
             this.dgv_resumeview = new System.Windows.Forms.DataGridView();
             this.Manage_lb = new System.Windows.Forms.Label();
+            this.refresh_bt = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resumeview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +72,7 @@
             this.dgv_resumeview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_resumeview.Location = new System.Drawing.Point(12, 75);
             this.dgv_resumeview.Name = "dgv_resumeview";
-            this.dgv_resumeview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgv_resumeview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_resumeview.Size = new System.Drawing.Size(862, 298);
             this.dgv_resumeview.TabIndex = 12;
             // 
@@ -90,11 +91,23 @@
             this.Manage_lb.Text = "Manage Resume";
             this.Manage_lb.UseCompatibleTextRendering = true;
             // 
+            // refresh_bt
+            // 
+            this.refresh_bt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.refresh_bt.Location = new System.Drawing.Point(726, 38);
+            this.refresh_bt.Name = "refresh_bt";
+            this.refresh_bt.Size = new System.Drawing.Size(138, 23);
+            this.refresh_bt.TabIndex = 14;
+            this.refresh_bt.Text = "Click here to refresh table";
+            this.refresh_bt.UseVisualStyleBackColor = false;
+            this.refresh_bt.Click += new System.EventHandler(this.refresh_bt_Click);
+            // 
             // Manage_resumeview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 464);
+            this.Controls.Add(this.refresh_bt);
             this.Controls.Add(this.Manage_lb);
             this.Controls.Add(this.dgv_resumeview);
             this.Controls.Add(this.edit_bt);
@@ -116,5 +129,6 @@
         private System.Windows.Forms.Button edit_bt;
         private System.Windows.Forms.DataGridView dgv_resumeview;
         private System.Windows.Forms.Label Manage_lb;
+        private System.Windows.Forms.Button refresh_bt;
     }
 }
