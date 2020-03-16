@@ -194,7 +194,7 @@
             // 
             this.ManageVacancy_menustrip.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ManageVacancy_menustrip.Name = "ManageVacancy_menustrip";
-            this.ManageVacancy_menustrip.Size = new System.Drawing.Size(117, 19);
+            this.ManageVacancy_menustrip.Size = new System.Drawing.Size(170, 19);
             this.ManageVacancy_menustrip.Text = "Manage Vacancy";
             // 
             // mainWindow_MenuItem
@@ -223,7 +223,7 @@
             // manageApplicantsToolStripMenuItem
             // 
             this.manageApplicantsToolStripMenuItem.Name = "manageApplicantsToolStripMenuItem";
-            this.manageApplicantsToolStripMenuItem.Size = new System.Drawing.Size(117, 19);
+            this.manageApplicantsToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
             this.manageApplicantsToolStripMenuItem.Text = "Manage Applicants";
             // 
             // Employer_accountview
