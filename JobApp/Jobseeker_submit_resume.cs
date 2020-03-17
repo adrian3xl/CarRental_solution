@@ -15,6 +15,23 @@ namespace JobApp
 
         }
 
+
+        public Jobseeker_submit_resume(Vacancy_details vacancy)
+        {
+            InitializeComponent();
+            _db = new Jobapp_dbEntities();
+            Populatefields(vacancy);
+        }
+
+        private void Populatefields(Vacancy_details vacancy)
+        {
+
+            lb_id.Text = vacancy.id.ToString();
+            vacancy.Job_title=title_tb.Text ;
+          
+        }
+
+
         private void Cancel_bt_Click(object sender, EventArgs e)
         {
             var Job_Seeker_Accountview = new Job_Seeker_Accountview();
@@ -51,7 +68,8 @@ namespace JobApp
                 _db.SaveChanges();
 
                 var resume_id = Resume_details.id;
-
+                var jobseeker_id = Resume_details.Jobseeker_details.id;
+               // var vacancy= 
 
                 var Job_Applications_details = new Job_Applications_details
                 {

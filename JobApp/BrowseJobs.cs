@@ -82,6 +82,8 @@ namespace JobApp
 
             var jobseeker_addresume = new Jobseeker_submit_resume
             {
+
+
                 MdiParent = this.MdiParent
             };
             jobseeker_addresume.ShowDialog();

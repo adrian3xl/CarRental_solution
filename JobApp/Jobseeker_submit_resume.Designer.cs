@@ -43,6 +43,9 @@
             this.Cancel_bt = new System.Windows.Forms.Button();
             this.Submit_bt = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.title_tb = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lb_id = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // exper_tb
@@ -178,11 +181,40 @@
             this.label7.TabIndex = 36;
             this.label7.Text = "Submit Resume";
             // 
+            // title_tb
+            // 
+            this.title_tb.Location = new System.Drawing.Point(798, 375);
+            this.title_tb.Multiline = true;
+            this.title_tb.Name = "title_tb";
+            this.title_tb.Size = new System.Drawing.Size(316, 25);
+            this.title_tb.TabIndex = 37;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(695, 378);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(88, 13);
+            this.label8.TabIndex = 38;
+            this.label8.Text = "Selected position";
+            // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.Location = new System.Drawing.Point(670, 13);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(35, 13);
+            this.lb_id.TabIndex = 39;
+            this.lb_id.Text = "label9";
+            // 
             // Jobseeker_submit_resume
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1231, 537);
+            this.Controls.Add(this.lb_id);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.title_tb);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Submit_bt);
             this.Controls.Add(this.Cancel_bt);
@@ -222,5 +254,8 @@
         private System.Windows.Forms.Button Cancel_bt;
         private System.Windows.Forms.Button Submit_bt;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox title_tb;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lb_id;
     }
 }

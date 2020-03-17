@@ -52,6 +52,7 @@ namespace JobApp
                     resume.Email = email_tb.Text;
                     resume.PriorWork_Experiences = exper_tb.Text;
                     resume.Qualifications = qualifica_tb.Text;
+                  
                     _db.SaveChanges();
 
                     MessageBox.Show("Resume was successfully Edited");
