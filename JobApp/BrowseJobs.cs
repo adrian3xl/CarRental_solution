@@ -68,7 +68,7 @@ namespace JobApp
             }
             catch (Exception)
             {
-                MessageBox.Show("");
+                MessageBox.Show("Error");
                 //  throw;
             }
         }
@@ -81,17 +81,18 @@ namespace JobApp
             try
             {
                 var Id = (int)dgv_vacacies.SelectedRows[0].Cells["id"].Value;
+
                 var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
 
-                var Submit_jobapplication = new Submit_jobapplication();
+                var Submit_jobapplication = new Submit_jobapplication(this,vacancy);
 
-                Submit_jobapplication.ShowDialog();
+                Submit_jobapplication.Show();
 
             }
             catch (Exception)
             {
 
-              //  throw;
+               throw;
             }
 
 
