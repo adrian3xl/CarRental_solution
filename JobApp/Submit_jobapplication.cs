@@ -23,20 +23,32 @@ namespace JobApp
         private void Submit_bt_Click(object sender, EventArgs e)
         {
 
-            var id = int.Parse(lb_id.Text);
-            var resume = _db.Resume_details.FirstOrDefault(q => q.id == id);
-            resume.Education_level = edu_tb.Text;
-            resume.Contact_number = cont_tb.Text;
-            resume.Hobbies = hobby_tb.Text;
-            resume.Email = email_tb.Text;
-            resume.PriorWork_Experiences = exper_tb.Text;
-            resume.Qualifications = qualifica_tb.Text;
+            var resume = new Resume_details
+            {
+               Education_level = edu_tb.Text,
+                Contact_number = cont_tb.Text,
+                Hobbies = hobby_tb.Text,
+                Email = email_tb.Text,
+                PriorWork_Experiences = exper_tb.Text,
+                Qualifications = qualifica_tb.Text
 
+
+            };
+
+            // _db.SaveChanges();
+
+            var Id = int.Parse(lb_id.Text);
+            var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
+           
+         //   _db.SaveChanges();
+
+            _db.Job_Applications_details.Add(this, vacancy, resume);
             _db.SaveChanges();
+        }
 
-
-            var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == id);
-
+        private void Cancel_bt_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
