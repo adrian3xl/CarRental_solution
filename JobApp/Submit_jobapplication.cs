@@ -17,6 +17,10 @@ namespace JobApp
             InitializeComponent();
         }
 
+        public Submit_jobapplication(BrowseJobs browseJobs, Vacancy_details vacancy)
+        {
+        }
+
         private void Submit_bt_Click(object sender, EventArgs e)
         {
 
