@@ -80,7 +80,7 @@ namespace JobApp
         {
             try
             {
-                var Id = (int)dgv_vacacies.SelectedRows[0].Cells["id"].Value;
+                var Id = (int)dgv_vacacies.SelectedRows[0].Cells["id"].ColumnIndex;
 
                 var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
 
