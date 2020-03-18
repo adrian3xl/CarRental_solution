@@ -78,13 +78,21 @@ namespace JobApp
 
         private void apply_bt_Click(object sender, EventArgs e)
         {
-           // var Id = (int)dgv_vacacies.SelectedRows[0].Cells.["id"];
-          //  var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
+            try
+            {
+                var Id = (int)dgv_vacacies.SelectedRows[0].Cells["id"].Value;
+                var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
 
-            var Submit_jobapplication = new Submit_jobapplication();
+                var Submit_jobapplication = new Submit_jobapplication();
 
+                Submit_jobapplication.ShowDialog();
 
+            }
+            catch (Exception)
+            {
 
+              //  throw;
+            }
 
 
 
