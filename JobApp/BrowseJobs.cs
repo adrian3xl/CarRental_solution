@@ -38,7 +38,7 @@ namespace JobApp
 
                 var vacancy = _db.Vacancy_details.Select(q => new
                 {
-                    // vacancyID = q.id,
+                    ID = q.id,
                     Jobtitle = q.Job_title,
                     JobRequirements = q.Job_Requirements
            ,
@@ -48,12 +48,12 @@ namespace JobApp
                     Employmenttype = q.Employment_type
            ,
                     Submitdeadline = q.Submit_deadline,
-                    Jobcategory = q.Job_category,
-                    q.id
+                    Jobcategory = q.Job_category
+                   // q.id
                 }).ToList();
 
                 dgv_vacacies.DataSource = vacancy;
-                // dgv_vacacies.Columns[0].HeaderText = "ID";
+                dgv_vacacies.Columns["id"].HeaderText = "ID";
                 dgv_vacacies.Columns["Jobtitle"].HeaderText = "Job Title";
                 dgv_vacacies.Columns["JobDiscription"].HeaderText = "Job Discription";
                 dgv_vacacies.Columns["JobRequirements"].HeaderText = "Job Requirements";
@@ -61,7 +61,7 @@ namespace JobApp
                 dgv_vacacies.Columns["Employmenttype"].HeaderText = "Employment Type";
                 dgv_vacacies.Columns["Submitdeadline"].HeaderText = "Submit deadline";
                 dgv_vacacies.Columns["Jobcategory"].HeaderText = "Job Category";
-                dgv_vacacies.Columns[7].Visible = false;
+                dgv_vacacies.Columns["id"].Visible = false;
 
 
 
