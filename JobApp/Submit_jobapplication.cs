@@ -22,6 +22,7 @@ namespace JobApp
 
         private void Submit_bt_Click(object sender, EventArgs e)
         {
+           
 
             var resume = new Resume_details
             {
@@ -31,19 +32,27 @@ namespace JobApp
                 Email = email_tb.Text,
                 PriorWork_Experiences = exper_tb.Text,
                 Qualifications = qualifica_tb.Text
+            
+
+        };
+
+            _db.Resume_details.Add(resume);
+            _db.SaveChanges();
 
 
-            };
+            lb_id.Text = resume.id.ToString();
 
-            // _db.SaveChanges();
+     ;
 
             var Id = int.Parse(lb_id.Text);
             var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
            
          //   _db.SaveChanges();
 
-            _db.Job_Applications_details.Add(this, vacancy, resume);
+           // _db.Job_Applications_details.Add(this, vacancy, resume);
             _db.SaveChanges();
+
+            MessageBox.Show("you have sucessfully applied for position");
         }
 
         private void Cancel_bt_Click(object sender, EventArgs e)
