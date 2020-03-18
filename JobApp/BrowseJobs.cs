@@ -10,8 +10,6 @@ namespace JobApp
 
         private readonly Jobapp_dbEntities _db;
 
-        public bool AutoGenerateColumns { get; private set; }
-
         public BrowseJobs()
         {
             InitializeComponent();
@@ -27,6 +25,7 @@ namespace JobApp
         {
             //dgv_vacacies.AutoGenerateColumns = false;
             Jobapp_dbEntities _db = new Jobapp_dbEntities();
+           
             var vacancy = _db.Vacancy_details.Where(q => q.Job_title.Contains(textox_search.Text.Trim()) || q.Job_category == textox_search.Text).ToList();
             dgv_vacacies.DataSource = vacancy;
 
@@ -75,19 +74,24 @@ namespace JobApp
         }
 
 
-        private void Button1_Click(object sender, EventArgs e)
+     
+
+        private void apply_bt_Click(object sender, EventArgs e)
         {
             // var Id = (int)dgv_vacacies.SelectedRows[0].Cells.[0];
             //    var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
-
-            var jobseeker_addresume = new Jobseeker_submit_resume
+            var Submit_jobapplication = new Submit_jobapplication()
             {
-
-
                 MdiParent = this.MdiParent
             };
-            jobseeker_addresume.ShowDialog();
-            //  Close();
+
+            Submit_jobapplication.ShowDialog();
+
+
+
+
+
+
         }
     }
 }

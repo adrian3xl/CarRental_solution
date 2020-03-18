@@ -128,12 +128,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Jobapp_db.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Jobseeker_submit_resume.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Jobseeker_submit_resume.Designer.cs">
-      <DependentUpon>Jobseeker_submit_resume.cs</DependentUpon>
-    </Compile>
     <Compile Include="Jobseeker_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
@@ -169,6 +163,12 @@
     <Compile Include="Resume_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
+    <Compile Include="Submit_jobapplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Submit_jobapplication.Designer.cs">
+      <DependentUpon>Submit_jobapplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vacancy_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
@@ -193,9 +193,6 @@
     <EmbeddedResource Include="JobApp_Main_window.resx">
       <DependentUpon>JobApp_Main_window.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Jobseeker_submit_resume.resx">
-      <DependentUpon>Jobseeker_submit_resume.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="JobSeeker_loginView.resx">
       <DependentUpon>JobSeeker_loginView.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,6 +215,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Submit_jobapplication.resx">
+      <DependentUpon>Submit_jobapplication.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="Jobapp_db.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Jobapp_db.Designer.cs</LastGenOutput>
