@@ -6,6 +6,7 @@ namespace JobApp
     public partial class Employer_signup : Form
     {
         private readonly Jobapp_dbEntities _db;
+
         public Employer_signup()
         {
             InitializeComponent();

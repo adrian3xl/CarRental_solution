@@ -8,5 +8,10 @@ namespace JobApp
         {
             InitializeComponent();
         }
+
+        private void Add_vacancy_bt_Click(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

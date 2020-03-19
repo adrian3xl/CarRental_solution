@@ -69,6 +69,7 @@
     <Compile Include="Add_Edit_Jobseeker_resume.Designer.cs">
       <DependentUpon>Add_Edit_Jobseeker_resume.cs</DependentUpon>
     </Compile>
+    <Compile Include="DisplayVacancy1.cs" />
     <Compile Include="Employer_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
@@ -101,6 +102,24 @@
     </Compile>
     <Compile Include="Employer_signup.Designer.cs">
       <DependentUpon>Employer_signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayVacancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayVacancy.Designer.cs">
+      <DependentUpon>DisplayVacancy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Vacancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Vacancy.Designer.cs">
+      <DependentUpon>Add_Vacancy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditVacancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditVacancy.Designer.cs">
+      <DependentUpon>EditVacancy.cs</DependentUpon>
     </Compile>
     <Compile Include="Jobapp_dbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -189,6 +208,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employer_signup.resx">
       <DependentUpon>Employer_signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayVacancy.resx">
+      <DependentUpon>DisplayVacancy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Vacancy.resx">
+      <DependentUpon>Add_Vacancy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditVacancy.resx">
+      <DependentUpon>EditVacancy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="JobApp_Main_window.resx">
       <DependentUpon>JobApp_Main_window.cs</DependentUpon>

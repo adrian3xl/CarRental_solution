@@ -66,6 +66,7 @@
             this.Add_vacancy_bt.TabIndex = 39;
             this.Add_vacancy_bt.Text = "Add vacancy";
             this.Add_vacancy_bt.UseVisualStyleBackColor = false;
+            this.Add_vacancy_bt.Click += new System.EventHandler(this.Add_vacancy_bt_Click);
             // 
             // label1
             // 

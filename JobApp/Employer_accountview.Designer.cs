@@ -28,48 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.CompName = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.indust_type_tb = new System.Windows.Forms.TextBox();
-            this.w_force_tb = new System.Windows.Forms.TextBox();
-            this.compan_bk_tb = new System.Windows.Forms.TextBox();
-            this.compa_loca_tb = new System.Windows.Forms.TextBox();
-            this.comp_email_tb = new System.Windows.Forms.TextBox();
-            this.comp_num_tb = new System.Windows.Forms.TextBox();
-            this.company_name_tb = new System.Windows.Forms.TextBox();
             this.ManageVacancy_menustrip = new System.Windows.Forms.ToolStripMenuItem();
             this.mainWindow_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.manageApplicantsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ContactNumber = new System.Windows.Forms.Label();
+            this.CompEmail = new System.Windows.Forms.Label();
+            this.compLoc = new System.Windows.Forms.Label();
+            this.IndType = new System.Windows.Forms.Label();
+            this.WorkNum = new System.Windows.Forms.Label();
+            this.CompBack = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // CompName
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(534, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 39);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Employer Account";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(284, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 17);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Company Name";
+            this.CompName.AutoSize = true;
+            this.CompName.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CompName.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CompName.Location = new System.Drawing.Point(542, 20);
+            this.CompName.Name = "CompName";
+            this.CompName.Size = new System.Drawing.Size(244, 39);
+            this.CompName.TabIndex = 13;
+            this.CompName.Text = "Employer Account";
+            this.CompName.Click += new System.EventHandler(this.CompName_Click);
             // 
             // label9
             // 
@@ -131,71 +120,13 @@
             this.label7.TabIndex = 28;
             this.label7.Text = "Workforce Number";
             // 
-            // indust_type_tb
-            // 
-            this.indust_type_tb.Location = new System.Drawing.Point(440, 300);
-            this.indust_type_tb.Name = "indust_type_tb";
-            this.indust_type_tb.ReadOnly = true;
-            this.indust_type_tb.Size = new System.Drawing.Size(159, 20);
-            this.indust_type_tb.TabIndex = 30;
-            // 
-            // w_force_tb
-            // 
-            this.w_force_tb.Location = new System.Drawing.Point(440, 360);
-            this.w_force_tb.Name = "w_force_tb";
-            this.w_force_tb.ReadOnly = true;
-            this.w_force_tb.Size = new System.Drawing.Size(63, 20);
-            this.w_force_tb.TabIndex = 31;
-            // 
-            // compan_bk_tb
-            // 
-            this.compan_bk_tb.Location = new System.Drawing.Point(817, 109);
-            this.compan_bk_tb.Multiline = true;
-            this.compan_bk_tb.Name = "compan_bk_tb";
-            this.compan_bk_tb.ReadOnly = true;
-            this.compan_bk_tb.Size = new System.Drawing.Size(315, 160);
-            this.compan_bk_tb.TabIndex = 32;
-            // 
-            // compa_loca_tb
-            // 
-            this.compa_loca_tb.Location = new System.Drawing.Point(440, 255);
-            this.compa_loca_tb.Multiline = true;
-            this.compa_loca_tb.Name = "compa_loca_tb";
-            this.compa_loca_tb.ReadOnly = true;
-            this.compa_loca_tb.Size = new System.Drawing.Size(267, 17);
-            this.compa_loca_tb.TabIndex = 33;
-            // 
-            // comp_email_tb
-            // 
-            this.comp_email_tb.Location = new System.Drawing.Point(440, 210);
-            this.comp_email_tb.Name = "comp_email_tb";
-            this.comp_email_tb.ReadOnly = true;
-            this.comp_email_tb.Size = new System.Drawing.Size(159, 20);
-            this.comp_email_tb.TabIndex = 34;
-            // 
-            // comp_num_tb
-            // 
-            this.comp_num_tb.Location = new System.Drawing.Point(440, 165);
-            this.comp_num_tb.Name = "comp_num_tb";
-            this.comp_num_tb.ReadOnly = true;
-            this.comp_num_tb.Size = new System.Drawing.Size(159, 20);
-            this.comp_num_tb.TabIndex = 35;
-            // 
-            // company_name_tb
-            // 
-            this.company_name_tb.Location = new System.Drawing.Point(440, 109);
-            this.company_name_tb.Name = "company_name_tb";
-            this.company_name_tb.ReadOnly = true;
-            this.company_name_tb.Size = new System.Drawing.Size(159, 20);
-            this.company_name_tb.TabIndex = 44;
-            this.company_name_tb.TextChanged += new System.EventHandler(this.Employer_accountview_Load);
-            // 
             // ManageVacancy_menustrip
             // 
             this.ManageVacancy_menustrip.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ManageVacancy_menustrip.Name = "ManageVacancy_menustrip";
             this.ManageVacancy_menustrip.Size = new System.Drawing.Size(170, 19);
             this.ManageVacancy_menustrip.Text = "Manage Vacancy";
+            this.ManageVacancy_menustrip.Click += new System.EventHandler(this.Show_vacancies);
             // 
             // mainWindow_MenuItem
             // 
@@ -226,27 +157,87 @@
             this.manageApplicantsToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
             this.manageApplicantsToolStripMenuItem.Text = "Manage Applicants";
             // 
+            // ContactNumber
+            // 
+            this.ContactNumber.AutoSize = true;
+            this.ContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ContactNumber.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.ContactNumber.Location = new System.Drawing.Point(440, 166);
+            this.ContactNumber.Name = "ContactNumber";
+            this.ContactNumber.Size = new System.Drawing.Size(51, 16);
+            this.ContactNumber.TabIndex = 45;
+            this.ContactNumber.Text = "label1";
+            // 
+            // CompEmail
+            // 
+            this.CompEmail.AutoSize = true;
+            this.CompEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CompEmail.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.CompEmail.Location = new System.Drawing.Point(440, 214);
+            this.CompEmail.Name = "CompEmail";
+            this.CompEmail.Size = new System.Drawing.Size(51, 16);
+            this.CompEmail.TabIndex = 46;
+            this.CompEmail.Text = "label2";
+            // 
+            // compLoc
+            // 
+            this.compLoc.AutoSize = true;
+            this.compLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.compLoc.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.compLoc.Location = new System.Drawing.Point(440, 255);
+            this.compLoc.Name = "compLoc";
+            this.compLoc.Size = new System.Drawing.Size(51, 16);
+            this.compLoc.TabIndex = 47;
+            this.compLoc.Text = "label5";
+            // 
+            // IndType
+            // 
+            this.IndType.AutoSize = true;
+            this.IndType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IndType.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.IndType.Location = new System.Drawing.Point(440, 304);
+            this.IndType.Name = "IndType";
+            this.IndType.Size = new System.Drawing.Size(59, 16);
+            this.IndType.TabIndex = 48;
+            this.IndType.Text = "label10";
+            // 
+            // WorkNum
+            // 
+            this.WorkNum.AutoSize = true;
+            this.WorkNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WorkNum.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.WorkNum.Location = new System.Drawing.Point(440, 363);
+            this.WorkNum.Name = "WorkNum";
+            this.WorkNum.Size = new System.Drawing.Size(59, 16);
+            this.WorkNum.TabIndex = 49;
+            this.WorkNum.Text = "label11";
+            // 
+            // CompBack
+            // 
+            this.CompBack.Location = new System.Drawing.Point(824, 113);
+            this.CompBack.Name = "CompBack";
+            this.CompBack.Size = new System.Drawing.Size(303, 168);
+            this.CompBack.TabIndex = 50;
+            // 
             // Employer_accountview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1174, 492);
-            this.Controls.Add(this.company_name_tb);
+            this.Controls.Add(this.CompBack);
+            this.Controls.Add(this.WorkNum);
+            this.Controls.Add(this.IndType);
+            this.Controls.Add(this.compLoc);
+            this.Controls.Add(this.CompEmail);
+            this.Controls.Add(this.ContactNumber);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.comp_num_tb);
-            this.Controls.Add(this.comp_email_tb);
-            this.Controls.Add(this.compa_loca_tb);
-            this.Controls.Add(this.compan_bk_tb);
-            this.Controls.Add(this.w_force_tb);
-            this.Controls.Add(this.indust_type_tb);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.CompName);
             this.Name = "Employer_accountview";
             this.Text = "Job Application Management System";
             this.Load += new System.EventHandler(this.Employer_accountview_Load);
@@ -259,24 +250,22 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label CompName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox indust_type_tb;
-        private System.Windows.Forms.TextBox w_force_tb;
-        private System.Windows.Forms.TextBox compan_bk_tb;
-        private System.Windows.Forms.TextBox compa_loca_tb;
-        private System.Windows.Forms.TextBox comp_email_tb;
-        private System.Windows.Forms.TextBox comp_num_tb;
-        private System.Windows.Forms.TextBox company_name_tb;
         private System.Windows.Forms.ToolStripMenuItem ManageVacancy_menustrip;
         private System.Windows.Forms.ToolStripMenuItem mainWindow_MenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem manageApplicantsToolStripMenuItem;
+        private System.Windows.Forms.Label ContactNumber;
+        private System.Windows.Forms.Label CompEmail;
+        private System.Windows.Forms.Label compLoc;
+        private System.Windows.Forms.Label IndType;
+        private System.Windows.Forms.Label WorkNum;
+        private System.Windows.Forms.Panel CompBack;
     }
 }

@@ -24,14 +24,14 @@ namespace JobApp
                 string password = company_pass_tb.Text;
                 bool IsValid = true;
                 var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == password);
-
+               
                 if (Employer_details == null)
                 {
                     IsValid = false;
                     MessageBox.Show("Invalid user name and password entered");
-
-
-
+                    
+         
+                    
                 }
 
                 if (IsValid)
@@ -39,9 +39,14 @@ namespace JobApp
 
                     MessageBox.Show("Welcome ");
 
-                    Employer_accountview Employer_accountview = new Employer_accountview();
 
+                    var EmployerID = Employer_details.id;
+                    
+                    Employer_accountview Employer_accountview = new Employer_accountview(EmployerID);
+
+                  
                     Employer_accountview.Show();
+
 
                 }
 
