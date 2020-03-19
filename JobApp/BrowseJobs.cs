@@ -10,8 +10,6 @@ namespace JobApp
 
         private readonly Jobapp_dbEntities _db;
 
-        public bool AutoGenerateColumns { get; private set; }
-
         public BrowseJobs()
         {
             InitializeComponent();
@@ -27,6 +25,7 @@ namespace JobApp
         {
             //dgv_vacacies.AutoGenerateColumns = false;
             Jobapp_dbEntities _db = new Jobapp_dbEntities();
+
             var vacancy = _db.Vacancy_details.Where(q => q.Job_title.Contains(textox_search.Text.Trim()) || q.Job_category == textox_search.Text).ToList();
             dgv_vacacies.DataSource = vacancy;
 
@@ -39,7 +38,7 @@ namespace JobApp
 
                 var vacancy = _db.Vacancy_details.Select(q => new
                 {
-                    // vacancyID = q.id,
+                    ID = q.id,
                     Jobtitle = q.Job_title,
                     JobRequirements = q.Job_Requirements
            ,
@@ -49,12 +48,12 @@ namespace JobApp
                     Employmenttype = q.Employment_type
            ,
                     Submitdeadline = q.Submit_deadline,
-                    Jobcategory = q.Job_category,
-                    q.id
+                    Jobcategory = q.Job_category
+                   // q.id
                 }).ToList();
 
                 dgv_vacacies.DataSource = vacancy;
-                // dgv_vacacies.Columns[0].HeaderText = "ID";
+                dgv_vacacies.Columns["id"].HeaderText = "ID";
                 dgv_vacacies.Columns["Jobtitle"].HeaderText = "Job Title";
                 dgv_vacacies.Columns["JobDiscription"].HeaderText = "Job Discription";
                 dgv_vacacies.Columns["JobRequirements"].HeaderText = "Job Requirements";
@@ -62,30 +61,46 @@ namespace JobApp
                 dgv_vacacies.Columns["Employmenttype"].HeaderText = "Employment Type";
                 dgv_vacacies.Columns["Submitdeadline"].HeaderText = "Submit deadline";
                 dgv_vacacies.Columns["Jobcategory"].HeaderText = "Job Category";
-                dgv_vacacies.Columns[7].Visible = false;
+                dgv_vacacies.Columns["id"].Visible = false;
 
 
 
             }
             catch (Exception)
             {
-                MessageBox.Show("");
+                MessageBox.Show("Error");
                 //  throw;
             }
         }
 
 
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            // var Id = (int)dgv_vacacies.SelectedRows[0].Cells.[0];
-            //    var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
 
-            var jobseeker_addresume = new Jobseeker_submit_resume
+
+        private void apply_bt_Click(object sender, EventArgs e)
+        {
+            try
             {
-                MdiParent = this.MdiParent
-            };
-            jobseeker_addresume.ShowDialog();
-            //  Close();
+                var Id = (int)dgv_vacacies.SelectedRows[0].Cells["id"].ColumnIndex;
+
+                var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
+
+                var Submit_jobapplication = new Submit_jobapplication(this,vacancy);
+
+                Submit_jobapplication.Show();
+
+            }
+            catch (Exception)
+            {
+
+               throw;
+            }
+
+
+
+
+
+
+
         }
     }
 }

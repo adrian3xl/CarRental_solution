@@ -46,6 +46,7 @@
             this.Search_bt = new System.Windows.Forms.Button();
             this.apply_bt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vacacies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employerdetailsBindingSource)).BeginInit();
@@ -133,7 +134,7 @@
             this.dgv_vacacies.Location = new System.Drawing.Point(97, 121);
             this.dgv_vacacies.Name = "dgv_vacacies";
             this.dgv_vacacies.ReadOnly = true;
-            this.dgv_vacacies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
+            this.dgv_vacacies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_vacacies.Size = new System.Drawing.Size(786, 298);
             this.dgv_vacacies.TabIndex = 11;
             // 
@@ -184,7 +185,7 @@
             this.apply_bt.TabIndex = 13;
             this.apply_bt.Text = "APPLY";
             this.apply_bt.UseVisualStyleBackColor = true;
-            this.apply_bt.Click += new System.EventHandler(this.Button1_Click);
+            this.apply_bt.Click += new System.EventHandler(this.apply_bt_Click);
             // 
             // label1
             // 
@@ -197,6 +198,16 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "*Select vacancy and then click apply button";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(897, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(29, 13);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "lb_id";
+            this.label2.Visible = false;
+            // 
             // BrowseJobs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -204,6 +215,7 @@
             this.BackgroundImage = global::JobApp.Properties.Resources.download;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(948, 559);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.apply_bt);
             this.Controls.Add(this.Search_bt);
@@ -242,5 +254,6 @@
         private System.Windows.Forms.Button Search_bt;
         private System.Windows.Forms.Button apply_bt;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
