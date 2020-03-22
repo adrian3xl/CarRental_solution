@@ -9,6 +9,7 @@
         <EntityTypeShape EntityType="Jobapp_dbModel.Job_Applications_details" Width="1.5" PointX="5.25" PointY="7" />
         <EntityTypeShape EntityType="Jobapp_dbModel.Jobseeker_details" Width="1.5" PointX="0.75" PointY="5.25" />
         <EntityTypeShape EntityType="Jobapp_dbModel.Resume_details" Width="1.5" PointX="3" PointY="8.375" />
+        <EntityTypeShape EntityType="Jobapp_dbModel.sysdiagram" Width="1.5" PointX="5.75" PointY="3" />
         <EntityTypeShape EntityType="Jobapp_dbModel.Vacancy_details" Width="1.5" PointX="3" PointY="0.75" />
         <AssociationConnector Association="Jobapp_dbModel.FK_Vacancy_details_Employer_details" />
         <AssociationConnector Association="Jobapp_dbModel.FK_Job_Applications_Job_Applications" />

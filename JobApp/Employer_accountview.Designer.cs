@@ -44,7 +44,7 @@
             this.compLoc = new System.Windows.Forms.Label();
             this.IndType = new System.Windows.Forms.Label();
             this.WorkNum = new System.Windows.Forms.Label();
-            this.CompBack = new System.Windows.Forms.Panel();
+            this.CompBack = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,10 +214,12 @@
             // 
             // CompBack
             // 
-            this.CompBack.Location = new System.Drawing.Point(824, 113);
+            this.CompBack.Enabled = false;
+            this.CompBack.Location = new System.Drawing.Point(782, 115);
+            this.CompBack.Multiline = true;
             this.CompBack.Name = "CompBack";
-            this.CompBack.Size = new System.Drawing.Size(303, 168);
-            this.CompBack.TabIndex = 50;
+            this.CompBack.Size = new System.Drawing.Size(350, 167);
+            this.CompBack.TabIndex = 51;
             // 
             // Employer_accountview
             // 
@@ -266,6 +268,6 @@
         private System.Windows.Forms.Label compLoc;
         private System.Windows.Forms.Label IndType;
         private System.Windows.Forms.Label WorkNum;
-        private System.Windows.Forms.Panel CompBack;
+        private System.Windows.Forms.TextBox CompBack;
     }
 }
