@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Company_name_tb = new System.Windows.Forms.TextBox();
@@ -35,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Enter_emp_bt = new System.Windows.Forms.Button();
             this.cancel_bt = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -106,6 +108,11 @@
             this.cancel_bt.UseVisualStyleBackColor = false;
             this.cancel_bt.Click += new System.EventHandler(this.cancel_bt_Click);
             // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.Text = "reminder";
+            this.notifyIcon1.Visible = true;
+            // 
             // Employer_loginview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -134,5 +141,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button Enter_emp_bt;
         private System.Windows.Forms.Button cancel_bt;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }

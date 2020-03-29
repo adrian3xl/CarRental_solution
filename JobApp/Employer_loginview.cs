@@ -17,6 +17,7 @@ namespace JobApp
 
         private void Enter_emp_bt_Click(object sender, EventArgs e)
         {
+            
             try
             {
 
@@ -36,9 +37,12 @@ namespace JobApp
 
                 if (IsValid)
                 {
+                    
+                    MessageBox.Show("Welcome");
+                    
+                    
 
-                    MessageBox.Show("Welcome ");
-
+                   
 
                     var EmployerID = Employer_details.id;
                     

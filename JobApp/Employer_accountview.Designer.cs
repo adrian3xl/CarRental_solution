@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employer_accountview));
             this.CompName = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,7 +47,16 @@
             this.IndType = new System.Windows.Forms.Label();
             this.WorkNum = new System.Windows.Forms.Label();
             this.CompBack = new System.Windows.Forms.TextBox();
+            this.Reminder_icon = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.rEMINDERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.rememberToCheckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Notification = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            this.Reminder_icon.SuspendLayout();
             this.SuspendLayout();
             // 
             // CompName
@@ -58,7 +69,6 @@
             this.CompName.Size = new System.Drawing.Size(244, 39);
             this.CompName.TabIndex = 13;
             this.CompName.Text = "Employer Account";
-            this.CompName.Click += new System.EventHandler(this.CompName_Click);
             // 
             // label9
             // 
@@ -84,7 +94,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(894, 76);
+            this.label4.Location = new System.Drawing.Point(776, 101);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 17);
             this.label4.TabIndex = 25;
@@ -215,17 +225,85 @@
             // CompBack
             // 
             this.CompBack.Enabled = false;
-            this.CompBack.Location = new System.Drawing.Point(782, 115);
+            this.CompBack.Location = new System.Drawing.Point(672, 132);
             this.CompBack.Multiline = true;
             this.CompBack.Name = "CompBack";
-            this.CompBack.Size = new System.Drawing.Size(350, 167);
+            this.CompBack.Size = new System.Drawing.Size(350, 84);
             this.CompBack.TabIndex = 51;
+            this.CompBack.TextChanged += new System.EventHandler(this.CompBack_TextChanged);
+            // 
+            // Reminder_icon
+            // 
+            this.Reminder_icon.BackColor = System.Drawing.Color.Goldenrod;
+            this.Reminder_icon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reminder_icon.BackgroundImage")));
+            this.Reminder_icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Reminder_icon.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reminder_icon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rEMINDERToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.rememberToCheckToolStripMenuItem,
+            this.forApplicationsToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.closeToolStripMenuItem});
+            this.Reminder_icon.Name = "contextMenuStrip1";
+            this.Reminder_icon.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.Reminder_icon.ShowImageMargin = false;
+            this.Reminder_icon.Size = new System.Drawing.Size(175, 104);
+            this.Reminder_icon.Text = "REMINDER!";
+            // 
+            // rEMINDERToolStripMenuItem
+            // 
+            this.rEMINDERToolStripMenuItem.Enabled = false;
+            this.rEMINDERToolStripMenuItem.Name = "rEMINDERToolStripMenuItem";
+            this.rEMINDERToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.rEMINDERToolStripMenuItem.Text = "REMINDER!";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(171, 6);
+            // 
+            // rememberToCheckToolStripMenuItem
+            // 
+            this.rememberToCheckToolStripMenuItem.Enabled = false;
+            this.rememberToCheckToolStripMenuItem.Name = "rememberToCheckToolStripMenuItem";
+            this.rememberToCheckToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.rememberToCheckToolStripMenuItem.Text = "Remember to check";
+            // 
+            // forApplicationsToolStripMenuItem
+            // 
+            this.forApplicationsToolStripMenuItem.Enabled = false;
+            this.forApplicationsToolStripMenuItem.Name = "forApplicationsToolStripMenuItem";
+            this.forApplicationsToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.forApplicationsToolStripMenuItem.Text = "for job applications.";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(171, 6);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.closeToolStripMenuItem.Text = "Close";
+            // 
+            // Notification
+            // 
+            this.Notification.Image = ((System.Drawing.Image)(resources.GetObject("Notification.Image")));
+            this.Notification.Location = new System.Drawing.Point(197, 12);
+            this.Notification.Name = "Notification";
+            this.Notification.Size = new System.Drawing.Size(94, 91);
+            this.Notification.TabIndex = 52;
+            this.Notification.UseVisualStyleBackColor = true;
+            this.Notification.Click += new System.EventHandler(this.Notification_Click);
             // 
             // Employer_accountview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 492);
+            this.ClientSize = new System.Drawing.Size(1059, 492);
+            this.Controls.Add(this.Notification);
             this.Controls.Add(this.CompBack);
             this.Controls.Add(this.WorkNum);
             this.Controls.Add(this.IndType);
@@ -245,6 +323,7 @@
             this.Load += new System.EventHandler(this.Employer_accountview_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.Reminder_icon.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -269,5 +348,13 @@
         private System.Windows.Forms.Label IndType;
         private System.Windows.Forms.Label WorkNum;
         private System.Windows.Forms.TextBox CompBack;
+        private System.Windows.Forms.ContextMenuStrip Reminder_icon;
+        private System.Windows.Forms.ToolStripMenuItem rEMINDERToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rememberToCheckToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem forApplicationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.Button Notification;
     }
 }
