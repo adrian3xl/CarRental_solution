@@ -15,6 +15,12 @@ namespace JobApp
             Id = ID;
             InitializeComponent();
             Populate();
+
+            /*Popup pictureBox1 = new Popup();
+
+              pictureBox1.Show();
+              */
+            
         }
 
         private void Employer_accountview_Load(object sender, EventArgs e)
