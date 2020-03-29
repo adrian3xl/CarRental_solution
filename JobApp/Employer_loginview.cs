@@ -46,10 +46,10 @@ namespace JobApp
 
                     var EmployerID = Employer_details.id;
                     
-                    Employer_accountview Employer_accountview = new Employer_accountview(EmployerID);
+                   var Employer_accountview = new Employer_accountview(EmployerID);
 
                   
-                    Employer_accountview.Show();
+                    Employer_accountview.ShowDialog();
 
 
                 }

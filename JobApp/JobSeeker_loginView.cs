@@ -25,7 +25,7 @@ namespace JobApp
                 if (Jobseeker_details == null)
                 {
                     IsValid = false;
-                    MessageBox.Show("Required field is empty");
+                    MessageBox.Show("Please re-enter user name and password");
                 }
 
                 if (IsValid)

@@ -42,14 +42,22 @@ namespace JobApp
 
             lb_id.Text = resume.id.ToString();
 
-     ;
+     
 
             var Id = int.Parse(lb_id.Text);
             var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
-           
-         //   _db.SaveChanges();
 
-           // _db.Job_Applications_details.Add(this, vacancy, resume);
+            var jobapplication = new Job_Applications_details()
+            {
+                Resume_details = resume,
+                Vacancy_details=vacancy
+
+            };
+
+
+           _db.Job_Applications_details.Add(jobapplication);
+
+          //  _db.Job_Applications_details.AddRange(Resume_details);
             _db.SaveChanges();
 
             MessageBox.Show("you have sucessfully applied for position");
