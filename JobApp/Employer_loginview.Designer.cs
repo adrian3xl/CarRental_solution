@@ -136,41 +136,41 @@
             this.toolStripMenuItem2,
             this.closeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(200, 126);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(200, 104);
             this.contextMenuStrip1.Text = "REMINDER!";
             // 
             // rEMINDERToolStripMenuItem
             // 
             this.rEMINDERToolStripMenuItem.Name = "rEMINDERToolStripMenuItem";
-            this.rEMINDERToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rEMINDERToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.rEMINDERToolStripMenuItem.Text = "REMINDER!";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 6);
             // 
             // rememberToCheckToolStripMenuItem
             // 
             this.rememberToCheckToolStripMenuItem.Name = "rememberToCheckToolStripMenuItem";
-            this.rememberToCheckToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rememberToCheckToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.rememberToCheckToolStripMenuItem.Text = "Remember to check";
             // 
             // forApplicationsToolStripMenuItem
             // 
             this.forApplicationsToolStripMenuItem.Name = "forApplicationsToolStripMenuItem";
-            this.forApplicationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.forApplicationsToolStripMenuItem.Text = "for applications.";
+            this.forApplicationsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
+            this.forApplicationsToolStripMenuItem.Text = "for job applications.";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(196, 6);
             // 
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
             // Employer_loginview
