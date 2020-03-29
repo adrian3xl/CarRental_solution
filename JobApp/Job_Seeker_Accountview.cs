@@ -62,6 +62,16 @@ namespace JobApp
             Manage_resumeview.Show();
         }
 
+        private void Notification_Click(object sender, EventArgs e)
+        {
+            Reminder_icon.Show(694, 6);
+        }
+
+        private void jobSeekerSignUpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
         //   private void addResumeToolStripMenuItem_Click(object sender, EventArgs e)
         //{
         // var Education_level;

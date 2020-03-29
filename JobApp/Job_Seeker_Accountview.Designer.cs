@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Job_Seeker_Accountview));
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.findJobsTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.browseJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advanceSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salaryTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeekerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Manageresume_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -45,10 +45,19 @@
             this.jobapp_dbDataSet = new JobApp.Jobapp_dbDataSet();
             this.label3 = new System.Windows.Forms.Label();
             this.job_Applications_detailsTableAdapter = new JobApp.Jobapp_dbDataSetTableAdapters.Job_Applications_detailsTableAdapter();
+            this.Notification = new System.Windows.Forms.Button();
+            this.Reminder_icon = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.rEMINDERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.rememberToCheckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gv_appstatus_list)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobApplicationsdetailsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobapp_dbDataSet)).BeginInit();
+            this.Reminder_icon.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -79,12 +88,11 @@
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.findJobsTool_itembox,
-            this.salaryTool_itembox,
-            this.jobSeeker_itembox,
-            this.Manageresume_MenuItem});
+            this.Manageresume_MenuItem,
+            this.jobSeeker_itembox});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(110, 508);
+            this.menuStrip1.Size = new System.Drawing.Size(123, 508);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -111,27 +119,21 @@
             this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.advanceSearchToolStripMenuItem.Text = "Advance Search";
             // 
-            // salaryTool_itembox
-            // 
-            this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(103, 19);
-            this.salaryTool_itembox.Text = "Salary Tool";
-            // 
             // jobSeeker_itembox
             // 
             this.jobSeeker_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jobSeekerSignUpToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(103, 19);
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(116, 19);
             this.jobSeeker_itembox.Text = "Job Seeker";
             // 
             // jobSeekerSignUpToolStripMenuItem
             // 
             this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
-            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign out";
+            this.jobSeekerSignUpToolStripMenuItem.Click += new System.EventHandler(this.jobSeekerSignUpToolStripMenuItem_Click);
             // 
             // Manageresume_MenuItem
             // 
@@ -187,11 +189,78 @@
             // 
             this.job_Applications_detailsTableAdapter.ClearBeforeFill = true;
             // 
+            // Notification
+            // 
+            this.Notification.Image = ((System.Drawing.Image)(resources.GetObject("Notification.Image")));
+            this.Notification.Location = new System.Drawing.Point(694, 6);
+            this.Notification.Name = "Notification";
+            this.Notification.Size = new System.Drawing.Size(94, 91);
+            this.Notification.TabIndex = 53;
+            this.Notification.UseVisualStyleBackColor = true;
+            this.Notification.Click += new System.EventHandler(this.Notification_Click);
+            // 
+            // Reminder_icon
+            // 
+            this.Reminder_icon.BackColor = System.Drawing.Color.Goldenrod;
+            this.Reminder_icon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reminder_icon.BackgroundImage")));
+            this.Reminder_icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Reminder_icon.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reminder_icon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rEMINDERToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.rememberToCheckToolStripMenuItem,
+            this.forApplicationsToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.closeToolStripMenuItem});
+            this.Reminder_icon.Name = "contextMenuStrip1";
+            this.Reminder_icon.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.Reminder_icon.ShowImageMargin = false;
+            this.Reminder_icon.Size = new System.Drawing.Size(164, 104);
+            this.Reminder_icon.Text = "REMINDER!";
+            // 
+            // rEMINDERToolStripMenuItem
+            // 
+            this.rEMINDERToolStripMenuItem.Enabled = false;
+            this.rEMINDERToolStripMenuItem.Name = "rEMINDERToolStripMenuItem";
+            this.rEMINDERToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.rEMINDERToolStripMenuItem.Text = "REMINDER!";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(160, 6);
+            // 
+            // rememberToCheckToolStripMenuItem
+            // 
+            this.rememberToCheckToolStripMenuItem.Enabled = false;
+            this.rememberToCheckToolStripMenuItem.Name = "rememberToCheckToolStripMenuItem";
+            this.rememberToCheckToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.rememberToCheckToolStripMenuItem.Text = "Salary tool update";
+            // 
+            // forApplicationsToolStripMenuItem
+            // 
+            this.forApplicationsToolStripMenuItem.Enabled = false;
+            this.forApplicationsToolStripMenuItem.Name = "forApplicationsToolStripMenuItem";
+            this.forApplicationsToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.forApplicationsToolStripMenuItem.Text = "is ready";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(160, 6);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
+            this.closeToolStripMenuItem.Text = "Close";
+            // 
             // Job_Seeker_Accountview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 508);
+            this.Controls.Add(this.Notification);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gv_appstatus_list);
             this.Controls.Add(this.user_name_tb);
@@ -206,6 +275,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gv_appstatus_list)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobApplicationsdetailsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobapp_dbDataSet)).EndInit();
+            this.Reminder_icon.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,7 +289,6 @@
         private System.Windows.Forms.ToolStripMenuItem findJobsTool_itembox;
         private System.Windows.Forms.ToolStripMenuItem browseJobsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advanceSearchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salaryTool_itembox;
         private System.Windows.Forms.ToolStripMenuItem jobSeeker_itembox;
         private System.Windows.Forms.ToolStripMenuItem jobSeekerSignUpToolStripMenuItem;
         private System.Windows.Forms.Label user_name_tb;
@@ -229,5 +298,13 @@
         private Jobapp_dbDataSet jobapp_dbDataSet;
         private System.Windows.Forms.BindingSource jobApplicationsdetailsBindingSource;
         private Jobapp_dbDataSetTableAdapters.Job_Applications_detailsTableAdapter job_Applications_detailsTableAdapter;
+        private System.Windows.Forms.Button Notification;
+        private System.Windows.Forms.ContextMenuStrip Reminder_icon;
+        private System.Windows.Forms.ToolStripMenuItem rEMINDERToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rememberToCheckToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem forApplicationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
     }
 }
