@@ -66,7 +66,7 @@ namespace JobApp
 
         private void Notification_Click(object sender, EventArgs e)
         {
-            Reminder_icon.Show(197, 12);
+            Reminder_icon.Show(953, 2);
         }
     }
 }

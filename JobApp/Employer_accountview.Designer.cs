@@ -64,7 +64,7 @@
             this.CompName.AutoSize = true;
             this.CompName.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CompName.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CompName.Location = new System.Drawing.Point(542, 20);
+            this.CompName.Location = new System.Drawing.Point(447, 22);
             this.CompName.Name = "CompName";
             this.CompName.Size = new System.Drawing.Size(244, 39);
             this.CompName.TabIndex = 13;
@@ -74,7 +74,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(256, 165);
+            this.label9.Location = new System.Drawing.Point(217, 165);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(178, 17);
             this.label9.TabIndex = 23;
@@ -84,7 +84,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(304, 255);
+            this.label3.Location = new System.Drawing.Point(265, 255);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 17);
             this.label3.TabIndex = 24;
@@ -94,7 +94,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(776, 101);
+            this.label4.Location = new System.Drawing.Point(810, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 17);
             this.label4.TabIndex = 25;
@@ -104,7 +104,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(335, 303);
+            this.label8.Location = new System.Drawing.Point(296, 303);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 17);
             this.label8.TabIndex = 29;
@@ -114,7 +114,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(324, 213);
+            this.label6.Location = new System.Drawing.Point(285, 213);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 17);
             this.label6.TabIndex = 27;
@@ -124,7 +124,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(300, 363);
+            this.label7.Location = new System.Drawing.Point(261, 363);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(134, 17);
             this.label7.TabIndex = 28;
@@ -172,7 +172,7 @@
             this.ContactNumber.AutoSize = true;
             this.ContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactNumber.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.ContactNumber.Location = new System.Drawing.Point(440, 166);
+            this.ContactNumber.Location = new System.Drawing.Point(401, 166);
             this.ContactNumber.Name = "ContactNumber";
             this.ContactNumber.Size = new System.Drawing.Size(51, 16);
             this.ContactNumber.TabIndex = 45;
@@ -183,7 +183,7 @@
             this.CompEmail.AutoSize = true;
             this.CompEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CompEmail.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.CompEmail.Location = new System.Drawing.Point(440, 214);
+            this.CompEmail.Location = new System.Drawing.Point(401, 214);
             this.CompEmail.Name = "CompEmail";
             this.CompEmail.Size = new System.Drawing.Size(51, 16);
             this.CompEmail.TabIndex = 46;
@@ -194,7 +194,7 @@
             this.compLoc.AutoSize = true;
             this.compLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compLoc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.compLoc.Location = new System.Drawing.Point(440, 255);
+            this.compLoc.Location = new System.Drawing.Point(401, 255);
             this.compLoc.Name = "compLoc";
             this.compLoc.Size = new System.Drawing.Size(51, 16);
             this.compLoc.TabIndex = 47;
@@ -205,7 +205,7 @@
             this.IndType.AutoSize = true;
             this.IndType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IndType.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.IndType.Location = new System.Drawing.Point(440, 304);
+            this.IndType.Location = new System.Drawing.Point(401, 304);
             this.IndType.Name = "IndType";
             this.IndType.Size = new System.Drawing.Size(59, 16);
             this.IndType.TabIndex = 48;
@@ -216,7 +216,7 @@
             this.WorkNum.AutoSize = true;
             this.WorkNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WorkNum.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.WorkNum.Location = new System.Drawing.Point(440, 363);
+            this.WorkNum.Location = new System.Drawing.Point(401, 363);
             this.WorkNum.Name = "WorkNum";
             this.WorkNum.Size = new System.Drawing.Size(59, 16);
             this.WorkNum.TabIndex = 49;
@@ -225,10 +225,10 @@
             // CompBack
             // 
             this.CompBack.Enabled = false;
-            this.CompBack.Location = new System.Drawing.Point(672, 132);
+            this.CompBack.Location = new System.Drawing.Point(697, 204);
             this.CompBack.Multiline = true;
             this.CompBack.Name = "CompBack";
-            this.CompBack.Size = new System.Drawing.Size(350, 84);
+            this.CompBack.Size = new System.Drawing.Size(350, 140);
             this.CompBack.TabIndex = 51;
             this.CompBack.TextChanged += new System.EventHandler(this.CompBack_TextChanged);
             // 
@@ -291,7 +291,7 @@
             // Notification
             // 
             this.Notification.Image = ((System.Drawing.Image)(resources.GetObject("Notification.Image")));
-            this.Notification.Location = new System.Drawing.Point(197, 12);
+            this.Notification.Location = new System.Drawing.Point(953, 2);
             this.Notification.Name = "Notification";
             this.Notification.Size = new System.Drawing.Size(94, 91);
             this.Notification.TabIndex = 52;
