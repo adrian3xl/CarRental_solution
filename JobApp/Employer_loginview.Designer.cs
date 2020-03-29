@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employer_loginview));
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Company_name_tb = new System.Windows.Forms.TextBox();
@@ -38,14 +37,6 @@
             this.Enter_emp_bt = new System.Windows.Forms.Button();
             this.cancel_bt = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.rEMINDERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
-            this.rememberToCheckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.forApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
-            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -122,57 +113,6 @@
             this.notifyIcon1.Text = "reminder";
             this.notifyIcon1.Visible = true;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.BackColor = System.Drawing.Color.Goldenrod;
-            this.contextMenuStrip1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("contextMenuStrip1.BackgroundImage")));
-            this.contextMenuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.contextMenuStrip1.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rEMINDERToolStripMenuItem,
-            this.toolStripMenuItem1,
-            this.rememberToCheckToolStripMenuItem,
-            this.forApplicationsToolStripMenuItem,
-            this.toolStripMenuItem2,
-            this.closeToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(200, 104);
-            this.contextMenuStrip1.Text = "REMINDER!";
-            // 
-            // rEMINDERToolStripMenuItem
-            // 
-            this.rEMINDERToolStripMenuItem.Name = "rEMINDERToolStripMenuItem";
-            this.rEMINDERToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.rEMINDERToolStripMenuItem.Text = "REMINDER!";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(196, 6);
-            // 
-            // rememberToCheckToolStripMenuItem
-            // 
-            this.rememberToCheckToolStripMenuItem.Name = "rememberToCheckToolStripMenuItem";
-            this.rememberToCheckToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.rememberToCheckToolStripMenuItem.Text = "Remember to check";
-            // 
-            // forApplicationsToolStripMenuItem
-            // 
-            this.forApplicationsToolStripMenuItem.Name = "forApplicationsToolStripMenuItem";
-            this.forApplicationsToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.forApplicationsToolStripMenuItem.Text = "for job applications.";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(196, 6);
-            // 
-            // closeToolStripMenuItem
-            // 
-            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(199, 22);
-            this.closeToolStripMenuItem.Text = "Close";
-            // 
             // Employer_loginview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -187,7 +127,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Employer_loginview";
             this.Text = "Job Application Management System";
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,12 +142,5 @@
         private System.Windows.Forms.Button Enter_emp_bt;
         private System.Windows.Forms.Button cancel_bt;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem rEMINDERToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem rememberToCheckToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem forApplicationsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
     }
 }

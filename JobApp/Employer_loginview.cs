@@ -17,7 +17,7 @@ namespace JobApp
 
         private void Enter_emp_bt_Click(object sender, EventArgs e)
         {
-            contextMenuStrip1.Show(1170, 400);//improvised popup
+            
             try
             {
 
