@@ -34,7 +34,7 @@ namespace JobApp
                 Qualifications = qualifica_tb.Text
             
 
-        };
+             };
 
             _db.Resume_details.Add(resume);
             _db.SaveChanges();
