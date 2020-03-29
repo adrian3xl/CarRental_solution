@@ -84,7 +84,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(894, 76);
+            this.label4.Location = new System.Drawing.Point(807, 117);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 17);
             this.label4.TabIndex = 25;
@@ -214,9 +214,7 @@
             // 
             // CompBack
             // 
-            this.CompBack.Enabled = false;
-            this.CompBack.Location = new System.Drawing.Point(782, 115);
-            this.CompBack.Multiline = true;
+            this.CompBack.Location = new System.Drawing.Point(824, 113);
             this.CompBack.Name = "CompBack";
             this.CompBack.Size = new System.Drawing.Size(350, 167);
             this.CompBack.TabIndex = 51;
@@ -225,7 +223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 492);
+            this.ClientSize = new System.Drawing.Size(1059, 492);
             this.Controls.Add(this.CompBack);
             this.Controls.Add(this.WorkNum);
             this.Controls.Add(this.IndType);
