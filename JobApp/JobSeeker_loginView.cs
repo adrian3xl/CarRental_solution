@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Linq;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 
 namespace JobApp
@@ -17,10 +19,25 @@ namespace JobApp
         {
             try
             {
+                SHA256 sha = SHA256.Create();
+
                 var user_name = textBox_username.Text;
                 var password = textBox_Password.Text;
                 var IsValid = true;
-                var Jobseeker_details = _db.Jobseeker_details.FirstOrDefault(q => q.User_Name == user_name && q.Password == password);
+
+                byte[] data = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                StringBuilder sBuilder = new StringBuilder();
+
+                for (int i=0; i<data.Length;i++)
+                {
+                    sBuilder.Append(data[1].ToString("x2"));
+                }
+
+                var hashed_password = sBuilder.ToString();
+
+
+                var Jobseeker_details = _db.Jobseeker_details.FirstOrDefault(q => q.User_Name == user_name && q.Password == hashed_password);
 
                 if (Jobseeker_details == null)
                 {
