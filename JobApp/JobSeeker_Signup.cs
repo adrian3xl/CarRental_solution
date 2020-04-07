@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 
 namespace JobApp
@@ -27,10 +29,12 @@ namespace JobApp
                 var Last_name = textBox_lname.Text;
                 int age = int.Parse(textBox_age.Text);
                 var User_name = textBox_username.Text;
-                var Create_Password = textBox_username.Text;
+                var password = textBox_createpass.Text;
                 var IsValid = true;
 
-                if (string.IsNullOrWhiteSpace(First_name) || string.IsNullOrWhiteSpace(Last_name) || string.IsNullOrWhiteSpace(User_name) || string.IsNullOrWhiteSpace(Create_Password))
+      
+
+                if (string.IsNullOrWhiteSpace(First_name) || string.IsNullOrWhiteSpace(Last_name) || string.IsNullOrWhiteSpace(User_name) || string.IsNullOrWhiteSpace(password))
                 {
                     IsValid = false;
                     MessageBox.Show("Error, required fields were not populated");
@@ -44,13 +48,31 @@ namespace JobApp
 
                 if (IsValid)
                 {
+
+                    SHA256 sha = SHA256.Create();
+
+
+                    byte[] data = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                    StringBuilder sBuilder = new StringBuilder();
+
+                    for (int i = 0; i < data.Length; i++)
+                    {
+                        sBuilder.Append(data[1].ToString("x2"));
+                    }
+
+
+                    var hashed_password = sBuilder.ToString();
+
+
+
                     var jobJobseeker_detail = new Jobseeker_details
                     {
                         First_name = First_name,
                         Last_name = Last_name,
                         User_Name = User_name,
                         Jobseeker_age = age,
-                        Password = Create_Password
+                        Password = hashed_password
                     };
 
                     _db.Jobseeker_details.Add(jobJobseeker_detail);

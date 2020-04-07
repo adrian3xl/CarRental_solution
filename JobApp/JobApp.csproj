@@ -98,6 +98,7 @@
     <Compile Include="Add_Edit_Jobseeker_resume.Designer.cs">
       <DependentUpon>Add_Edit_Jobseeker_resume.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utils.cs" />
     <Compile Include="DisplayVacancy1.cs" />
     <Compile Include="Employer_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
@@ -222,9 +223,6 @@
     </Compile>
     <Compile Include="Submit_jobapplication.Designer.cs">
       <DependentUpon>Submit_jobapplication.cs</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
     <Compile Include="Vacancy_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>

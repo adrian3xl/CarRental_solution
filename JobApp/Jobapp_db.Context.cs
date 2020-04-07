@@ -29,7 +29,6 @@ namespace JobApp
         public virtual DbSet<Job_Applications_details> Job_Applications_details { get; set; }
         public virtual DbSet<Jobseeker_details> Jobseeker_details { get; set; }
         public virtual DbSet<Resume_details> Resume_details { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Vacancy_details> Vacancy_details { get; set; }
     }
 }

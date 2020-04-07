@@ -32,15 +32,7 @@ namespace JobApp
 
                 StringBuilder sBuilder = new StringBuilder();
 
-                for (int i = 0; i < data.Length; i++)
-                {
-                    sBuilder.Append(data[1].ToString("x2"));
-                }
-
-                var hashed_password = sBuilder.ToString();
-
-
-                var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == hashed_password);
+                var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == password);
                
                 if (Employer_details == null)
                 {
