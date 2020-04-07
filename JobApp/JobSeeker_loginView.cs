@@ -25,17 +25,7 @@ namespace JobApp
                 var password = textBox_Password.Text;
                 var IsValid = true;
 
-                byte[] data = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
-
-                StringBuilder sBuilder = new StringBuilder();
-
-                for (int i=0; i<data.Length;i++)
-                {
-                    sBuilder.Append(data[1].ToString("x2"));
-                }
-
-                var hashed_password = sBuilder.ToString();
-
+                var hashed_password = Utils.HashedPassword(password);
 
                 var Jobseeker_details = _db.Jobseeker_details.FirstOrDefault(q => q.User_Name == user_name && q.Password == hashed_password);
 

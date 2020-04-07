@@ -11,7 +11,7 @@ namespace JobApp
    public static class Utils
     {
 
-    /*
+    
         public static string HashedPassword(string password)
         {
             SHA256 sha = SHA256.Create();
@@ -29,6 +29,6 @@ namespace JobApp
             return sBuilder.ToString();
         }
 
-        */
+        
     }
 }

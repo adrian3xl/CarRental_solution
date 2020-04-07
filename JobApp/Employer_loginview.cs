@@ -28,11 +28,9 @@ namespace JobApp
                 string password = company_pass_tb.Text;
                 bool IsValid = true;
 
-                byte[] data = sha.ComputeHash(Encoding.UTF8.GetBytes(password));
+                var hashed_password = Utils.HashedPassword(password);
 
-                StringBuilder sBuilder = new StringBuilder();
-
-                var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == password);
+                var Employer_details = _db.Employer_details.FirstOrDefault(q => q.Company_name == company_name && q.Password == hashed_password);
                
                 if (Employer_details == null)
                 {
