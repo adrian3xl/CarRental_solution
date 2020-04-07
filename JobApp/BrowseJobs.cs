@@ -9,12 +9,22 @@ namespace JobApp
     {
 
         private readonly Jobapp_dbEntities _db;
+        private int _JobId;
 
         public BrowseJobs()
         {
             InitializeComponent();
             //user_name_tb.Text
             _db = new Jobapp_dbEntities();
+
+        }
+
+        public BrowseJobs(int JobId)
+        {
+            InitializeComponent();
+            //user_name_tb.Text
+            _db = new Jobapp_dbEntities();
+            _JobId = JobId;
 
         }
 
@@ -80,22 +90,22 @@ namespace JobApp
         {
             try
             {
-                var Id = (int)dgv_vacacies.SelectedRows[0].Cells["id"].ColumnIndex;
+                var Id = (int)dgv_vacacies.SelectedRows[0].Cells["id"].Value;
 
-                var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
+                 var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == _JobId);
+                 //int vacancyId = vacancy.id;
+                
 
-                var Submit_jobapplication = new Submit_jobapplication(this,vacancy);
+              var Submit_jobapplication = new Submit_jobapplication(this, vacancy, _JobId,Id);
 
-                Submit_jobapplication.Show();
+               Submit_jobapplication.Show();
+
 
             }
             catch (Exception)
             {
-
                throw;
             }
-
-
 
 
 

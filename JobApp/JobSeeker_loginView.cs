@@ -7,6 +7,7 @@ namespace JobApp
     public partial class JobSeeker_loginView : Form
     {
         private readonly Jobapp_dbEntities _db;
+        private int JbskrID;
         public JobSeeker_loginView()
         {
             InitializeComponent();
@@ -21,7 +22,7 @@ namespace JobApp
                 var password = textBox_Password.Text;
                 var IsValid = true;
                 var Jobseeker_details = _db.Jobseeker_details.FirstOrDefault(q => q.User_Name == user_name && q.Password == password);
-
+                JbskrID = Jobseeker_details.id;
                 if (Jobseeker_details == null)
                 {
                     IsValid = false;
@@ -32,8 +33,8 @@ namespace JobApp
                 {
                     MessageBox.Show("Welcome " + user_name);
 
-                    Job_Seeker_Accountview job_Seeker_Accountview = new Job_Seeker_Accountview(textBox_username.Text);
-
+                    Job_Seeker_Accountview job_Seeker_Accountview = new Job_Seeker_Accountview(JbskrID, textBox_username.Text);
+      
                     job_Seeker_Accountview.ShowDialog();
                     Close();
                     

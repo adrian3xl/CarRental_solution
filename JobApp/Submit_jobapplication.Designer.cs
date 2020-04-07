@@ -44,6 +44,7 @@
             this.Submit_bt = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.lb_id = new System.Windows.Forms.Label();
+            this.selectJob = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // exper_tb
@@ -188,11 +189,20 @@
             this.lb_id.TabIndex = 57;
             this.lb_id.Text = "lb_id";
             // 
+            // selectJob
+            // 
+            this.selectJob.FormattingEnabled = true;
+            this.selectJob.Location = new System.Drawing.Point(493, 347);
+            this.selectJob.Name = "selectJob";
+            this.selectJob.Size = new System.Drawing.Size(319, 21);
+            this.selectJob.TabIndex = 58;
+            // 
             // Submit_jobapplication
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1077, 505);
+            this.Controls.Add(this.selectJob);
             this.Controls.Add(this.lb_id);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Submit_bt);
@@ -211,6 +221,7 @@
             this.Controls.Add(this.exper_tb);
             this.Name = "Submit_jobapplication";
             this.Text = "Submit_jobapplication";
+            this.Load += new System.EventHandler(this.SetDropDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +245,6 @@
         private System.Windows.Forms.Button Submit_bt;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lb_id;
+        private System.Windows.Forms.ComboBox selectJob;
     }
 }
