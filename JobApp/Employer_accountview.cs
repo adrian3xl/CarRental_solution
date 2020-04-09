@@ -68,5 +68,10 @@ namespace JobApp
         {
             Reminder_icon.Show(953, 2);
         }
+
+        private void manageApplicantsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

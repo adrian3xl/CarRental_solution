@@ -44,19 +44,19 @@ namespace JobApp
                 if (IsValid)
                 {
                     
-                    MessageBox.Show("Welcome");
+                    MessageBox.Show("Welcome"+" "+ Employer_details.Company_name);
                     
                     
 
                    
 
                     var EmployerID = Employer_details.id;
-                    
-                   var Employer_accountview = new Employer_accountview(EmployerID);
+                    this.Hide();
+                    var Employer_accountview = new Employer_accountview(EmployerID);
 
                   
                     Employer_accountview.ShowDialog();
-
+                    this.Close();
 
                 }
 

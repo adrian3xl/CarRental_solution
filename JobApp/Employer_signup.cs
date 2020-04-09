@@ -68,6 +68,7 @@ namespace JobApp
 
                     MessageBox.Show("Registration was successful");
                     
+                    this.Close();
                 }
 
 

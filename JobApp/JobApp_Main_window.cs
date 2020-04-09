@@ -21,25 +21,9 @@ namespace JobApp
             jobSeeker_Signup.MdiParent = this;
         }
 
-        private void JobSeekerLoginToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var jobSeeker_loginView = new JobSeeker_loginView();
+       
 
-
-               jobSeeker_loginView.ShowDialog();
-            jobSeeker_loginView.MdiParent = this;
-
-        }
-
-        private void EmployerLoginToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var employer_signup = new Employer_signup();
-
-            employer_signup.ShowDialog();
-            employer_signup.MdiParent = this;
-            
-            
-        }
+       
 
         private void EmployerLoginToolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -56,6 +40,25 @@ namespace JobApp
             var JobSeeker_loginView = new JobSeeker_loginView();
             JobSeeker_loginView.ShowDialog();
             JobSeeker_loginView.MdiParent = this;
+
+        }
+
+        private void EmployerSignUpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var employer_signup = new Employer_signup();
+
+            employer_signup.ShowDialog();
+            employer_signup.MdiParent = this;
+            
+        }
+
+        private void JobseekerLoginToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            var jobSeeker_loginView = new JobSeeker_loginView();
+
+
+            jobSeeker_loginView.ShowDialog();
+            jobSeeker_loginView.MdiParent = this;
 
         }
     }

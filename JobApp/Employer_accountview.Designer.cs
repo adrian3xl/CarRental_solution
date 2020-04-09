@@ -166,6 +166,7 @@
             this.manageApplicantsToolStripMenuItem.Name = "manageApplicantsToolStripMenuItem";
             this.manageApplicantsToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
             this.manageApplicantsToolStripMenuItem.Text = "Manage Applicants";
+            this.manageApplicantsToolStripMenuItem.Click += new System.EventHandler(this.manageApplicantsToolStripMenuItem_Click);
             // 
             // ContactNumber
             // 

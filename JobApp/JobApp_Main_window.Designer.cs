@@ -33,14 +33,10 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.jobSeekerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jobSeekerLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.findJobsTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
-            this.browseJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.advanceSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salaryTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
+            this.employerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employee_itembox = new System.Windows.Forms.ToolStripMenuItem();
-            this.employerLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employerLoginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.jobseekerLoginToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.dummy_search_bt = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -82,12 +78,10 @@
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.jobSeeker_itembox,
-            this.findJobsTool_itembox,
-            this.salaryTool_itembox,
             this.employee_itembox});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(77, 503);
+            this.menuStrip1.Size = new System.Drawing.Size(64, 503);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -95,81 +89,49 @@
             // 
             this.jobSeeker_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.jobSeekerSignUpToolStripMenuItem,
-            this.jobSeekerLoginToolStripMenuItem});
+            this.employerSignUpToolStripMenuItem,
+            this.jobSeekerSignUpToolStripMenuItem});
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(70, 19);
-            this.jobSeeker_itembox.Text = "Job Seeker";
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(57, 19);
+            this.jobSeeker_itembox.Text = "Register";
             // 
             // jobSeekerSignUpToolStripMenuItem
             // 
             this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
-            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign up";
             this.jobSeekerSignUpToolStripMenuItem.Click += new System.EventHandler(this.JobSeekerSignUpToolStripMenuItem_Click);
             // 
-            // jobSeekerLoginToolStripMenuItem
+            // employerSignUpToolStripMenuItem
             // 
-            this.jobSeekerLoginToolStripMenuItem.Name = "jobSeekerLoginToolStripMenuItem";
-            this.jobSeekerLoginToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
-            this.jobSeekerLoginToolStripMenuItem.Text = "Job Seeker Login";
-            this.jobSeekerLoginToolStripMenuItem.Click += new System.EventHandler(this.JobSeekerLoginToolStripMenuItem_Click);
-            // 
-            // findJobsTool_itembox
-            // 
-            this.findJobsTool_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.findJobsTool_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.browseJobsToolStripMenuItem,
-            this.advanceSearchToolStripMenuItem});
-            this.findJobsTool_itembox.Enabled = false;
-            this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(71, 19);
-            this.findJobsTool_itembox.Text = "Find Jobs";
-            this.findJobsTool_itembox.Visible = false;
-            // 
-            // browseJobsToolStripMenuItem
-            // 
-            this.browseJobsToolStripMenuItem.Name = "browseJobsToolStripMenuItem";
-            this.browseJobsToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.browseJobsToolStripMenuItem.Text = "Browse Jobs";
-            // 
-            // advanceSearchToolStripMenuItem
-            // 
-            this.advanceSearchToolStripMenuItem.Name = "advanceSearchToolStripMenuItem";
-            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.advanceSearchToolStripMenuItem.Text = "Advance Search";
-            // 
-            // salaryTool_itembox
-            // 
-            this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(71, 19);
-            this.salaryTool_itembox.Text = "Salary Tool";
-            this.salaryTool_itembox.Visible = false;
+            this.employerSignUpToolStripMenuItem.Name = "employerSignUpToolStripMenuItem";
+            this.employerSignUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.employerSignUpToolStripMenuItem.Text = "Employer Sign up";
+            this.employerSignUpToolStripMenuItem.Click += new System.EventHandler(this.EmployerSignUpToolStripMenuItem_Click);
             // 
             // employee_itembox
             // 
             this.employee_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.employee_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.employerLoginToolStripMenuItem,
-            this.employerLoginToolStripMenuItem1});
+            this.employerLoginToolStripMenuItem1,
+            this.jobseekerLoginToolStripMenuItem1});
             this.employee_itembox.Name = "employee_itembox";
-            this.employee_itembox.Size = new System.Drawing.Size(70, 19);
-            this.employee_itembox.Text = "Employer";
-            // 
-            // employerLoginToolStripMenuItem
-            // 
-            this.employerLoginToolStripMenuItem.Name = "employerLoginToolStripMenuItem";
-            this.employerLoginToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
-            this.employerLoginToolStripMenuItem.Text = "Employer Sign up";
-            this.employerLoginToolStripMenuItem.Click += new System.EventHandler(this.EmployerLoginToolStripMenuItem_Click);
+            this.employee_itembox.Size = new System.Drawing.Size(57, 19);
+            this.employee_itembox.Text = "Login";
             // 
             // employerLoginToolStripMenuItem1
             // 
             this.employerLoginToolStripMenuItem1.Name = "employerLoginToolStripMenuItem1";
-            this.employerLoginToolStripMenuItem1.Size = new System.Drawing.Size(167, 22);
+            this.employerLoginToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.employerLoginToolStripMenuItem1.Text = "Employer Login";
             this.employerLoginToolStripMenuItem1.Click += new System.EventHandler(this.EmployerLoginToolStripMenuItem1_Click);
+            // 
+            // jobseekerLoginToolStripMenuItem1
+            // 
+            this.jobseekerLoginToolStripMenuItem1.Name = "jobseekerLoginToolStripMenuItem1";
+            this.jobseekerLoginToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.jobseekerLoginToolStripMenuItem1.Text = "Jobseeker Login";
+            this.jobseekerLoginToolStripMenuItem1.Click += new System.EventHandler(this.JobseekerLoginToolStripMenuItem1_Click);
             // 
             // dummy_search_bt
             // 
@@ -229,20 +191,16 @@
 
         private System.Windows.Forms.Label Main_window_label;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem findJobsTool_itembox;
-        private System.Windows.Forms.ToolStripMenuItem browseJobsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem advanceSearchToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salaryTool_itembox;
         private System.Windows.Forms.ToolStripMenuItem jobSeeker_itembox;
         private System.Windows.Forms.ToolStripMenuItem jobSeekerSignUpToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem jobSeekerLoginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employee_itembox;
-        private System.Windows.Forms.ToolStripMenuItem employerLoginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employerLoginToolStripMenuItem1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button dummy_search_bt;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem employerSignUpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem jobseekerLoginToolStripMenuItem1;
     }
 }
 
