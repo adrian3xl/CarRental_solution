@@ -8,6 +8,7 @@ namespace JobApp
 {
     public partial class JobSeeker_loginView : Form
     {
+        private int JsId;
         private readonly Jobapp_dbEntities _db;
         public JobSeeker_loginView()
         {
@@ -19,7 +20,7 @@ namespace JobApp
         {
             try
             {
-                SHA256 sha = SHA256.Create();
+                //SHA256 sha = SHA256.Create();
 
                 var user_name = textBox_username.Text;
                 var password = textBox_Password.Text;
@@ -28,7 +29,7 @@ namespace JobApp
                 var hashed_password = Utils.HashedPassword(password);
 
                 var Jobseeker_details = _db.Jobseeker_details.FirstOrDefault(q => q.User_Name == user_name && q.Password == hashed_password);
-
+                JsId = Jobseeker_details.id;
                 if (Jobseeker_details == null)
                 {
                     IsValid = false;
@@ -39,13 +40,10 @@ namespace JobApp
                 {
                     MessageBox.Show("Welcome " + user_name);
 
-                    Job_Seeker_Accountview job_Seeker_Accountview = new Job_Seeker_Accountview(textBox_username.Text);
+                    Job_Seeker_Accountview job_Seeker_Accountview = new Job_Seeker_Accountview(JsId,textBox_username.Text);
 
                     job_Seeker_Accountview.ShowDialog();
-                    Close();
-                    
-
-
+                    Hide();                    
                 }
 
             }

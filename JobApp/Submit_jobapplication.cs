@@ -82,7 +82,21 @@ namespace JobApp
             selectJob.DisplayMember = "Education_level";
             selectJob.ValueMember = "id";
             selectJob.DataSource = data;
+           var NewId = _db.Vacancy_details.FirstOrDefault(s=> s.id == VId);
+
+
+
+            NameBox.Text = NewId.Job_title;
         }
-        
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void NameBox_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

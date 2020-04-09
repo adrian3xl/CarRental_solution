@@ -7,14 +7,15 @@ namespace JobApp
     public partial class Add_Edit_Jobseeker_resume : Form
     {
         private readonly bool iseditmode;
-
+        private int ID;
         private readonly Jobapp_dbEntities _db;
-        public Add_Edit_Jobseeker_resume()
+        public Add_Edit_Jobseeker_resume(int _id)
         {
             InitializeComponent();
             _db = new Jobapp_dbEntities();
             lable_title.Text = "Add New Resume";
             iseditmode = false;
+            ID = _id;
         }
 
         public Add_Edit_Jobseeker_resume(Resume_details resume_toedit)
@@ -52,6 +53,7 @@ namespace JobApp
                     resume.Email = email_tb.Text;
                     resume.PriorWork_Experiences = exper_tb.Text;
                     resume.Qualifications = qualifica_tb.Text;
+                    resume.Jobseeker_details_id = ID;
                   
                     _db.SaveChanges();
 
@@ -77,10 +79,10 @@ namespace JobApp
                         Hobbies = hobby_tb.Text,
                         Email = email_tb.Text,
                         PriorWork_Experiences = exper_tb.Text,
-                        Qualifications = qualifica_tb.Text
+                        Qualifications = qualifica_tb.Text,
+                        Jobseeker_details_id = ID
 
-
-                    };
+                };
 
                     _db.Resume_details.Add(add_resume);
                     _db.SaveChanges();

@@ -21,7 +21,7 @@ namespace JobApp
             user_name_tb.Text = user_name;
             var job_seeker = new Jobseeker_details();
             Job_seeker_id = JBskId;
-            MessageBox.Show($"{Job_seeker_id}");
+           // MessageBox.Show($"{Job_seeker_id}");
         }
 
         private void BrowseJobsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -62,7 +62,7 @@ namespace JobApp
 
         private void Manageresume_MenuItem_Click(object sender, EventArgs e)
         {
-            var Manage_resumeview = new Manage_resumeview();
+            var Manage_resumeview = new Manage_resumeview(Job_seeker_id);
             Manage_resumeview.MdiParent = this.MdiParent;
             Manage_resumeview.Show();
         }

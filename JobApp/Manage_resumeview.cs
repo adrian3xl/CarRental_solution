@@ -8,15 +8,17 @@ namespace JobApp
     public partial class Manage_resumeview : Form
     {
         private readonly Jobapp_dbEntities _db;
-        public Manage_resumeview()
+        private int _jsId;
+        public Manage_resumeview(int jsID)
         {
             InitializeComponent();
             _db = new Jobapp_dbEntities();
+            _jsId = jsID;
         }
 
         private void Add_bt_Click(object sender, EventArgs e)
         {
-            var add_Edit_Jobseeker_Resume = new Add_Edit_Jobseeker_resume
+            var add_Edit_Jobseeker_Resume = new Add_Edit_Jobseeker_resume(_jsId)
             {
                 MdiParent = this.MdiParent
             };

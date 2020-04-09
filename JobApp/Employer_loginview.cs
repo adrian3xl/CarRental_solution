@@ -22,7 +22,7 @@ namespace JobApp
             
             try
             {
-                SHA256 sha = SHA256.Create();
+               // SHA256 sha = SHA256.Create();
 
                 string company_name = Company_name_tb.Text.Trim();
                 string password = company_pass_tb.Text;
