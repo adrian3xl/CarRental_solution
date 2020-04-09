@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employer_accountview));
             this.CompName = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,8 +46,17 @@
             this.compLoc = new System.Windows.Forms.Label();
             this.IndType = new System.Windows.Forms.Label();
             this.WorkNum = new System.Windows.Forms.Label();
-            this.CompBack = new System.Windows.Forms.Panel();
+            this.CompBack = new System.Windows.Forms.TextBox();
+            this.Reminder_icon = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.rEMINDERToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
+            this.rememberToCheckToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.forApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
+            this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Notification = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            this.Reminder_icon.SuspendLayout();
             this.SuspendLayout();
             // 
             // CompName
@@ -53,18 +64,17 @@
             this.CompName.AutoSize = true;
             this.CompName.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.CompName.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CompName.Location = new System.Drawing.Point(542, 20);
+            this.CompName.Location = new System.Drawing.Point(447, 22);
             this.CompName.Name = "CompName";
             this.CompName.Size = new System.Drawing.Size(244, 39);
             this.CompName.TabIndex = 13;
             this.CompName.Text = "Employer Account";
-            this.CompName.Click += new System.EventHandler(this.CompName_Click);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(256, 165);
+            this.label9.Location = new System.Drawing.Point(217, 165);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(178, 17);
             this.label9.TabIndex = 23;
@@ -74,7 +84,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(304, 255);
+            this.label3.Location = new System.Drawing.Point(265, 255);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 17);
             this.label3.TabIndex = 24;
@@ -84,7 +94,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(894, 76);
+            this.label4.Location = new System.Drawing.Point(810, 165);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 17);
             this.label4.TabIndex = 25;
@@ -94,7 +104,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(335, 303);
+            this.label8.Location = new System.Drawing.Point(296, 303);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 17);
             this.label8.TabIndex = 29;
@@ -104,7 +114,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(324, 213);
+            this.label6.Location = new System.Drawing.Point(285, 213);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 17);
             this.label6.TabIndex = 27;
@@ -114,7 +124,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(300, 363);
+            this.label7.Location = new System.Drawing.Point(261, 363);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(134, 17);
             this.label7.TabIndex = 28;
@@ -162,7 +172,7 @@
             this.ContactNumber.AutoSize = true;
             this.ContactNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ContactNumber.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.ContactNumber.Location = new System.Drawing.Point(440, 166);
+            this.ContactNumber.Location = new System.Drawing.Point(401, 166);
             this.ContactNumber.Name = "ContactNumber";
             this.ContactNumber.Size = new System.Drawing.Size(51, 16);
             this.ContactNumber.TabIndex = 45;
@@ -173,7 +183,7 @@
             this.CompEmail.AutoSize = true;
             this.CompEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CompEmail.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.CompEmail.Location = new System.Drawing.Point(440, 214);
+            this.CompEmail.Location = new System.Drawing.Point(401, 214);
             this.CompEmail.Name = "CompEmail";
             this.CompEmail.Size = new System.Drawing.Size(51, 16);
             this.CompEmail.TabIndex = 46;
@@ -184,7 +194,7 @@
             this.compLoc.AutoSize = true;
             this.compLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.compLoc.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.compLoc.Location = new System.Drawing.Point(440, 255);
+            this.compLoc.Location = new System.Drawing.Point(401, 255);
             this.compLoc.Name = "compLoc";
             this.compLoc.Size = new System.Drawing.Size(51, 16);
             this.compLoc.TabIndex = 47;
@@ -195,7 +205,7 @@
             this.IndType.AutoSize = true;
             this.IndType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IndType.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.IndType.Location = new System.Drawing.Point(440, 304);
+            this.IndType.Location = new System.Drawing.Point(401, 304);
             this.IndType.Name = "IndType";
             this.IndType.Size = new System.Drawing.Size(59, 16);
             this.IndType.TabIndex = 48;
@@ -206,7 +216,7 @@
             this.WorkNum.AutoSize = true;
             this.WorkNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WorkNum.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.WorkNum.Location = new System.Drawing.Point(440, 363);
+            this.WorkNum.Location = new System.Drawing.Point(401, 363);
             this.WorkNum.Name = "WorkNum";
             this.WorkNum.Size = new System.Drawing.Size(59, 16);
             this.WorkNum.TabIndex = 49;
@@ -214,16 +224,86 @@
             // 
             // CompBack
             // 
-            this.CompBack.Location = new System.Drawing.Point(824, 113);
+            this.CompBack.Enabled = false;
+            this.CompBack.Location = new System.Drawing.Point(697, 204);
+            this.CompBack.Multiline = true;
             this.CompBack.Name = "CompBack";
-            this.CompBack.Size = new System.Drawing.Size(303, 168);
-            this.CompBack.TabIndex = 50;
+            this.CompBack.Size = new System.Drawing.Size(350, 140);
+            this.CompBack.TabIndex = 51;
+            this.CompBack.TextChanged += new System.EventHandler(this.CompBack_TextChanged);
+            // 
+            // Reminder_icon
+            // 
+            this.Reminder_icon.BackColor = System.Drawing.Color.Goldenrod;
+            this.Reminder_icon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Reminder_icon.BackgroundImage")));
+            this.Reminder_icon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Reminder_icon.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reminder_icon.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rEMINDERToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.rememberToCheckToolStripMenuItem,
+            this.forApplicationsToolStripMenuItem,
+            this.toolStripMenuItem2,
+            this.closeToolStripMenuItem});
+            this.Reminder_icon.Name = "contextMenuStrip1";
+            this.Reminder_icon.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
+            this.Reminder_icon.ShowImageMargin = false;
+            this.Reminder_icon.Size = new System.Drawing.Size(175, 104);
+            this.Reminder_icon.Text = "REMINDER!";
+            // 
+            // rEMINDERToolStripMenuItem
+            // 
+            this.rEMINDERToolStripMenuItem.Enabled = false;
+            this.rEMINDERToolStripMenuItem.Name = "rEMINDERToolStripMenuItem";
+            this.rEMINDERToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.rEMINDERToolStripMenuItem.Text = "REMINDER!";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(171, 6);
+            // 
+            // rememberToCheckToolStripMenuItem
+            // 
+            this.rememberToCheckToolStripMenuItem.Enabled = false;
+            this.rememberToCheckToolStripMenuItem.Name = "rememberToCheckToolStripMenuItem";
+            this.rememberToCheckToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.rememberToCheckToolStripMenuItem.Text = "Remember to check";
+            // 
+            // forApplicationsToolStripMenuItem
+            // 
+            this.forApplicationsToolStripMenuItem.Enabled = false;
+            this.forApplicationsToolStripMenuItem.Name = "forApplicationsToolStripMenuItem";
+            this.forApplicationsToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.forApplicationsToolStripMenuItem.Text = "for job applications.";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(171, 6);
+            // 
+            // closeToolStripMenuItem
+            // 
+            this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.closeToolStripMenuItem.Text = "Close";
+            // 
+            // Notification
+            // 
+            this.Notification.Image = ((System.Drawing.Image)(resources.GetObject("Notification.Image")));
+            this.Notification.Location = new System.Drawing.Point(953, 2);
+            this.Notification.Name = "Notification";
+            this.Notification.Size = new System.Drawing.Size(94, 91);
+            this.Notification.TabIndex = 52;
+            this.Notification.UseVisualStyleBackColor = true;
+            this.Notification.Click += new System.EventHandler(this.Notification_Click);
             // 
             // Employer_accountview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 492);
+            this.ClientSize = new System.Drawing.Size(1059, 492);
+            this.Controls.Add(this.Notification);
             this.Controls.Add(this.CompBack);
             this.Controls.Add(this.WorkNum);
             this.Controls.Add(this.IndType);
@@ -243,6 +323,7 @@
             this.Load += new System.EventHandler(this.Employer_accountview_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.Reminder_icon.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,6 +347,14 @@
         private System.Windows.Forms.Label compLoc;
         private System.Windows.Forms.Label IndType;
         private System.Windows.Forms.Label WorkNum;
-        private System.Windows.Forms.Panel CompBack;
+        private System.Windows.Forms.TextBox CompBack;
+        private System.Windows.Forms.ContextMenuStrip Reminder_icon;
+        private System.Windows.Forms.ToolStripMenuItem rEMINDERToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem rememberToCheckToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem forApplicationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.Button Notification;
     }
 }

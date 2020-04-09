@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Text;
 using System.Windows.Forms;
 
 namespace JobApp
@@ -21,10 +23,15 @@ namespace JobApp
                 var company_background = companinfo_tb.Text;
                 var company_location = compan_loca_tb.Text;
                 var company_contact_number = company_contact_tb.Text;
-                int workforce = int.Parse(work_force_tb.Text);
+                var workforce = int.Parse(work_force_tb.Text);
                 var company_email = company_email_tb.Text;
                 var industry_type = industry_type_tb.Text;
-                var password = password_tb.Text;
+                var password= password_tb.Text;
+
+              
+
+
+              
 
                 if (string.IsNullOrWhiteSpace(company_name) || string.IsNullOrWhiteSpace(company_email) || string.IsNullOrWhiteSpace(company_background) || string.IsNullOrWhiteSpace(company_location) || string.IsNullOrWhiteSpace(company_contact_number) || string.IsNullOrWhiteSpace(industry_type))
                 {
@@ -38,6 +45,11 @@ namespace JobApp
                 }
                 else
                 {
+
+
+
+                    var hashed_password = Utils.HashedPassword(password);
+
                     var Employer_details = new Employer_details
                     {
                         Company_name = company_name,
@@ -47,7 +59,8 @@ namespace JobApp
                         Workforce_number = workforce,
                         Company_Email = company_email,
                         Industry_type = industry_type,
-                        Password = password
+                        Password = hashed_password
+
                     };
 
                     _db.Employer_details.Add(Employer_details);

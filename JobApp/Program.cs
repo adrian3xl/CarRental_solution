@@ -14,8 +14,9 @@ namespace JobApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new JobApp_Main_window());
-          // Application.Run(new Manage_resumeview());
-           // Application.Run(new BrowseJobs());
+            // Application.Run(new Manage_resumeview());
+            // Application.Run(new BrowseJobs());
+            // Application.Run(new Employer_accountview());
         }
     }
-}
+} 

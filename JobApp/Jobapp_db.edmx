@@ -17,7 +17,7 @@
           <Property Name="Workforce_number" Type="int" />
           <Property Name="Company_Email" Type="nvarchar" MaxLength="50" />
           <Property Name="Industry_type" Type="nvarchar" MaxLength="50" />
-          <Property Name="Password" Type="nvarchar" MaxLength="20" />
+          <Property Name="Password" Type="nvarchar(max)" />
         </EntityType>
         <EntityType Name="Job_Applications_details">
           <Key>
@@ -37,7 +37,7 @@
           <Property Name="First_name" Type="nvarchar" MaxLength="20" />
           <Property Name="Last_name" Type="nvarchar" MaxLength="20" />
           <Property Name="Jobseeker_age" Type="int" />
-          <Property Name="Password" Type="nvarchar" MaxLength="10" />
+          <Property Name="Password" Type="nvarchar(max)" />
           <Property Name="User_Name" Type="nvarchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Resume_details">
@@ -197,7 +197,7 @@
           <Property Name="Workforce_number" Type="Int32" />
           <Property Name="Company_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Industry_type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Vacancy_details" Relationship="Jobapp_dbModel.FK_Vacancy_details_Employer_details" FromRole="Employer_details" ToRole="Vacancy_details" />
         </EntityType>
         <EntityType Name="Job_Applications_details">
@@ -221,7 +221,7 @@
           <Property Name="First_name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="Last_name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="Jobseeker_age" Type="Int32" />
-          <Property Name="Password" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="User_Name" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Job_Applications_details" Relationship="Jobapp_dbModel.FK_Job_Applications_Jobseeker_details" FromRole="Jobseeker_details" ToRole="Job_Applications_details" />
           <NavigationProperty Name="Resume_details" Relationship="Jobapp_dbModel.FK_Resume_details_Jobseeker_details" FromRole="Jobseeker_details" ToRole="Resume_details" />

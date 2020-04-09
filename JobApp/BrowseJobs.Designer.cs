@@ -35,8 +35,6 @@
             this.browseJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advanceSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salaryTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
-            this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
-            this.jobSeekerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgv_vacacies = new System.Windows.Forms.DataGridView();
             this.employerdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jobapp_dbDataSet = new JobApp.Jobapp_dbDataSet();
@@ -47,6 +45,7 @@
             this.apply_bt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.previousWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vacacies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employerdetailsBindingSource)).BeginInit();
@@ -74,10 +73,10 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.findJobsTool_itembox,
             this.salaryTool_itembox,
-            this.jobSeeker_itembox});
+            this.previousWindowToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(78, 559);
+            this.menuStrip1.Size = new System.Drawing.Size(123, 559);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -88,7 +87,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(71, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -100,31 +99,17 @@
             // advanceSearchToolStripMenuItem
             // 
             this.advanceSearchToolStripMenuItem.Name = "advanceSearchToolStripMenuItem";
-            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.advanceSearchToolStripMenuItem.Text = "Advance Search";
+            this.advanceSearchToolStripMenuItem.Click += new System.EventHandler(this.advanceSearchToolStripMenuItem_Click);
             // 
             // salaryTool_itembox
             // 
             this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(71, 19);
+            this.salaryTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.salaryTool_itembox.Text = "Salary Tool";
-            // 
-            // jobSeeker_itembox
-            // 
-            this.jobSeeker_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.jobSeekerSignUpToolStripMenuItem});
-            this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(71, 19);
-            this.jobSeeker_itembox.Text = "Job Seeker";
-            this.jobSeeker_itembox.Visible = false;
-            // 
-            // jobSeekerSignUpToolStripMenuItem
-            // 
-            this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
-            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
-            this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign out";
+            this.salaryTool_itembox.Click += new System.EventHandler(this.salaryTool_itembox_Click);
             // 
             // dgv_vacacies
             // 
@@ -208,6 +193,14 @@
             this.label2.Text = "lb_id";
             this.label2.Visible = false;
             // 
+            // previousWindowToolStripMenuItem
+            // 
+            this.previousWindowToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.previousWindowToolStripMenuItem.Name = "previousWindowToolStripMenuItem";
+            this.previousWindowToolStripMenuItem.Size = new System.Drawing.Size(116, 19);
+            this.previousWindowToolStripMenuItem.Text = "Previous window";
+            this.previousWindowToolStripMenuItem.Click += new System.EventHandler(this.previousWindowToolStripMenuItem_Click);
+            // 
             // BrowseJobs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,8 +236,6 @@
         private System.Windows.Forms.ToolStripMenuItem browseJobsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advanceSearchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salaryTool_itembox;
-        private System.Windows.Forms.ToolStripMenuItem jobSeeker_itembox;
-        private System.Windows.Forms.ToolStripMenuItem jobSeekerSignUpToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgv_vacacies;
         private Jobapp_dbDataSet jobapp_dbDataSet;
         private System.Windows.Forms.BindingSource employerdetailsBindingSource;
@@ -255,5 +246,6 @@
         private System.Windows.Forms.Button apply_bt;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem previousWindowToolStripMenuItem;
     }
 }

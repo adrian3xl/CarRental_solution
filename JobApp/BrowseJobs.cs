@@ -112,5 +112,20 @@ namespace JobApp
 
 
         }
+
+        private void salaryTool_itembox_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Updating salary feature.....");
+        }
+
+        private void advanceSearchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Advance search feature currently not available.");
+        }
+
+        private void previousWindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
