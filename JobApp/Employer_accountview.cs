@@ -65,5 +65,10 @@ namespace JobApp
             Review_Applicant.ShowDialog();
 
         }
+
+        private void signOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -55,6 +55,7 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Notification = new System.Windows.Forms.Button();
+            this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.Reminder_icon.SuspendLayout();
             this.SuspendLayout();
@@ -144,7 +145,6 @@
             this.mainWindow_MenuItem.Name = "mainWindow_MenuItem";
             this.mainWindow_MenuItem.Size = new System.Drawing.Size(170, 19);
             this.mainWindow_MenuItem.Text = "Manage account information";
-            
             // 
             // menuStrip1
             // 
@@ -154,7 +154,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ManageVacancy_menustrip,
             this.manageApplicantsToolStripMenuItem,
-            this.mainWindow_MenuItem});
+            this.mainWindow_MenuItem,
+            this.signOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(177, 492);
@@ -299,6 +300,13 @@
             this.Notification.UseVisualStyleBackColor = true;
             this.Notification.Click += new System.EventHandler(this.Notification_Click);
             // 
+            // signOutToolStripMenuItem
+            // 
+            this.signOutToolStripMenuItem.Name = "signOutToolStripMenuItem";
+            this.signOutToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
+            this.signOutToolStripMenuItem.Text = "Sign out";
+            this.signOutToolStripMenuItem.Click += new System.EventHandler(this.signOutToolStripMenuItem_Click);
+            // 
             // Employer_accountview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,7 +329,6 @@
             this.Controls.Add(this.CompName);
             this.Name = "Employer_accountview";
             this.Text = "Job Application Management System";
-           
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.Reminder_icon.ResumeLayout(false);
@@ -357,5 +364,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
         private System.Windows.Forms.Button Notification;
+        private System.Windows.Forms.ToolStripMenuItem signOutToolStripMenuItem;
     }
 }
