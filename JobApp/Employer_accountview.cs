@@ -23,18 +23,7 @@ namespace JobApp
             
         }
 
-        private void Employer_accountview_Load(object sender, EventArgs e)
-        {
-           
-
-
-
-        }
-
-        private void mainWindow_MenuItem_Click(object sender, EventArgs e)
-        {
-              
-        }
+    
 
         private void Show_vacancies(object sender, EventArgs e)
         {
@@ -69,8 +58,11 @@ namespace JobApp
             Reminder_icon.Show(953, 2);
         }
 
-        private void manageApplicantsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ManageApplicantsToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Review_Applicant Review_Applicant = new Review_Applicant();
+
+            Review_Applicant.ShowDialog();
 
         }
     }

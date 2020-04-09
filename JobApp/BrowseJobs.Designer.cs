@@ -35,6 +35,7 @@
             this.browseJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advanceSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salaryTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
+            this.previousWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgv_vacacies = new System.Windows.Forms.DataGridView();
             this.employerdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jobapp_dbDataSet = new JobApp.Jobapp_dbDataSet();
@@ -45,7 +46,6 @@
             this.apply_bt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.previousWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_vacacies)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employerdetailsBindingSource)).BeginInit();
@@ -76,7 +76,7 @@
             this.previousWindowToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(123, 559);
+            this.menuStrip1.Size = new System.Drawing.Size(112, 559);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -87,7 +87,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(105, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -99,7 +99,7 @@
             // advanceSearchToolStripMenuItem
             // 
             this.advanceSearchToolStripMenuItem.Name = "advanceSearchToolStripMenuItem";
-            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.advanceSearchToolStripMenuItem.Text = "Advance Search";
             this.advanceSearchToolStripMenuItem.Click += new System.EventHandler(this.advanceSearchToolStripMenuItem_Click);
             // 
@@ -107,16 +107,24 @@
             // 
             this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(116, 19);
+            this.salaryTool_itembox.Size = new System.Drawing.Size(105, 19);
             this.salaryTool_itembox.Text = "Salary Tool";
             this.salaryTool_itembox.Click += new System.EventHandler(this.salaryTool_itembox_Click);
+            // 
+            // previousWindowToolStripMenuItem
+            // 
+            this.previousWindowToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.previousWindowToolStripMenuItem.Name = "previousWindowToolStripMenuItem";
+            this.previousWindowToolStripMenuItem.Size = new System.Drawing.Size(105, 19);
+            this.previousWindowToolStripMenuItem.Text = "Previous window";
+            this.previousWindowToolStripMenuItem.Click += new System.EventHandler(this.previousWindowToolStripMenuItem_Click);
             // 
             // dgv_vacacies
             // 
             this.dgv_vacacies.AllowUserToAddRows = false;
             this.dgv_vacacies.AllowUserToDeleteRows = false;
             this.dgv_vacacies.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_vacacies.Location = new System.Drawing.Point(97, 121);
+            this.dgv_vacacies.Location = new System.Drawing.Point(133, 121);
             this.dgv_vacacies.Name = "dgv_vacacies";
             this.dgv_vacacies.ReadOnly = true;
             this.dgv_vacacies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -192,14 +200,6 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "lb_id";
             this.label2.Visible = false;
-            // 
-            // previousWindowToolStripMenuItem
-            // 
-            this.previousWindowToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.previousWindowToolStripMenuItem.Name = "previousWindowToolStripMenuItem";
-            this.previousWindowToolStripMenuItem.Size = new System.Drawing.Size(116, 19);
-            this.previousWindowToolStripMenuItem.Text = "Previous window";
-            this.previousWindowToolStripMenuItem.Click += new System.EventHandler(this.previousWindowToolStripMenuItem_Click);
             // 
             // BrowseJobs
             // 

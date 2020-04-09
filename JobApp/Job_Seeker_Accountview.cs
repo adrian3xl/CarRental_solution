@@ -50,6 +50,7 @@ namespace JobApp
                 gv_appstatus_list.Columns["Resume_details"].HeaderText = "Resume Details";
                 // gv_appstatus_list.Columns["Resume_details"].HeaderText = "Resume Details";
                 gv_appstatus_list.Columns["Job_title"].HeaderText = "Job Title";
+                gv_appstatus_list.Columns["Application_status"].HeaderText = "Application Status";
                 gv_appstatus_list.Columns["ID"].Visible = false;
             }
             catch (Exception err)

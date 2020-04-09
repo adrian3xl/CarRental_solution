@@ -144,7 +144,7 @@
             this.mainWindow_MenuItem.Name = "mainWindow_MenuItem";
             this.mainWindow_MenuItem.Size = new System.Drawing.Size(170, 19);
             this.mainWindow_MenuItem.Text = "Manage account information";
-            this.mainWindow_MenuItem.Click += new System.EventHandler(this.mainWindow_MenuItem_Click);
+            
             // 
             // menuStrip1
             // 
@@ -166,7 +166,7 @@
             this.manageApplicantsToolStripMenuItem.Name = "manageApplicantsToolStripMenuItem";
             this.manageApplicantsToolStripMenuItem.Size = new System.Drawing.Size(170, 19);
             this.manageApplicantsToolStripMenuItem.Text = "Manage Applicants";
-            this.manageApplicantsToolStripMenuItem.Click += new System.EventHandler(this.manageApplicantsToolStripMenuItem_Click);
+            this.manageApplicantsToolStripMenuItem.Click += new System.EventHandler(this.ManageApplicantsToolStripMenuItem_Click);
             // 
             // ContactNumber
             // 
@@ -321,7 +321,7 @@
             this.Controls.Add(this.CompName);
             this.Name = "Employer_accountview";
             this.Text = "Job Application Management System";
-            this.Load += new System.EventHandler(this.Employer_accountview_Load);
+           
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.Reminder_icon.ResumeLayout(false);
