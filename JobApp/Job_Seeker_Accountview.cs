@@ -73,7 +73,9 @@ namespace JobApp
             Reminder_icon.Show(694, 6);
         }
 
-        private void jobSeekerSignUpToolStripMenuItem_Click(object sender, EventArgs e)
+        
+
+        private void JobSeeker_itembox_Click(object sender, EventArgs e)
         {
             Close();
         }

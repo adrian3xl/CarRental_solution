@@ -36,9 +36,8 @@
             this.findJobsTool_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.browseJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.advanceSearchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
-            this.jobSeekerSignUpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Manageresume_MenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.jobSeeker_itembox = new System.Windows.Forms.ToolStripMenuItem();
             this.user_name_tb = new System.Windows.Forms.Label();
             this.gv_appstatus_list = new System.Windows.Forms.DataGridView();
             this.jobApplicationsdetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -103,7 +102,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(103, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -119,28 +118,20 @@
             this.advanceSearchToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
             this.advanceSearchToolStripMenuItem.Text = "Advance Search";
             // 
-            // jobSeeker_itembox
-            // 
-            this.jobSeeker_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.jobSeeker_itembox.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.jobSeekerSignUpToolStripMenuItem});
-            this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(116, 19);
-            this.jobSeeker_itembox.Text = "Job Seeker";
-            // 
-            // jobSeekerSignUpToolStripMenuItem
-            // 
-            this.jobSeekerSignUpToolStripMenuItem.Name = "jobSeekerSignUpToolStripMenuItem";
-            this.jobSeekerSignUpToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.jobSeekerSignUpToolStripMenuItem.Text = "Job Seeker Sign out";
-            this.jobSeekerSignUpToolStripMenuItem.Click += new System.EventHandler(this.jobSeekerSignUpToolStripMenuItem_Click);
-            // 
             // Manageresume_MenuItem
             // 
             this.Manageresume_MenuItem.Name = "Manageresume_MenuItem";
-            this.Manageresume_MenuItem.Size = new System.Drawing.Size(103, 19);
+            this.Manageresume_MenuItem.Size = new System.Drawing.Size(116, 19);
             this.Manageresume_MenuItem.Text = "Manage Resume";
             this.Manageresume_MenuItem.Click += new System.EventHandler(this.Manageresume_MenuItem_Click);
+            // 
+            // jobSeeker_itembox
+            // 
+            this.jobSeeker_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.jobSeeker_itembox.Name = "jobSeeker_itembox";
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(116, 19);
+            this.jobSeeker_itembox.Text = "Sign Out";
+            this.jobSeeker_itembox.Click += new System.EventHandler(this.JobSeeker_itembox_Click);
             // 
             // user_name_tb
             // 
@@ -290,7 +281,6 @@
         private System.Windows.Forms.ToolStripMenuItem browseJobsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem advanceSearchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jobSeeker_itembox;
-        private System.Windows.Forms.ToolStripMenuItem jobSeekerSignUpToolStripMenuItem;
         private System.Windows.Forms.Label user_name_tb;
         private System.Windows.Forms.ToolStripMenuItem Manageresume_MenuItem;
         private System.Windows.Forms.DataGridView gv_appstatus_list;
