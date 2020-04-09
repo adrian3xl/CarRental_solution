@@ -60,7 +60,7 @@ namespace JobApp
 
         private void ManageApplicantsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Review_Applicant Review_Applicant = new Review_Applicant();
+            Applicant_status Review_Applicant = new Applicant_status();
 
             Review_Applicant.ShowDialog();
 

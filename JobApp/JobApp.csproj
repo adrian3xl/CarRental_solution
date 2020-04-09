@@ -113,11 +113,17 @@
     <Compile Include="Add_Edit_Jobseeker_resume.Designer.cs">
       <DependentUpon>Add_Edit_Jobseeker_resume.cs</DependentUpon>
     </Compile>
-    <Compile Include="Review_Applicant.cs">
+    <Compile Include="Review_Application.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Review_Applicant.Designer.cs">
-      <DependentUpon>Review_Applicant.cs</DependentUpon>
+    <Compile Include="Review_Application.Designer.cs">
+      <DependentUpon>Review_Application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Applicant_status.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applicant_status.Designer.cs">
+      <DependentUpon>Applicant_status.cs</DependentUpon>
     </Compile>
     <Compile Include="Utils.cs" />
     <Compile Include="DisplayVacancy1.cs" />
@@ -251,6 +257,9 @@
     <EmbeddedResource Include="Add_Edit_Jobseeker_resume.resx">
       <DependentUpon>Add_Edit_Jobseeker_resume.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Review_Application.resx">
+      <DependentUpon>Review_Application.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employer_view_vacancy.resx">
       <DependentUpon>Employer_view_vacancy.cs</DependentUpon>
     </EmbeddedResource>
@@ -303,8 +312,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Review_Applicant.resx">
-      <DependentUpon>Review_Applicant.cs</DependentUpon>
+    <EmbeddedResource Include="Applicant_status.resx">
+      <DependentUpon>Applicant_status.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Submit_jobapplication.resx">
       <DependentUpon>Submit_jobapplication.cs</DependentUpon>
