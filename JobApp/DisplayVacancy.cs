@@ -35,6 +35,9 @@ namespace JobApp
 
         private void Display_vacancy_Load(object sender, EventArgs e)
         {
+
+
+
           var details = _db.Vacancy_details.Where(q=>q.Employers_id == Emp_id).ToList();
             vacancy.DataSource = details;
            // DisplayId();
@@ -101,6 +104,8 @@ namespace JobApp
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //datagrid display needs to be fleshed out...call the specific fields and then populate the grid on refresh
+            //see manage resume or proper implimentation 
             //  MessageBox.Show("Please exit window and enter back in to see updates");
             PopulateGrid();
         }
