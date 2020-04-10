@@ -228,12 +228,6 @@
     <Compile Include="Manage_resumeview.Designer.cs">
       <DependentUpon>Manage_resumeview.cs</DependentUpon>
     </Compile>
-    <Compile Include="Notification.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Notification.Designer.cs">
-      <DependentUpon>Notification.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resume_details.cs">
@@ -289,9 +283,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manage_resumeview.resx">
       <DependentUpon>Manage_resumeview.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Notification.resx">
-      <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
