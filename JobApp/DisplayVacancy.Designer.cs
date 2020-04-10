@@ -32,6 +32,7 @@
             this.createVacancy = new System.Windows.Forms.Button();
             this.VacancyAddForm = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.lb_id = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.vacancy)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,9 +41,9 @@
             this.vacancy.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.vacancy.Location = new System.Drawing.Point(40, 74);
             this.vacancy.Name = "vacancy";
+            this.vacancy.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.vacancy.Size = new System.Drawing.Size(748, 292);
             this.vacancy.TabIndex = 0;
-            this.vacancy.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.vacancy_CellContentClick);
             // 
             // createVacancy
             // 
@@ -69,7 +70,6 @@
             this.VacancyAddForm.TabIndex = 15;
             this.VacancyAddForm.Text = "Your Vacancies";
             this.VacancyAddForm.UseCompatibleTextRendering = true;
-            this.VacancyAddForm.Click += new System.EventHandler(this.VacancyAddForm_Click);
             // 
             // button1
             // 
@@ -82,11 +82,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Edit_Vacancy);
             // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.Location = new System.Drawing.Point(652, 37);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(29, 13);
+            this.lb_id.TabIndex = 17;
+            this.lb_id.Text = "lb_id";
+            this.lb_id.Visible = false;
+            // 
             // Display_Vacancy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lb_id);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.VacancyAddForm);
             this.Controls.Add(this.createVacancy);
@@ -106,5 +117,6 @@
         private System.Windows.Forms.Button createVacancy;
         private System.Windows.Forms.Label VacancyAddForm;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lb_id;
     }
 }

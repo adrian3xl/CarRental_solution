@@ -52,22 +52,25 @@ namespace JobApp
             NewVacancy.Show();
         }
 
-        private void vacancy_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void VacancyAddForm_Click(object sender, EventArgs e)
-        {
-
-        }
+      //  vacancy
 
         private void Edit_Vacancy(object sender, EventArgs e)
         {
-           
-            var change_vacancy = (int) vacancy.SelectedRows[0].Cells["id"].Value;
-            var edit = new EditVacancy(change_vacancy);
-            edit.Show();
+
+            var ID = (int)vacancy.SelectedRows[0].Cells["id"].Value;
+            var change_vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == ID);
+
+            var EditVacancy = new EditVacancy(change_vacancy)
+            {
+                MdiParent = this.MdiParent
+            };
+            EditVacancy.ShowDialog();
+
+
+            //  var change_vacancy = (int) vacancy.SelectedRows[0].Cells["id"].Value;
+
+            //  var edit = new EditVacancy(change_vacancy);
+            //  edit.Show();
 
         }
     }

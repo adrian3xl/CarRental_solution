@@ -29,23 +29,24 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.JobCat = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.EmpType = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.JobLevel = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.JobDesc = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.JobTitle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.JobDesc = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.JobReq = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.JobLevel = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.EmpType = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.Deadline = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
-            this.JobCat = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.VacancyAddForm = new System.Windows.Forms.Label();
+            this.lb_id = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,6 +82,89 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(876, 484);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
+            // JobCat
+            // 
+            this.JobCat.Location = new System.Drawing.Point(213, 423);
+            this.JobCat.Name = "JobCat";
+            this.JobCat.Size = new System.Drawing.Size(305, 20);
+            this.JobCat.TabIndex = 13;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(3, 420);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 13);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "Job Category";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(3, 378);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(84, 13);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Submit Deadline";
+            // 
+            // EmpType
+            // 
+            this.EmpType.Location = new System.Drawing.Point(213, 308);
+            this.EmpType.Name = "EmpType";
+            this.EmpType.Size = new System.Drawing.Size(305, 20);
+            this.EmpType.TabIndex = 9;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(3, 305);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(91, 13);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Employment Type";
+            // 
+            // JobLevel
+            // 
+            this.JobLevel.Location = new System.Drawing.Point(213, 235);
+            this.JobLevel.Name = "JobLevel";
+            this.JobLevel.Size = new System.Drawing.Size(305, 20);
+            this.JobLevel.TabIndex = 7;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(3, 232);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Job Level";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 148);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Job Requirements";
+            // 
+            // JobDesc
+            // 
+            this.JobDesc.Location = new System.Drawing.Point(213, 64);
+            this.JobDesc.Multiline = true;
+            this.JobDesc.Name = "JobDesc";
+            this.JobDesc.Size = new System.Drawing.Size(440, 76);
+            this.JobDesc.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 61);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Job Description";
+            // 
             // JobTitle
             // 
             this.JobTitle.Location = new System.Drawing.Point(213, 3);
@@ -97,32 +181,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Job Title";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Job Description";
-            // 
-            // JobDesc
-            // 
-            this.JobDesc.Location = new System.Drawing.Point(213, 64);
-            this.JobDesc.Multiline = true;
-            this.JobDesc.Name = "JobDesc";
-            this.JobDesc.Size = new System.Drawing.Size(440, 76);
-            this.JobDesc.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Job Requirements";
-            // 
             // JobReq
             // 
             this.JobReq.Location = new System.Drawing.Point(213, 151);
@@ -131,69 +189,12 @@
             this.JobReq.Size = new System.Drawing.Size(440, 70);
             this.JobReq.TabIndex = 5;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 232);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Job Level";
-            // 
-            // JobLevel
-            // 
-            this.JobLevel.Location = new System.Drawing.Point(213, 235);
-            this.JobLevel.Name = "JobLevel";
-            this.JobLevel.Size = new System.Drawing.Size(305, 20);
-            this.JobLevel.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 305);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 13);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Employment Type";
-            // 
-            // EmpType
-            // 
-            this.EmpType.Location = new System.Drawing.Point(213, 308);
-            this.EmpType.Name = "EmpType";
-            this.EmpType.Size = new System.Drawing.Size(305, 20);
-            this.EmpType.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(3, 378);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 13);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Submit Deadline";
-            // 
             // Deadline
             // 
             this.Deadline.Location = new System.Drawing.Point(213, 381);
             this.Deadline.Name = "Deadline";
             this.Deadline.Size = new System.Drawing.Size(200, 20);
             this.Deadline.TabIndex = 11;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 420);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Job Category";
-            // 
-            // JobCat
-            // 
-            this.JobCat.Location = new System.Drawing.Point(213, 423);
-            this.JobCat.Name = "JobCat";
-            this.JobCat.Size = new System.Drawing.Size(305, 20);
-            this.JobCat.TabIndex = 13;
             // 
             // button1
             // 
@@ -231,11 +232,22 @@
             this.VacancyAddForm.Text = "Edit Vacancy";
             this.VacancyAddForm.UseCompatibleTextRendering = true;
             // 
+            // lb_id
+            // 
+            this.lb_id.AutoSize = true;
+            this.lb_id.Location = new System.Drawing.Point(887, 13);
+            this.lb_id.Name = "lb_id";
+            this.lb_id.Size = new System.Drawing.Size(29, 13);
+            this.lb_id.TabIndex = 20;
+            this.lb_id.Text = "lb_id";
+            this.lb_id.Visible = false;
+            // 
             // EditVacancy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 681);
+            this.Controls.Add(this.lb_id);
             this.Controls.Add(this.VacancyAddForm);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -269,5 +281,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label VacancyAddForm;
+        private System.Windows.Forms.Label lb_id;
     }
 }
