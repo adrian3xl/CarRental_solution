@@ -73,5 +73,36 @@ namespace JobApp
             //  edit.Show();
 
         }
+
+        private void prev_bt_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void del_bt_Click(object sender, EventArgs e)
+        {
+            var ID = (int)vacancy.SelectedRows[0].Cells["id"].Value;
+            var change_vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == ID);
+
+            _db.Vacancy_details.Remove(change_vacancy);
+            _db.SaveChanges();
+            MessageBox.Show("Delete was successful");
+
+
+        }
+
+
+        public void PopulateGrid()
+        {
+            var details = _db.Vacancy_details.Where(q => q.Employers_id == Emp_id).ToList();
+            vacancy.DataSource = details;
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //  MessageBox.Show("Please exit window and enter back in to see updates");
+            PopulateGrid();
+        }
     }
 }
