@@ -76,7 +76,7 @@
             this.previousWindowToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(112, 559);
+            this.menuStrip1.Size = new System.Drawing.Size(123, 559);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -87,7 +87,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(105, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -107,7 +107,7 @@
             // 
             this.salaryTool_itembox.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.salaryTool_itembox.Name = "salaryTool_itembox";
-            this.salaryTool_itembox.Size = new System.Drawing.Size(105, 19);
+            this.salaryTool_itembox.Size = new System.Drawing.Size(116, 19);
             this.salaryTool_itembox.Text = "Salary Tool";
             this.salaryTool_itembox.Click += new System.EventHandler(this.salaryTool_itembox_Click);
             // 
@@ -115,7 +115,7 @@
             // 
             this.previousWindowToolStripMenuItem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.previousWindowToolStripMenuItem.Name = "previousWindowToolStripMenuItem";
-            this.previousWindowToolStripMenuItem.Size = new System.Drawing.Size(105, 19);
+            this.previousWindowToolStripMenuItem.Size = new System.Drawing.Size(116, 19);
             this.previousWindowToolStripMenuItem.Text = "Previous window";
             this.previousWindowToolStripMenuItem.Click += new System.EventHandler(this.previousWindowToolStripMenuItem_Click);
             // 

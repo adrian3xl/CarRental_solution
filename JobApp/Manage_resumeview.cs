@@ -29,7 +29,7 @@ namespace JobApp
         {
             try
             {
-                var ID = (int)dgv_resumeview.SelectedRows[0].Cells["ID"].Value;
+                var ID = (int)dgv_resumeview.SelectedRows[0].Cells["id"].Value;
                 var resume = _db.Resume_details.FirstOrDefault(q => q.id == ID);
 
                 Add_Edit_Jobseeker_resume add_Edit_Jobseeker_Resume = new Add_Edit_Jobseeker_resume(resume)
@@ -49,7 +49,7 @@ namespace JobApp
         {
             try
             {
-                var ID = (int)dgv_resumeview.SelectedRows[0].Cells["ID"].Value;
+                var ID = (int)dgv_resumeview.SelectedRows[0].Cells["id"].Value;
                 var resume = _db.Resume_details.FirstOrDefault(q => q.id == ID);
 
                 _db.Resume_details.Remove(resume);
@@ -92,7 +92,7 @@ namespace JobApp
                 dgv_resumeview.Columns["Hobbies"].HeaderText = "Hobbies";
                 dgv_resumeview.Columns["Contact_number"].HeaderText = "Contact Number";
                 dgv_resumeview.Columns["Email"].HeaderText = "Email Address";
-                dgv_resumeview.Columns["ID"].Visible = false;
+                dgv_resumeview.Columns["id"].Visible = false;
 
             }
             catch (Exception)
@@ -127,7 +127,7 @@ namespace JobApp
             dgv_resumeview.Columns["Hobbies"].HeaderText = "Hobbies";
             dgv_resumeview.Columns["Contact_number"].HeaderText = "Contact Number";
             dgv_resumeview.Columns["Email"].HeaderText = "Email Address";
-            dgv_resumeview.Columns["ID"].Visible = false;
+            dgv_resumeview.Columns["id"].Visible = false;
         }
         private void refresh_bt_Click(object sender, EventArgs e)
         {

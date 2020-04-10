@@ -130,12 +130,6 @@
     <Compile Include="Employer_details.cs">
       <DependentUpon>Jobapp_db.tt</DependentUpon>
     </Compile>
-    <Compile Include="Employer_view_vacancy.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Employer_view_vacancy.Designer.cs">
-      <DependentUpon>Employer_view_vacancy.cs</DependentUpon>
-    </Compile>
     <Compile Include="BrowseJobs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -259,9 +253,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Review_Application.resx">
       <DependentUpon>Review_Application.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Employer_view_vacancy.resx">
-      <DependentUpon>Employer_view_vacancy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BrowseJobs.resx">
       <DependentUpon>BrowseJobs.cs</DependentUpon>

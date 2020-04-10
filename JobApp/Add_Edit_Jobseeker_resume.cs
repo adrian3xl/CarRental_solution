@@ -45,16 +45,16 @@ namespace JobApp
             {
                 try
                 {
-                    var id = int.Parse(lb_id.Text);
-                    var resume = _db.Resume_details.FirstOrDefault(q => q.id == id);
+                    var Id = int.Parse(lb_id.Text);
+                    var resume = _db.Resume_details.FirstOrDefault(q => q.id == Id);
                     resume.Education_level = edu_tb.Text;
                     resume.Contact_number = cont_tb.Text;
                     resume.Hobbies = hobby_tb.Text;
                     resume.Email = email_tb.Text;
                     resume.PriorWork_Experiences = exper_tb.Text;
                     resume.Qualifications = qualifica_tb.Text;
-                    resume.Jobseeker_details_id = ID;
-                  
+                    //resume.Jobseeker_details_id = ID;
+                 // _db.Resume_details.Add
                     _db.SaveChanges();
 
                     MessageBox.Show("Resume was successfully Edited");
@@ -80,7 +80,7 @@ namespace JobApp
                         Email = email_tb.Text,
                         PriorWork_Experiences = exper_tb.Text,
                         Qualifications = qualifica_tb.Text,
-                        Jobseeker_details_id = ID
+                       // Jobseeker_details_id = ID
 
                 };
 
