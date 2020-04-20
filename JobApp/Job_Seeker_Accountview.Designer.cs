@@ -52,6 +52,7 @@
             this.forApplicationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.closeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ref_bt = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gv_appstatus_list)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobApplicationsdetailsBindingSource)).BeginInit();
@@ -91,7 +92,7 @@
             this.jobSeeker_itembox});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(123, 508);
+            this.menuStrip1.Size = new System.Drawing.Size(110, 508);
             this.menuStrip1.TabIndex = 34;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -102,7 +103,7 @@
             this.browseJobsToolStripMenuItem,
             this.advanceSearchToolStripMenuItem});
             this.findJobsTool_itembox.Name = "findJobsTool_itembox";
-            this.findJobsTool_itembox.Size = new System.Drawing.Size(116, 19);
+            this.findJobsTool_itembox.Size = new System.Drawing.Size(103, 19);
             this.findJobsTool_itembox.Text = "Find Jobs";
             // 
             // browseJobsToolStripMenuItem
@@ -121,7 +122,7 @@
             // Manageresume_MenuItem
             // 
             this.Manageresume_MenuItem.Name = "Manageresume_MenuItem";
-            this.Manageresume_MenuItem.Size = new System.Drawing.Size(116, 19);
+            this.Manageresume_MenuItem.Size = new System.Drawing.Size(103, 19);
             this.Manageresume_MenuItem.Text = "Manage Resume";
             this.Manageresume_MenuItem.Click += new System.EventHandler(this.Manageresume_MenuItem_Click);
             // 
@@ -129,7 +130,7 @@
             // 
             this.jobSeeker_itembox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.jobSeeker_itembox.Name = "jobSeeker_itembox";
-            this.jobSeeker_itembox.Size = new System.Drawing.Size(116, 19);
+            this.jobSeeker_itembox.Size = new System.Drawing.Size(103, 19);
             this.jobSeeker_itembox.Text = "Sign Out";
             this.jobSeeker_itembox.Click += new System.EventHandler(this.JobSeeker_itembox_Click);
             // 
@@ -246,11 +247,22 @@
             this.closeToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
+            // ref_bt
+            // 
+            this.ref_bt.Location = new System.Drawing.Point(625, 167);
+            this.ref_bt.Name = "ref_bt";
+            this.ref_bt.Size = new System.Drawing.Size(75, 23);
+            this.ref_bt.TabIndex = 54;
+            this.ref_bt.Text = "Refresh";
+            this.ref_bt.UseVisualStyleBackColor = true;
+            this.ref_bt.Click += new System.EventHandler(this.ref_bt_Click);
+            // 
             // Job_Seeker_Accountview
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 508);
+            this.Controls.Add(this.ref_bt);
             this.Controls.Add(this.Notification);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gv_appstatus_list);
@@ -296,5 +308,6 @@
         private System.Windows.Forms.ToolStripMenuItem forApplicationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem closeToolStripMenuItem;
+        private System.Windows.Forms.Button ref_bt;
     }
 }

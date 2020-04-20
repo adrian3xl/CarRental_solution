@@ -35,38 +35,47 @@ namespace JobApp
 
         private void Submit_bt_Click(object sender, EventArgs e)
         {
-           // var JobSkrTable = new Resume_details();
-            var Data = _db.Resume_details.FirstOrDefault(q => q.id == 3);
-            var JobseekerData = _db.Resume_details.FirstOrDefault(q => q.Jobseeker_details_id ==_jbsId);
-           var ResumeId = JobseekerData.id;
-
-            // int ResumeId = Data.id;
-
-           var Applicant = new Job_Applications_details
+            try
             {
-                resume_id = ResumeId,
-                Jobseeker_id = _jbsId,
-                vacancy_id = VId,
-                Application_status ="Pending"  
-            };
+                // var JobSkrTable = new Resume_details();
+                var Data = _db.Resume_details.FirstOrDefault(q => q.id == 3);
+                var JobseekerData = _db.Resume_details.FirstOrDefault(q => q.Jobseeker_details_id == _jbsId);
+                var ResumeId = JobseekerData.id;
 
-             _db.Job_Applications_details.Add(Applicant);
-             _db.SaveChanges();
+                // int ResumeId = Data.id;
+
+                var Applicant = new Job_Applications_details
+                {
+                    resume_id = ResumeId,
+                    Jobseeker_id = _jbsId,
+                    vacancy_id = VId,
+                    Application_status = "Pending"
+                };
+
+                _db.Job_Applications_details.Add(Applicant);
+                _db.SaveChanges();
+                MessageBox.Show("Job application was successfull");
+                this.Close();
+                // lb_id.Text = resume.id.ToString();
 
 
-            // lb_id.Text = resume.id.ToString();
+                var Id = int.Parse(lb_id.Text);
+                var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
+
+                //   _db.SaveChanges();
+
+                // _db.Job_Applications_details.Add(this, vacancy, resume);
+                // _db.SaveChanges();*/
 
 
-             var Id = int.Parse(lb_id.Text);
-             var vacancy = _db.Vacancy_details.FirstOrDefault(q => q.id == Id);
 
-          //   _db.SaveChanges();
+            }
+            catch (Exception)
+            {
 
-          // _db.Job_Applications_details.Add(this, vacancy, resume);
-            // _db.SaveChanges();*/
-
-            
-            
+                MessageBox.Show("Job application was successfull");
+                // throw;
+            }
             
         }
 
@@ -77,16 +86,24 @@ namespace JobApp
 
         private void SetDropDown(object sender, EventArgs e)
         {
+            try
+            {
 
-            var data = _db.Resume_details.ToList();
-            selectJob.DisplayMember = "Education_level";
-            selectJob.ValueMember = "id";
-            selectJob.DataSource = data;
-           var NewId = _db.Vacancy_details.FirstOrDefault(s=> s.id == VId);
+                var data = _db.Resume_details.ToList();
+                selectJob.DisplayMember = "Education_level";
+                selectJob.ValueMember = "id";
+                selectJob.DataSource = data;
+                var NewId = _db.Vacancy_details.FirstOrDefault(s => s.id == VId);
 
 
 
-            NameBox.Text = NewId.Job_title;
+                NameBox.Text = NewId.Job_title;
+            }
+            catch (Exception)
+            {
+               // MessageBox.Show("Job application was successfull");
+                // throw;
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

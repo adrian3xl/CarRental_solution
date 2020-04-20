@@ -60,6 +60,34 @@ namespace JobApp
             }
         }
 
+        private void populate( )
+        {
+            try
+            {
+                var application = _db.Job_Applications_details.Select(q => new
+                {
+                    ID = q.id,
+                    q.Application_status,
+                    Resume_details = q.Resume_details.Jobseeker_details.First_name + "" + q.Resume_details.Jobseeker_details.Last_name,
+                    q.Vacancy_details.Job_title,
+                    Job_SeekerID = q.Jobseeker_id
+
+                }).Where(s => s.Job_SeekerID == Job_seeker_id).ToList();
+
+                gv_appstatus_list.DataSource = application;
+                gv_appstatus_list.Columns["Resume_details"].HeaderText = "Resume Details";
+                // gv_appstatus_list.Columns["Resume_details"].HeaderText = "Resume Details";
+                gv_appstatus_list.Columns["Job_title"].HeaderText = "Job Title";
+                gv_appstatus_list.Columns["Application_status"].HeaderText = "Application Status";
+                gv_appstatus_list.Columns["ID"].Visible = false;
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show($"error: {err}");
+                // throw;
+            }
+
+        }
 
         private void Manageresume_MenuItem_Click(object sender, EventArgs e)
         {
@@ -78,6 +106,11 @@ namespace JobApp
         private void JobSeeker_itembox_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void ref_bt_Click(object sender, EventArgs e)
+        {
+            populate();
         }
 
         //   private void addResumeToolStripMenuItem_Click(object sender, EventArgs e)
